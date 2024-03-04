@@ -67,7 +67,6 @@ const NavModule = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isMoreNavOpen]);
-  console.log('pathname', pathname)
 
   return (
     <NavModuleStyles>

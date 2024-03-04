@@ -6,6 +6,8 @@
   "dependencies": {
     "@fontsource/heebo": "^5.0.18",
     "bulma": "^0.9.0",
+    "d3-fetch": "^3.0.1",
+    "d3-scale": "^4.0.2",
     "decap-cms-app": "^3.0.12",
     "decap-cms-media-library-cloudinary": "^3.0.1",
     "decap-cms-media-library-uploadcare": "^3.0.0",
@@ -31,6 +33,8 @@
     "react-dom": "^18.0.0",
     "react-helmet": "^6.0.0",
     "react-icons": "^5.0.1",
+    "react-simple-maps": "^3.0.0",
+    "react-tooltip": "^5.26.3",
     "sass": "^1.43.2",
     "styled-components": "^6.1.8",
     "uuid": "^8.0.0"

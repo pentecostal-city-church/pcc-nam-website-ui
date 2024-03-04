@@ -9,6 +9,9 @@ import PerksModule from "../components/PerksModule/PerksModule";
 import Perk from "../components/PerksModule/Perk";
 import Features from "../components/Features/Features";
 import LatestPosts from "../components/Post/LatestPosts";
+import MapChart from '../components/MapChart';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
+
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -21,14 +24,22 @@ export const IndexPageTemplate = ({
   intro,
 }) => {
 
+  const [content, setContent] = React.useState({
+    id: '',
+    label: ''
+  });
+
   return (
     <div>
       <Seo title="Home" />
       <Layout>
-        <BannerModule
-          title="Welcome to Barcadia"
-          subTitle="Using a combination of Gatsby and Contentful, Barcadia is ready to deploy and simple to use."
-        />
+        <div>
+          <MapChart setTooltipContent={setContent} />
+          <ReactTooltip
+            id={'county-geo'}
+            place='bottom'
+          />
+        </div>
         <BasicTextModule
           title="A super-fast theme that is easy to get started, using the power of
             GatsbyJS"
