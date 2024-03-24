@@ -99,7 +99,7 @@ const MapChart = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     // https://www.bls.gov/lau/
-    const csvFilePath = '/data/uscounties.csv';
+    const csvFilePath = '/img/uscounties.csv';
     try {
         csv(csvFilePath).then((counties) => {
             setData(counties);
