@@ -1,18 +1,18 @@
-"county","county_ascii","name","id","state_id","state_name","lat","lng","population"
-"Los Angeles","Los Angeles","Los Angeles County","06037","CA","California","34.3219","-118.2247","9936690"
+"county","county_ascii","name","id","state_id","state_name","lat","lng","population","main"
+"Los Angeles","Los Angeles","Los Angeles County","06037","CA","California","34.3219","-118.2247","9936690",1
 "Cook","Cook","Cook County","17031","IL","Illinois","41.8401","-87.8168","5225367"
 "Harris","Harris","Harris County","48201","TX","Texas","29.8578","-95.3938","4726177"
 "Maricopa","Maricopa","Maricopa County","04013","AZ","Arizona","33.3490","-112.4915","4430871"
-"San Diego","San Diego","San Diego County","06073","CA","California","33.0343","-116.7351","3289701"
-"Orange","Orange","Orange County","06059","CA","California","33.7031","-117.7609","3175227"
+"San Diego","San Diego","San Diego County","06073","CA","California","33.0343","-116.7351","3289701",1
+"Orange","Orange","Orange County","06059","CA","California","33.7031","-117.7609","3175227",1
 "Miami-Dade","Miami-Dade","Miami-Dade County","12086","FL","Florida","25.6150","-80.5624","2688237"
 "Kings","Kings","Kings County","36047","NY","New York","40.6413","-73.9383","2679620"
 "Dallas","Dallas","Dallas County","48113","TX","Texas","32.7666","-96.7778","2604053"
-"Riverside","Riverside","Riverside County","06065","CA","California","33.7437","-115.9938","2429487"
+"Riverside","Riverside","Riverside County","06065","CA","California","33.7437","-115.9938","2429487",1
 "Queens","Queens","Queens County","36081","NY","New York","40.7035","-73.8196","2360826"
-"Clark","Clark","Clark County","32003","NV","Nevada","36.2152","-115.0135","2265926"
+"Clark","Clark","Clark County","32003","NV","Nevada","36.2152","-115.0135","2265926",1
 "King","King","King County","53033","WA","Washington","47.4902","-121.8052","2254371"
-"San Bernardino","San Bernardino","San Bernardino County","06071","CA","California","34.8414","-116.1785","2180563"
+"San Bernardino","San Bernardino","San Bernardino County","06071","CA","California","34.8414","-116.1785","2180563",1
 "Tarrant","Tarrant","Tarrant County","48439","TX","Texas","32.7719","-97.2911","2113854"
 "Bexar","Bexar","Bexar County","48029","TX","Texas","29.4489","-98.5200","2014059"
 "Broward","Broward","Broward County","12011","FL","Florida","26.1523","-80.4871","1940907"
@@ -61,7 +61,7 @@
 "Shelby","Shelby","Shelby County","47157","TN","Tennessee","35.1842","-89.8940","926440"
 "Pierce","Pierce","Pierce County","53053","WA","Washington","47.0239","-122.1040","918993"
 "Denton","Denton","Denton County","48121","TX","Texas","33.2055","-97.1168","914870"
-"Kern","Kern","Kern County","06029","CA","California","35.3426","-118.7301","906883"
+"Kern","Kern","Kern County","06029","CA","California","35.3426","-118.7301","906883",1
 "Macomb","Macomb","Macomb County","26099","MI","Michigan","42.6957","-82.9323","878453"
 "Hidalgo","Hidalgo","Hidalgo County","48215","TX","Texas","26.3969","-98.1812","873167"
 "El Paso","El Paso","El Paso County","48141","TX","Texas","31.7686","-106.2348","863832"
@@ -71,7 +71,7 @@
 "Essex","Essex","Essex County","34013","NJ","New Jersey","40.7880","-74.2481","853374"
 "San Francisco","San Francisco","San Francisco County","06075","CA","California","37.7556","-122.4450","851036"
 "Baltimore","Baltimore","Baltimore County","24005","MD","Maryland","39.4627","-76.6393","850737"
-"Ventura","Ventura","Ventura County","06111","CA","California","34.4561","-119.0836","842009"
+"Ventura","Ventura","Ventura County","06111","CA","California","34.4561","-119.0836","842009",1
 "Fort Bend","Fort Bend","Fort Bend County","48157","TX","Texas","29.5275","-95.7709","832607"
 "Snohomish","Snohomish","Snohomish County","53061","WA","Washington","48.0474","-121.6972","828337"
 "Hamilton","Hamilton","Hamilton County","39061","OH","Ohio","39.1955","-84.5428","827671"
@@ -159,7 +159,7 @@
 "East Baton Rouge","East Baton Rouge","East Baton Rouge Parish","22033","LA","Louisiana","30.5383","-91.0956","454369"
 "Naugatuck Valley","Naugatuck Valley","Naugatuck Valley Planning Region","09140","CT","Connecticut","41.5231","-73.0860","451887"
 "Solano","Solano","Solano County","06095","CA","California","38.2700","-121.9328","450995"
-"Santa Barbara","Santa Barbara","Santa Barbara County","06083","CA","California","34.6729","-120.0169","445213"
+"Santa Barbara","Santa Barbara","Santa Barbara County","06083","CA","California","34.6729","-120.0169","445213",1
 "Sarasota","Sarasota","Sarasota County","12115","FL","Florida","27.1845","-82.3315","439392"
 "Dakota","Dakota","Dakota County","27037","MN","Minnesota","44.6719","-93.0654","439179"
 "Monterey","Monterey","Monterey County","06053","CA","California","36.2171","-121.2388","437609"
@@ -250,7 +250,7 @@
 "York","York","York County","45091","SC","South Carolina","34.9748","-81.1845","282987"
 "Ingham","Ingham","Ingham County","26065","MI","Michigan","42.5971","-84.3735","282540"
 "Merced","Merced","Merced County","06047","CA","California","37.1919","-120.7177","282290"
-"San Luis Obispo","San Luis Obispo","San Luis Obispo County","06079","CA","California","35.3871","-120.4044","281712"
+"San Luis Obispo","San Luis Obispo","San Luis Obispo County","06079","CA","California","35.3871","-120.4044","281712",1
 "Southeastern Connecticut","Southeastern Connecticut","Southeastern Connecticut Planning Region","09180","CT","Connecticut","41.5023","-72.1000","280293"
 "Alachua","Alachua","Alachua County","12001","FL","Florida","29.6747","-82.3577","279729"
 "St. Johns","St. Johns","St. Johns County","12109","FL","Florida","29.9016","-81.4407","278722"
@@ -374,7 +374,7 @@
 "Bay","Bay","Bay County","12005","FL","Florida","30.2652","-85.6203","181055"
 "Vanderburgh","Vanderburgh","Vanderburgh County","18163","IN","Indiana","38.0249","-87.5859","179900"
 "Kanawha","Kanawha","Kanawha County","54039","WV","West Virginia","38.3365","-81.5281","179895"
-"Imperial","Imperial","Imperial County","06025","CA","California","33.0395","-115.3654","179578"
+"Imperial","Imperial","Imperial County","06025","CA","California","33.0395","-115.3654","179578",1
 "Licking","Licking","Licking County","39089","OH","Ohio","40.0916","-82.4831","178844"
 "Shawnee","Shawnee","Shawnee County","20177","KS","Kansas","39.0415","-95.7565","178625"
 "Muskegon","Muskegon","Muskegon County","26121","MI","Michigan","43.2912","-86.1520","175947"
@@ -970,7 +970,7 @@
 "Waupaca","Waupaca","Waupaca County","55135","WI","Wisconsin","44.4705","-88.9648","51822"
 "Harrisonburg","Harrisonburg","Harrisonburg City","51660","VA","Virginia","38.4362","-78.8735","51784"
 "Darke","Darke","Darke County","39037","OH","Ohio","40.1333","-84.6194","51751"
-"Nye","Nye","Nye County","32023","NV","Nevada","38.0422","-116.4719","51698"
+"Nye","Nye","Nye County","32023","NV","Nevada","38.0422","-116.4719","51698",1
 "Ogle","Ogle","Ogle County","17141","IL","Illinois","42.0426","-89.3207","51672"
 "Cass","Cass","Cass County","26027","MI","Michigan","41.9154","-85.9935","51604"
 "Franklin","Franklin","Franklin County","21073","KY","Kentucky","38.2391","-84.8771","51475"

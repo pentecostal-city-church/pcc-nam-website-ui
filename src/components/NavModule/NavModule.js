@@ -76,8 +76,9 @@ const NavModule = () => {
             {title && (
               <LogoStyles>
                 <Link to="/">
-                  {title}
-                  <span>.</span>
+                  <img className={'logo-image-circle'} src={'/img/socal-nam-dark-logo.png'} />
+                  {/* {title}
+                  <span>.</span> */}
                 </Link>
               </LogoStyles>
             )}
@@ -186,8 +187,9 @@ const NavModule = () => {
             {title && (
               <LogoStyles>
                 <Link to="/">
-                  {title}
-                  <span>.</span>
+                  <img className={'logo-image-circle'} src={'/img/socal-nam-logo-dark.png'} />
+                  {/* {title}
+                  <span>.</span> */}
                 </Link>
               </LogoStyles>
             )}

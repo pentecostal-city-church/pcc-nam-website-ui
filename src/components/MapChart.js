@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import {
   ComposableMap,
   Geographies,
@@ -17,18 +17,85 @@ const colorScale = scaleQuantize(
         10000000
     ],
     [
-        "#ffedea",
-        "#ffcec5",
-        "#ffad9f",
-        "#ff8a75",
-        "#ff5533",
-        "#e2492d",
-        "#be3d26",
-        "#9a311f",
-        "#782618"
+        'rgb(183, 193, 204)',
+        'rgb(170, 185, 192)',
+        'rgb(163, 178, 191)',
+        'rgb(135, 161, 185)',
+        'rgb(135, 161, 185)',
+        'rgb(100, 135, 170)',
+        'rgb(100, 135, 170)',
+        'rgb(88, 127, 164)',
+        'rgb(61, 106, 149)',
+        'rgb(61, 106, 149)'
       ]
-    );
-const MapChart = ({ setTooltipContent }) => {
+);
+
+const colorScaleHover = scaleQuantize(
+    [
+        1,
+        10000000
+    ],
+    [
+        'rgb(198, 208, 219)',
+        'rgb(185, 200, 207)',
+        'rgb(178, 193, 206)',
+        'rgb(150, 176, 200)',
+        'rgb(150, 176, 200)',
+        'rgb(115, 150, 185)',
+        'rgb(115, 150, 185)',
+        'rgb(103, 142, 179)',
+        'rgb(76, 121, 164)',
+        'rgb(76, 121, 164)'
+      ]
+);
+
+const sizeScale = (width) => {
+    if (width > 3000) {
+        return {
+            // height: 400,
+            // width: 300,
+            // scale: 1000,
+            center: [-21, 35]
+        };
+    } else if (width > 2000) {
+        return {
+            // height: 400,
+            // width: 300,
+            // scale: 500,
+            center: [-21, 33]
+        };
+    } else if (width > 1000) {
+        return {
+            // height: 400,
+            // width: 300,
+            // scale: 1000,
+            center: [-21, 40]
+        };
+    } else if (width > 800) {
+        return {
+            // height: 400,
+            // width: 300,
+            // scale: 1500,
+            center: [-21, 38]
+        };
+    } else if (width > 600) {
+        return {
+            // height: 400,
+            // width: 300,
+            // scale: 1000,
+            center: [-21, 40]
+        };
+    } else {
+        return {
+            // height: 400,
+            // width: 300,
+            // scale: 1000,
+            center: [-22, 41]
+        };
+    }
+}
+
+const MapChart = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     // https://www.bls.gov/lau/
@@ -42,64 +109,89 @@ const MapChart = ({ setTooltipContent }) => {
     }
   }, []);
 
+  const scaleParameters = useMemo(() => {
+    try {
+        return sizeScale(window.screen.width);
+    } catch (e) {
+        return sizeScale(1000);
+    }
+  });
+
   return (
-    <>
-      <ComposableMap data-tip="" projection="geoAlbersUsa">
-        <ZoomableGroup zoom={1}>
+      <ComposableMap
+        data-tip=""
+        width={240}
+        height={240}
+        // projectionConfig={{
+        //   center: [-20, 34.9],
+        //   scale: 3800
+        // }}
+        projectionConfig={{
+            // rotate: [0, 0, 0],
+            center: scaleParameters.center,
+            // scale: 750
+            // scale: 1500
+        }}
+        projection="geoAlbers"
+      >
+        {/* <ZoomableGroup
+            zoom={1}
+            onMove={({ x, y, k, dragging }) => {
+                console.log(x, y, k, dragging)
+            }}
+        > */}
           <Geographies geography={geoUrl}>
             {({ geographies }) =>
               geographies.map((geo) => {
                 const cur = data.find((s) => s.id === geo.id);
-                return cur?.id ? (
-                    <>
-                        <Geography
-                            data-tooltip-id={'county-geo'}
-                            data-tooltip-content={`${cur ? cur.name : null}, ${cur ? cur.state_id : null} — ${
-                                cur ? cur.population : null
-                            }`}
-                            // data-tooltip-id={cur.id}
-                            key={geo.rsmKey}
-                            geography={geo}
-                            onMouseEnter={() => {
-                                // setTooltipContent(
-                                //     {
-                                //         id: cur.id,
-                                //         label: `${cur ? cur.name : null} — ${
-                                //         cur ? cur.unemployment_rate : null
-                                //         }`
-                                //     }
-                                // );
-                            }}
-                            onMouseLeave={() => {
-                                // setTooltipContent({
-                                //     id: '',
-                                //     label: ''
-                                // });
-                            }}
-                            style={{
-                                default: {
-                                    fill: "#D6D6DA",
-                                    outline: "none"
-                                },
-                                hover: {
-                                    fill: colorScale(cur ? cur.population : "#EEE"),
-                                    outline: "none"
-                                },
-                                pressed: {
-                                    fill: "#00a4b7",
-                                    outline: "none"
-                                }
-                            }}
-                        />
-                            {/* <div data-tooltip-id={555} data-tooltip-content="Hello to you too!"/> */}
-                        </>
+                return (cur?.state_id === 'CA' || cur?.state_id === 'NV') ? (
+                    <Geography
+                        stroke="rgb(127,127,127)"
+                        strokeWidth={0.25}
+                        data-tooltip-id={'county-geo'}
+                        data-tooltip-content={`${cur ? cur.name : ''}, ${cur ? cur.state_id : ''} — ${
+                            cur ? cur.population : ''
+                        }`}
+                        // data-tooltip-id={cur.id}
+                        key={geo.rsmKey}
+                        geography={geo}
+                        onMouseEnter={() => {
+                            // setTooltipContent(
+                            //     {
+                            //         id: cur.id,
+                            //         label: `${cur ? cur.name : null} — ${
+                            //         cur ? cur.unemployment_rate : null
+                            //         }`
+                            //     }
+                            // );
+                        }}
+                        onMouseLeave={() => {
+                            // setTooltipContent({
+                            //     id: '',
+                            //     label: ''
+                            // });
+                        }}
+                        style={{
+                            default: {
+                                fill: (cur && cur.main) ? colorScale(cur ? cur.population : "#EEE") : (cur && (cur.state_id === 'CA' || cur.state_id === 'NV')) ? 'rgb(235,235,235)' : "#D6D6DA",
+                                outline: "none"
+                            },
+                            hover: {
+                                fill: (cur && cur.main) ? colorScaleHover(cur ? cur.population : "#EEE") : (cur && (cur.state_id === 'CA' || cur.state_id === 'NV')) ? 'rgb(247,247,247)' : '#EEE',
+                                outline: "none"
+                            },
+                            pressed: {
+                                fill: "#00a4b7",
+                                outline: "none"
+                            }
+                        }}
+                    />
                 ) : null;
               })
             }
           </Geographies>
-        </ZoomableGroup>
+        {/* </ZoomableGroup> */}
       </ComposableMap>
-    </>
   );
 };
 

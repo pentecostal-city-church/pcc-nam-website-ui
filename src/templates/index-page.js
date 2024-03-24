@@ -24,17 +24,12 @@ export const IndexPageTemplate = ({
   intro,
 }) => {
 
-  const [content, setContent] = React.useState({
-    id: '',
-    label: ''
-  });
-
   return (
     <div>
       <Seo title="Home" />
       <Layout>
         <div>
-          <MapChart setTooltipContent={setContent} />
+          <MapChart />
           <ReactTooltip
             id={'county-geo'}
             place='bottom'

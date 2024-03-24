@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   --borderSpacing: 30px;
   --menuWidth: 100vw;
   --blockquote: 20px;
-  --background: #1b1b1b;
+  --background: rgb(0,0,0);
   --primary: #ffc400;
   --bodyColor: #afc2cb;
   --inActive: #555;
@@ -242,6 +242,35 @@ blockquote {
     display: inline-block;
     border-bottom: 2px solid rgba(255,255,255,0.15);
   }
+}
+
+.rsm-svg {
+  height: 550px;
+  width: 325px;
+  @media(min-width:500px) {
+    height: 625px;
+    width: 500px;
+  }
+  @media(min-width:1000px) {
+    height: 550px;
+    width: 700px;
+  }
+  @media(min-width:1500px) {
+    height: 700px;
+    width: 850px;
+  }
+  @media(min-width:2000px) {
+    height: 700px;
+    width: 1000px;
+  }
+  @media(min-width:2500px) {
+    height: 750px;
+    width: 1500px;
+  }
+}
+
+.rsm-geographies {
+  transform: rotate(-13deg);
 }
 
 .learn__more {
