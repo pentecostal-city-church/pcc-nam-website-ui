@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: 'pcc-nam-website-ui',
   siteMetadata: {
     title: "Barcadia",
     description: "A super-fast site using GatsbyJS",
