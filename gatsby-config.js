@@ -15,7 +15,6 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    `gatsby-transformer-csv`,
     {
       resolve: "gatsby-plugin-sass",
       options: {
@@ -29,6 +28,12 @@ module.exports = {
       options: {
         name: `data`,
         path: `${__dirname}/static/data/`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-csv`,
+      options: {
+        noheader: true,
       },
     },
     {
