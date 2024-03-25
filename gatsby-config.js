@@ -27,15 +27,10 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `${__dirname}/static/data/`,
+        path: `${__dirname}/src/data/`,
       },
     },
-    {
-      resolve: `gatsby-transformer-csv`,
-      options: {
-        noheader: true,
-      },
-    },
+    `gatsby-transformer-csv`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
