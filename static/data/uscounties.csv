@@ -1,15 +1,8 @@
 "county","county_ascii","name","id","state_id","state_name","lat","lng","population","main"
 "Los Angeles","Los Angeles","Los Angeles County","06037","CA","California","34.3219","-118.2247","9936690",1
-"Cook","Cook","Cook County","17031","IL","Illinois","41.8401","-87.8168","5225367"
-"Harris","Harris","Harris County","48201","TX","Texas","29.8578","-95.3938","4726177"
-"Maricopa","Maricopa","Maricopa County","04013","AZ","Arizona","33.3490","-112.4915","4430871"
 "San Diego","San Diego","San Diego County","06073","CA","California","33.0343","-116.7351","3289701",1
 "Orange","Orange","Orange County","06059","CA","California","33.7031","-117.7609","3175227",1
-"Miami-Dade","Miami-Dade","Miami-Dade County","12086","FL","Florida","25.6150","-80.5624","2688237"
-"Kings","Kings","Kings County","36047","NY","New York","40.6413","-73.9383","2679620"
-"Dallas","Dallas","Dallas County","48113","TX","Texas","32.7666","-96.7778","2604053"
 "Riverside","Riverside","Riverside County","06065","CA","California","33.7437","-115.9938","2429487",1
-"Queens","Queens","Queens County","36081","NY","New York","40.7035","-73.8196","2360826"
 "Clark","Clark","Clark County","32003","NV","Nevada","36.2152","-115.0135","2265926",1
 "King","King","King County","53033","WA","Washington","47.4902","-121.8052","2254371"
 "San Bernardino","San Bernardino","San Bernardino County","06071","CA","California","34.8414","-116.1785","2180563",1

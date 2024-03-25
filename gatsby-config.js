@@ -15,6 +15,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    `gatsby-transformer-csv`,
     {
       resolve: "gatsby-plugin-sass",
       options: {
@@ -24,19 +25,18 @@ module.exports = {
       },
     },
     {
-      // keep as first gatsby-source-filesystem plugin for gatsby image support
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/static/img`,
-        name: "img",
+        name: `data`,
+        path: `${__dirname}/static/data/`,
       },
     },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/static/data`,
-        name: "data",
+        path: `${__dirname}/static/img`,
+        name: "img",
       },
     },
     {
