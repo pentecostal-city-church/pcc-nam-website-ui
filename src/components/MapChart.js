@@ -152,7 +152,7 @@ const MapChart = () => {
                         stroke="rgb(127,127,127)"
                         strokeWidth={0.25}
                         data-tooltip-id={'county-geo'}
-                        data-tooltip-content={`${cur ? cur.name : ''}, ${cur ? cur.state_id : ''} — ${
+                        data-tooltip-content={`${cur ? cur.name : ''}, ${cur ? cur.state_id : ''} — pop. ${
                             cur ? cur.population : ''
                         }`}
                         // data-tooltip-id={cur.id}
