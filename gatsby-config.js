@@ -23,6 +23,12 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": `${__dirname}/static/img/socal-nam-circle-logo.jpg`
+      }
+    },
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
