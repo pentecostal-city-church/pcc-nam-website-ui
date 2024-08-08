@@ -74,6 +74,7 @@ const NavModule = () => {
       <div className="menu-container">
         <div className="nav">
           <div className="container">
+            <div className="logo-container">
             {title && (
               <LogoStyles>
                 <Link to="/">
@@ -90,6 +91,7 @@ const NavModule = () => {
                 </Link>
               </LogoStyles>
             )}
+            </div>
             <HamburgerStyles
               initial="open"
               animate={isOpen ? "open" : "closed"}
@@ -192,6 +194,7 @@ const NavModule = () => {
       <div className="topnav-container">
         <div className="nav">
           <div className="container">
+            <div className="logo-container">
             {title && (
               <LogoStyles>
                 <Link to="/">
@@ -208,7 +211,8 @@ const NavModule = () => {
                 </Link>
               </LogoStyles>
             )}
-            <div>
+            </div>
+            <div className="nav-menu-container">
               {(menuItems ?? []).map((menuItem, index) => {
                 if (!menuItem) {
                   return null;
@@ -232,7 +236,7 @@ const NavModule = () => {
                   class="dropbtn flex"
                 >
                   More
-                  <div class="chevron-container">{isMoreNavOpen ? <ChevronUp /> : <ChevronDown />}</div>
+                  <div class="chevron-container">{isMoreNavOpen ? <ChevronUp style={{ color: 'black' }} /> : <ChevronDown style={{ color: 'black' }} />}</div>
                 </div>
                 {isMoreNavOpen && (<div class="more-dropdown-content">
                   {menuItems?.length && (

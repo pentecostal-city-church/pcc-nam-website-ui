@@ -2,14 +2,20 @@ import styled from "styled-components"
 import { motion } from "framer-motion"
 
 export const NavModuleStyles = styled.nav`
-  .nav {
+  .logo-container {
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    padding: 12px var(--borderSpacing) 12px var(--borderSpacing);
+    width: 320px;
     background-color: rgba(0,0,0,1);
+  }
+
+  .nav {
+    background-color: rgba(255,255,255,1);
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
-    padding: 12px var(--borderSpacing) 12px var(--borderSpacing);
   }
 
   .container {
@@ -55,7 +61,7 @@ export const NavModuleStyles = styled.nav`
   }
 
   .dropbtn {
-    color: white;
+    color: black;
     padding: 12px;
     font-size: 13px;
     font-weight: 600;
@@ -69,7 +75,7 @@ export const NavModuleStyles = styled.nav`
   
   .outlined {
     z-index: 1000;
-    border: 1px solid white;
+    border: 1px solid black;
   }
 
   .dropdown {
@@ -80,7 +86,7 @@ export const NavModuleStyles = styled.nav`
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: white;
     min-width: 105px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -91,7 +97,7 @@ export const NavModuleStyles = styled.nav`
   }
   
   .dropdown-content a {
-    color: white;
+    color: black;
     opacity: 0.85;
     text-transform: uppercase;
     padding: 6px 16px;
@@ -105,7 +111,7 @@ export const NavModuleStyles = styled.nav`
   .highlighted {
     opacity: 1;
   }
-  
+
   .dropdown-content a:hover {
     opacity: 1;
   }
@@ -119,60 +125,61 @@ export const NavModuleStyles = styled.nav`
   }
 
   .nav-title {
-    color: white;
+    color: rgba(0,0,0,1);
     text-decoration: none;
   }
 
   .show-4 {
-    @media only screen and (max-width: 867px) {
+    @media only screen and (max-width: 950px) {
       display: none;
     }
   }
 
   .show-5 {
-    @media only screen and (max-width: 1008px) {
+    @media only screen and (max-width: 1093px) {
       display: none;
     }
   }
 
   .show-6 {
-    @media only screen and (max-width: 1117px) {
+    @media only screen and (max-width: 1195px) {
       display: none;
     }
   }
 
   .show-7 {
-    @media only screen and (max-width: 1182px) {
+    @media only screen and (max-width: 1252px) {
       display: none;
     }
   }
 
   .more-dropdown .more-dropdown-content .show-more-4 {
-    @media only screen and (min-width: 868px) {
+    @media only screen and (min-width: 951px) {
       display: none;
     }
   }
 
   .more-dropdown .more-dropdown-content .show-more-5 {
-    @media only screen and (min-width: 1009px) {
+    @media only screen and (min-width: 1094px) {
       display: none;
     }
   }
 
   .more-dropdown .more-dropdown-content .show-more-6 {
-    @media only screen and (min-width: 1118px) {
+    @media only screen and (min-width: 1196px) {
       display: none;
     }
   }
 
   .more-dropdown .more-dropdown-content .show-more-7 {
-    @media only screen and (min-width: 1183px) {
+    @media only screen and (min-width: 1253px) {
       display: none;
     }
   }
 
   .more-dropdown {
     width: 96px;
+    margin-right: 24px;
     @media only screen and (min-width: 1183px) {
       display: none;
     }
@@ -197,14 +204,14 @@ export const NavModuleStyles = styled.nav`
   .more-dropdown-content {
     margin-top: 8px;
     position: absolute;
-    background-color: black;
+    background-color: #fff;
     min-width: 105px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
 
   .more-dropdown-content a {
-    color: white;
+    color: black;
     opacity: 0.85;
     text-transform: uppercase;
     padding: 6px 16px;
@@ -347,7 +354,8 @@ export const HamburgerStyles = styled(motion.button)`
   border: none;
   width: 30px;
   height: 30px;
-  padding: 0;
+  padding: 1px;
+  margin: 0px 36px;
   cursor: pointer;
   outline: none;
 
@@ -358,7 +366,7 @@ export const HamburgerStyles = styled(motion.button)`
 
   .bar {
     display: block;
-    background-color: #fff;
+    background-color: rgba(0,0,0,1);
     height: 2px;
     border-radius: 2px;
 

@@ -56,33 +56,118 @@ const sizeScale = (width) => {
             // scale: 1000,
             center: [-21, 35]
         };
+    } else if (width > 2500) {
+        return {
+            // height: 400,
+            // width: 300,
+            scale: 1225,
+            center: [-22, 39]
+        };
+        
+    } else if (width > 2400) {
+        return {
+            // height: 400,
+            // width: 300,
+            scale: 1200,
+            center: [-22, 39]
+        };
+        
+    } else if (width > 2200) {
+        return {
+            // height: 400,
+            // width: 300,
+            scale: 1200,
+            center: [-22, 39]
+        };
+        
     } else if (width > 2000) {
         return {
             // height: 400,
             // width: 300,
+            scale: 1150,
+            center: [-22, 39.5]
+        };
+        
+    } else if (width > 1800) {
+        return {
+            // height: 400,
+            // width: 300,
+            scale: 1100,
+            center: [-26, 39.5]
+        };
+        
+    } else if (width > 1600) {
+        return {
+            // height: 400,
+            // width: 300,
+            scale: 1100,
+            center: [-22.5, 39.5]
+        };
+        
+    } else if (width > 1400) {
+        return {
+            // height: 400,
+            // width: 300,
+            scale: 1100,
+            center: [-22, 38.5]
+        };
+        
+    } else if (width > 1200) {
+        return {
+            // height: 400,
+            // width: 300,
             // scale: 500,
-            center: [-21, 33]
+            scale: 1100,
+            center: [-21, 39]
         };
     } else if (width > 1000) {
         return {
             // height: 400,
             // width: 300,
-            // scale: 1000,
-            center: [-21, 40]
+            scale: 1100,
+            center: [-21, 39]
+        };
+    } else if (width > 924) {
+        return {
+            // height: 400,
+            // width: 300,
+            scale: 1250,
+            center: [-22.5, 39]
         };
     } else if (width > 800) {
         return {
             // height: 400,
             // width: 300,
-            // scale: 1500,
-            center: [-21, 38]
+            scale: 1250,
+            center: [-23.5, 39]
         };
     } else if (width > 600) {
         return {
             // height: 400,
             // width: 300,
-            // scale: 1000,
-            center: [-21, 40]
+            scale: 1250,
+            center: [-23, 39]
+        };
+    } else if (width > 500) {
+        return {
+            // height: 400,
+            // width: 300,
+            scale: 1250,
+            center: [-22, 38]
+        };
+    } else if (width > 400) {
+        return {
+            // height: 400,
+            // width: 300,
+            scale: 1250,
+            center: [-23, 38]
+        };
+    } else if (width > 300) {
+        return {
+            // height: 400,
+            // width: 300,
+            scale: 1250,
+            center: [-22, 39]
         };
     } else {
         return {
@@ -94,23 +179,22 @@ const sizeScale = (width) => {
     }
 }
 
-const MapChart = () => {
-//   const [data, setData] = useState([]);
-//   useEffect(() => {
-//     // https://www.bls.gov/lau/
-//     const csvFilePath = '/data/uscounties.csv';
-//     try {
-//         csv(csvFilePath).then((counties) => {
-//             setData(counties);
-//           });
-//     } catch (e) {
-//         console.log('csv error', e);
-//     }
-//   }, []);
+const populationTextFormatter = (str) => {
+    try {
+        if (Number(str)) {
+            return str.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        } else {
+            return '';
+        }
+    } catch (e) {
+        return '';
+    }
+}
 
+const MapChart = (props) => {
   const scaleParameters = useMemo(() => {
     try {
-        return sizeScale(window.screen.width);
+        return sizeScale(props.widthScale);
     } catch (e) {
         return sizeScale(1000);
     }
@@ -119,8 +203,8 @@ const MapChart = () => {
   return (
       <ComposableMap
         data-tip=""
-        width={240}
-        height={240}
+        width={225}
+        height={225}
         // projectionConfig={{
         //   center: [-20, 34.9],
         //   scale: 3800
@@ -128,7 +212,7 @@ const MapChart = () => {
         projectionConfig={{
             // rotate: [0, 0, 0],
             center: scaleParameters.center,
-            // scale: 750
+            scale: scaleParameters.scale ?? 1000
             // scale: 1500
         }}
         projection="geoAlbers"
@@ -149,12 +233,15 @@ const MapChart = () => {
                 // }
                 return (cur?.state_id === 'CA' || cur?.state_id === 'NV') ? (
                     <Geography
-                        stroke="rgb(127,127,127)"
+                        stroke="rgb(157,157,157)"
                         strokeWidth={0.25}
                         data-tooltip-id={'county-geo'}
-                        data-tooltip-content={`${cur ? cur.name : ''}, ${cur ? cur.state_id : ''} — pop. ${
-                            cur ? cur.population : ''
-                        }`}
+                        data-tooltip-html={`<div class="hover-tooltip-container"><b>${cur ? cur.name : ''}, ${cur ? cur.state_id : ''} </b><br /><p class="population-text">Population: ${
+                            cur ? populationTextFormatter(cur.population) : ''
+                        }</p></div>`}
+                        // data-tooltip-content={`${cur ? cur.name : ''}, ${cur ? cur.state_id : ''} — pop. ${
+                        //     cur ? cur.population : ''
+                        // }`}
                         // data-tooltip-id={cur.id}
                         key={geo.rsmKey}
                         geography={geo}

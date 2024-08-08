@@ -8,16 +8,16 @@ export const menuItems = [
     text: "About Us",
     accordion: [
       {
-        path: "/#",
-        text: "Link 1",
+        path: "/committee",
+        text: "Committee",
       },
       {
-        path: "/#",
-        text: "Link 2",
+        path: "/contact-us",
+        text: "Contact Us",
       },
       {
-        path: "/#",
-        text: "Link 3",
+        path: "/affiliation",
+        text: "Affiliation",
       }
     ]
   },

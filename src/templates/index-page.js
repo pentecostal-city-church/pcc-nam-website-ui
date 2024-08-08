@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Seo from "../components/SEO";
-import BannerModule from "../components/BannerModule/BannerModule";
+// import BannerModule from "../components/BannerModule/BannerModule";
 import BasicTextModule from "../components/BasicTextModule/BasicTextModule";
 import PerksModule from "../components/PerksModule/PerksModule";
 import Perk from "../components/PerksModule/Perk";
@@ -11,7 +11,7 @@ import Features from "../components/Features/Features";
 import LatestPosts from "../components/Post/LatestPosts";
 import MapChart from '../components/MapChart';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
-
+import CircularText from "../components/CircularText";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -23,19 +23,64 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => {
+  const intervalRef = React.useRef(null);
+  const [screenWidth, setScreenWidth] = React.useState(window?.innerWidth ?? 1200);
+
+  const getMapSize = () => { 
+    const screenWidth = window.innerWidth;
+    return screenWidth;
+  };
+
+  React.useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setScreenWidth(getMapSize());
+    }, [2500]);
+
+    return () => {
+      try {
+        clearInterval(intervalRef);
+        intervalRef.current = null;
+      } catch (e) {}
+    }
+  }, []);
 
   return (
     <div>
       <Seo title="Home" />
       <Layout>
-        <div>
-          <MapChart />
-          <ReactTooltip
-            id={'county-geo'}
-            place='bottom'
-          />
+        <div className={'landing-main-container'}>
+          <div className={'map-column'}>
+            <div>
+              <MapChart widthScale={screenWidth} />
+              <ReactTooltip
+                id={'county-geo'}
+                place='bottom'
+              />
+            </div>
+            <div className={'subtitle-text-container'}>
+              <div className={'subtitle-text'} style={{ display: 'flex', justifyContent: 'center', width: '75%', maxWidth: '440px' }}>
+                {`We invite you to join SoCal NAM's mission to support church planting efforts in the Socal District!`}
+              </div>
+            </div>
+          </div>
+          <div className={'purpose-column'}>
+            <div className="purpose-column-section">
+            <p className="purpose-column-header">OUR MISSION:</p>
+            <h2 className="purpose-column-title">INSPIRE. EQUIP. SUSTAIN.</h2> 
+            </div>
+            {/* <br/> */}
+            <hr className="purpose-column-divider" />
+            {/* <br/> */}
+            <div className="purpose-column-section">
+            <p className="purpose-column-header">PURPOSE:</p>
+            <h2 className="purpose-column-title">INSPIRE, EQUIP AND SUSTAIN THE OPERATION OF CHURCH PLANTING.</h2>
+            </div>
+            <hr className="purpose-column-divider" style={{ marginBottom: '0px' }} />
+            <div className="circular-text-gap" />
+            <CircularText />
+          </div>
         </div>
-        <BasicTextModule
+        {/* <BasicTextModule
           title="A super-fast theme that is easy to get started, using the power of
             GatsbyJS"
           content="Using modern CSS properties such as grid, this theme is optmised for
@@ -54,7 +99,7 @@ export const IndexPageTemplate = ({
         <LatestPosts
           title="The Latest from Barcadia"
           introduction="Cras scelerisque, tellus sed gravida tincidunt, velit tellus blandit justo, nec viverra augue erat in erat. Maecenas iaculis sed purus non fringilla."
-        />
+        /> */}
       </Layout>
     </div>
   );
