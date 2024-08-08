@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/socal-nam',
+  pathPrefix: '/pcc-nam-website-ui',
   siteMetadata: {
     title: "SoCal NAM",
     description: "",

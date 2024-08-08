@@ -1,6 +1,6 @@
 export const menuItems = [
   {
-    path: "/socal-nam/",
+    path: "/pcc-nam-website-ui",
     text: "Welcome",
   },
   {
@@ -8,21 +8,21 @@ export const menuItems = [
     text: "About Us",
     accordion: [
       {
-        path: "/socal-nam/committee",
+        path: "/pcc-nam-website-ui/committee",
         text: "Committee",
       },
       {
-        path: "/socal-nam/contact-us",
+        path: "/pcc-nam-website-ui/contact-us",
         text: "Contact Us",
       },
       {
-        path: "/socal-nam/affiliation",
+        path: "/pcc-nam-website-ui/affiliation",
         text: "Affiliation",
       }
     ]
   },
   {
-    path: "/socal-nam/ministries",
+    path: "/pcc-nam-website-ui/ministries",
     text: "Ministries",
   },
   {
