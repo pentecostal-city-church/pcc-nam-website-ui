@@ -11,12 +11,11 @@ import {
 } from "react-icons/fa"
 
 const Footer = () => {
-  const allProduct = [];
   const siteMeta = UseSiteMetadata()
   return (
     <FooterStyles style={{ marginBottom: 0 }} className="section">
       <div className="container container__tight">
-        <FooterMenuStyles className="footer__menu">
+        {/* <FooterMenuStyles className="footer__menu">
           <h5>Links</h5>
           <ul>
             {menuItems.map((item, index) => {
@@ -30,38 +29,14 @@ const Footer = () => {
               )
             })}
           </ul>
-        </FooterMenuStyles>
-        {allProduct.length > 0 && (
-          <FooterMenuStyles className="footer__menu products__menu">
-            <h5>
-              <Link to="/products">
-                All Products<span>.</span>
-              </Link>
-            </h5>
-            <ul>
-              {allProduct.map((item, index) => {
-                const { gatsbyPath, title } = item
-
-                return (
-                  <li key={index}>
-                    <Link to={gatsbyPath}>
-                      {title}
-                      <span>.</span>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </FooterMenuStyles>
-        )}
-
+        </FooterMenuStyles> */}
         {siteMeta.twitterUsername ||
         siteMeta.facebookUsername ||
         siteMeta.instagramUsername ||
         siteMeta.linkedinUsername ? (
           <FooterMenuStyles className="footer__menu social__menu">
             <h5>
-              Follow Barcadia<span>.</span>
+              Follow SoCal UPCI<span>.</span>
             </h5>
             <ul>
               {siteMeta.twitterUsername && (
@@ -114,7 +89,7 @@ const Footer = () => {
           ""
         )}
       </div>
-      <CopyrightStyles>
+      {/* <CopyrightStyles>
         <div className="container container__tight">
           <p>
             Copyright{" "}
@@ -128,7 +103,7 @@ const Footer = () => {
             <span>.</span>
           </p>
         </div>
-      </CopyrightStyles>
+      </CopyrightStyles> */}
     </FooterStyles>
   )
 }
