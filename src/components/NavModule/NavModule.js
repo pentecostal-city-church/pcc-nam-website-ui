@@ -43,7 +43,11 @@ const NavModule = () => {
   const { title } = UseSiteMetadata();
   const pathname = useMemo(() => {
     try {
-      return window?.location?.pathname;
+      if (typeof window !== 'undefined'){
+        return window?.location?.pathname;
+      } else {
+        return '/';
+      }
     } catch (e) {
       return '/';
     }

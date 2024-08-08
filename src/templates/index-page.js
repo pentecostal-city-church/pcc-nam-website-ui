@@ -24,10 +24,10 @@ export const IndexPageTemplate = ({
   intro,
 }) => {
   const intervalRef = React.useRef(null);
-  const [screenWidth, setScreenWidth] = React.useState(window?.innerWidth ?? 1200);
+  const [screenWidth, setScreenWidth] = React.useState(typeof window !== 'undefined' ? window?.innerWidth : 1200);
 
   const getMapSize = () => { 
-    const screenWidth = window.innerWidth;
+    const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
     return screenWidth;
   };
 
