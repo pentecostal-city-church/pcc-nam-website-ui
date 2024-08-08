@@ -1,6 +1,6 @@
 ---
 templateKey: 'committee-page'
-path: /committee
+path: /socal-nam/committee
 title: NORTH AMERICAN MISSIONS DISTRICT LEADERSHIP
 ---
 ### Shade-grown coffee

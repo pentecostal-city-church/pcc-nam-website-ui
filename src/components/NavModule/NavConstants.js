@@ -1,6 +1,6 @@
 export const menuItems = [
   {
-    path: "/",
+    path: "/socal-nam/",
     text: "Welcome",
   },
   {
@@ -8,21 +8,21 @@ export const menuItems = [
     text: "About Us",
     accordion: [
       {
-        path: "/committee",
+        path: "/socal-nam/committee",
         text: "Committee",
       },
       {
-        path: "/contact-us",
+        path: "/socal-nam/contact-us",
         text: "Contact Us",
       },
       {
-        path: "/affiliation",
+        path: "/socal-nam/affiliation",
         text: "Affiliation",
       }
     ]
   },
   {
-    path: "/ministries",
+    path: "/socal-nam/ministries",
     text: "Ministries",
   },
   {
