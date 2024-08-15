@@ -9,6 +9,7 @@ import IndexPagePreview from './preview-templates/IndexPagePreview';
 import CommitteePagePreview from './preview-templates/CommitteePagePreview';
 import MinistriesPagePreview from './preview-templates/MinistriesPagePreview';
 import AffiliationPagePreview from './preview-templates/AffiliationPagePreview';
+import ContactUsPagePreview from './preview-templates/ContactUsPagePreview';
 
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
@@ -20,3 +21,4 @@ CMS.registerPreviewTemplate('blog', BlogPostPreview)
 CMS.registerPreviewTemplate('committee', CommitteePagePreview);
 CMS.registerPreviewTemplate('affiliation', AffiliationPagePreview);
 CMS.registerPreviewTemplate('ministries', MinistriesPagePreview);
+CMS.registerPreviewTemplate('contact-us', ContactUsPagePreview);

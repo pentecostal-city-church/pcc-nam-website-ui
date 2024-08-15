@@ -562,6 +562,7 @@ svg.circular-text-svg {
   font-family: sans-serif;
   font-size: 21px;
   font-weight: 300;
+  margin-bottom: 8px;
 }
 
 .church-planter-text-2 {
@@ -569,5 +570,6 @@ svg.circular-text-svg {
   font-weight: 300;
   font-size: 16px;
   font-family: sans-serif;
+  margin-top: 0px;
 }
 `

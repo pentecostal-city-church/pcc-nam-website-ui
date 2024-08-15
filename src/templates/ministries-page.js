@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
+import { HTMLContent } from "../components/Content";
 
 
 // eslint-disable-next-line
@@ -90,15 +90,15 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
                 </div>
             </div>
         </div>
-        <div style={{ marginTop: '80px', marginBottom: '56px' }}>
+        {/* <div style={{ marginTop: '80px', marginBottom: '56px' }}>
             <div style={{ textAlign: 'center' }}>
                 <a style={{ fontSize: '36px', color: 'rgb(30, 150, 168)' }} src={`https://modistrict.breezechms.com/give/online`}>CLICK HERE TO DONATE TO A SPECIFIC MINISTRY</a>
             </div>
             <div style={{ textAlign: 'center' }}>
                 <p>Choose "North American Missions" and then the specific fund that you are desiring to support.</p>
             </div>
-        </div>
-        <div style={{ marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/685b8f5d-41cb-464b-aed9-9addeef456e7.jpeg")' }}/>
+        </div> */}
+        <div style={{ marginTop: '48px', marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/685b8f5d-41cb-464b-aed9-9addeef456e7.jpeg")' }}/>
             <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                 <p style={{ color: 'white' }}>{`SoCal District North American Missions Department`}</p>
             </div>

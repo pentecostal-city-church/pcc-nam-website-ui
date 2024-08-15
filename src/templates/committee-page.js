@@ -26,51 +26,56 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
               {`DISTRICT LEADERSHIP`}
           </p>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <p style={{ marginTop: '16px' }}>{`This site focuses on the vision of North American Missions in the state of Missouri.`}</p>
+        <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+          <p style={{ marginTop: '16px', marginBottom: '0px' }}>{`This site focuses on the vision of North American Missions in the state of Missouri.`}</p>
           <p style={{ marginTop: '16px' }}>{`To find out more about the national vision of North American Missions, please click the following link:`}</p>
         </div>
         <div className="church-planter-container">
           <div className={`church-planter-row`}>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter1} />
-              <p className={'church-planter-text-1'}>{`Church Planter 1`}</p>
-              <p className={'church-planter-text-2'}>{`Region`}</p>
+              <img className={'church-planter-img'} src={churchPlanter6} />
+              <p className={'church-planter-text-1'}>{`Nathan Cupoli`}</p>
+              <p className={'church-planter-text-2'}>{`Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
               <img className={'church-planter-img'} src={churchPlanter2} />
-              <p className={'church-planter-text-1'}>{`Church Planter 1`}</p>
-              <p className={'church-planter-text-2'}>{`Region`}</p>
-            </div>
-            <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter3} />
-              <p className={'church-planter-text-1'}>{`Church Planter 1`}</p>
-              <p className={'church-planter-text-2'}>{`Region`}</p>
-            </div>
-            <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter4} />
-              <p className={'church-planter-text-1'}>{`Church Planter 1`}</p>
-              <p className={'church-planter-text-2'}>{`Region`}</p>
-            </div>
-            <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter5} />
-              <p className={'church-planter-text-1'}>{`Church Planter 1`}</p>
-              <p className={'church-planter-text-2'}>{`Region`}</p>
-            </div>
-            <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter6} />
-              <p className={'church-planter-text-1'}>{`Church Planter 1`}</p>
-              <p className={'church-planter-text-2'}>{`Region`}</p>
-            </div>
-            <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter7} />
-              <p className={'church-planter-text-1'}>{`Church Planter 1`}</p>
-              <p className={'church-planter-text-2'}>{`Region`}</p>
+              <p className={'church-planter-text-1'}>{`Estefan Garcia`}</p>
+              <p className={'church-planter-text-2'}>{`Secretary`}</p>
             </div>
             <div className={'church-planter-img-container'}>
               <img className={'church-planter-img'} src={churchPlanter8} />
-              <p className={'church-planter-text-1'}>{`Church Planter 1`}</p>
-              <p className={'church-planter-text-2'}>{`Region`}</p>
+              <p className={'church-planter-text-1'}>{`Lakelie Lopez`}</p>
+              <p className={'church-planter-text-2'}>{`Promotions Director`}</p>
+            </div>
+            <div className={'church-planter-img-container'}>
+              <img className={'church-planter-img'} src={churchPlanter4} />
+              <p className={'church-planter-text-1'}>{`Ezekiel Rodriguez`}</p>
+              <p className={'church-planter-text-2'}>{`Section 1 Director`}</p>
+            </div>
+            <div className={'church-planter-img-container'}>
+              <img className={'church-planter-img'} src={churchPlanter5} />
+              <p className={'church-planter-text-1'}>{`Phillip Raya`}</p>
+              <p className={'church-planter-text-2'}>{`Section 2 Director`}</p>
+            </div>
+            <div className={'church-planter-img-container'}>
+              <img className={'church-planter-img'} src={churchPlanter1} />
+              <p className={'church-planter-text-1'}>{`Effrin Garibay`}</p>
+              <p className={'church-planter-text-2'}>{`Section 3 Director`}</p>
+            </div>
+            <div className={'church-planter-img-container'}>
+              <div className={'church-planter-img'} />
+              <p className={'church-planter-text-1'}>{`Vacant`}</p>
+              <p className={'church-planter-text-2'}>{`Section 4 Director`}</p>
+            </div>
+            <div className={'church-planter-img-container'}>
+              <img className={'church-planter-img'} src={churchPlanter3} />
+              <p className={'church-planter-text-1'}>{`Dan Olivera`}</p>
+              <p className={'church-planter-text-2'}>{`Section 5 Director`}</p>
+            </div>
+            <div className={'church-planter-img-container'}>
+              <img className={'church-planter-img'} src={churchPlanter3} />
+              <p className={'church-planter-text-1'}>{`Javier Orozco`}</p>
+              <p className={'church-planter-text-2'}>{`Spanish Liaison`}</p>
             </div>
           </div>
         </div>
