@@ -223,7 +223,7 @@ const NavModule = () => {
                 }
                 return (
                   <div key={index} class={`dropdown ${index >= 3 ? 'show-' + (index + 1) : null}`}>
-                    <div class={`dropbtn ${(pathname === menuItem.path) ? 'highlighted' : null}`}><a target="_blank" class="nav-title" href={menuItem.path}>{menuItem.text}</a></div>
+                    <div class={`dropbtn ${(pathname === menuItem.path) ? 'highlighted' : null}`}><a class="nav-title" href={menuItem.path}>{menuItem.text}</a></div>
                     {menuItem.accordion ? (
                       <div class="dropdown-content">
                         {menuItem.accordion.map((accordionItem, accordionIndex) => {
