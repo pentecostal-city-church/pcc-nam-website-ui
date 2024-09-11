@@ -56,13 +56,13 @@ export const menuItems = [
         text: "NAM Status",
       },
       {
-        path: "pcc-nam-website-ui/affiliation-application",
+        path: "/pcc-nam-website-ui/affiliation-application",
         text: "Affiliation Application"
       }
     ]
   },
   {
-    path: "/resources",
+    path: "/pcc-nam-website-ui/resources",
     text: "Resources"
   },
 ]
