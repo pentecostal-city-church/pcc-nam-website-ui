@@ -44,6 +44,10 @@ export const IndexPageTemplate = ({
     }
   }, []);
 
+  const startTrainingHandler = () => {
+    window.open('https://ministrycentral.com/the-launch-button', 'blank');
+  }
+
   return (
     <div>
       <Seo title="Home" />
@@ -59,21 +63,32 @@ export const IndexPageTemplate = ({
             </div>
             <div className={'subtitle-text-container'}>
               <div className={'subtitle-text'} style={{ display: 'flex', justifyContent: 'center', width: '75%', maxWidth: '440px' }}>
-                {`We invite you to join SoCal NAM's mission to support church planting efforts in the Socal District!`}
+                {`Southern California NAM County Map`}
               </div>
             </div>
+            <div style={{ marginTop: '24px' }} className={'subtitle-text-container'}>
+              <div style={{ marginBottom: '24px' }}>
+                <a href={`/policy-form`} style={{ textDecoration: 'underline', color: 'rgb(30, 150, 168)', fontSize: '20px' }}>{`Click here to see the SoCal District path to planting a church.`}</a>
+              </div>
+            </div>
+            <div className={'subtitle-text-container'}>
+                <button onClick={startTrainingHandler} className={`training-button`}>
+                  {`START ONLINE TRAINING!`}
+                </button>
+              </div>
           </div>
           <div className={'purpose-column'}>
             <div className="purpose-column-section">
-            <p className="purpose-column-header">OUR MISSION:</p>
-            <h2 className="purpose-column-title">INSPIRE. EQUIP. SUSTAIN.</h2> 
+              <div className="purpose-column-section">
+                <p className="purpose-column-header">OUR PURPOSE:</p>
+                <h2 className="purpose-column-title">INSPIRE, EQUIP AND SUSTAIN THE OPERATION OF CHURCH PLANTING.</h2>
+              </div>
             </div>
             {/* <br/> */}
             <hr className="purpose-column-divider" />
             {/* <br/> */}
             <div className="purpose-column-section">
-            <p className="purpose-column-header">PURPOSE:</p>
-            <h2 className="purpose-column-title">INSPIRE, EQUIP AND SUSTAIN THE OPERATION OF CHURCH PLANTING.</h2>
+            <p style={{ fontWeight: 400, fontSize: '20px' }} className="purpose-column-header">{`26 million souls from diverse backgrounds have gathered in the SoCal District, representing over 140 countries and 224 languages. The world has come to us and we have been commissioned to reach The Next Town with the Act 2:38 message of salvation. Help us Go. Gather. Grow.`}</p>
             </div>
             <hr className="purpose-column-divider" style={{ marginBottom: '0px' }} />
             <div className="circular-text-gap" />

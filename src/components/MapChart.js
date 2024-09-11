@@ -263,11 +263,11 @@ const MapChart = (props) => {
                         }}
                         style={{
                             default: {
-                                fill: (cur && cur.main) ? colorScale(cur ? cur.population : "#EEE") : (cur && (cur.state_id === 'CA' || cur.state_id === 'NV')) ? 'rgb(235,235,235)' : "#D6D6DA",
+                                fill: (cur && cur.main) ? colorScale(cur ? cur.population : "#EEE") : (cur && (cur.state_id === 'CA' || cur.state_id === 'NV')) ? 'rgb(0,0,0)' : "#D6D6DA",
                                 outline: "none"
                             },
                             hover: {
-                                fill: (cur && cur.main) ? colorScaleHover(cur ? cur.population : "#EEE") : (cur && (cur.state_id === 'CA' || cur.state_id === 'NV')) ? 'rgb(247,247,247)' : '#EEE',
+                                fill: (cur && cur.main) ? colorScaleHover(cur ? cur.population : "#EEE") : (cur && (cur.state_id === 'CA' || cur.state_id === 'NV')) ? 'rgb(0,0,0)' : '#EEE',
                                 outline: "none"
                             },
                             pressed: {

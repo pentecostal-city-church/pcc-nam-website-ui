@@ -4,7 +4,7 @@ export const menuItems = [
     text: "Welcome",
   },
   {
-    path: "/about",
+    path: "/pcc-nam-website-ui/about",
     text: "About Us",
     accordion: [
       {
@@ -26,75 +26,43 @@ export const menuItems = [
     text: "Ministries",
   },
   {
-    path: "/give",
+    path: "/pcc-nam-website-ui/give",
     text: "Give",
     accordion: [
       {
-        path: "/#",
-        text: "Link 1",
+        path: "/pcc-nam-website-ui/give",
+        text: "Give",
       },
       {
-        path: "/#",
-        text: "Link 2",
-      },
-      {
-        path: "/#",
-        text: "Link 3",
+        path: "/pcc-nam-website-ui/christmas-for-christ",
+        text: "Christmas For Christ",
       }
     ]
   },
   {
-    path: "/applications",
+    path: "/pcc-nam-website-ui/applications",
     text: "Applications",
     accordion: [
       {
-        path: "/#",
-        text: "Link 1",
+        path: "/pcc-nam-website-ui/daughter-work",
+        text: "Daughter Work",
       },
       {
-        path: "/#",
-        text: "Link 2",
+        path: "/pcc-nam-website-ui/policy-form",
+        text: "Policy Form",
       },
       {
-        path: "/#",
-        text: "Link 3",
-      }
-    ]
-  },
-  {
-    path: "/reports",
-    text: "Reports",
-    accordion: [
-      {
-        path: "/#",
-        text: "Link 1",
+        path: "/pcc-nam-website-ui/nam-status",
+        text: "NAM Status",
       },
       {
-        path: "/#",
-        text: "Link 2",
-      },
-      {
-        path: "/#",
-        text: "Link 3",
+        path: "pcc-nam-website-ui/affiliation-application",
+        text: "Affiliation Application"
       }
     ]
   },
   {
     path: "/resources",
-    text: "Resources",
-    accordion: [
-      {
-        path: "/#",
-        text: "Link 1",
-      },
-      {
-        path: "/#",
-        text: "Link 2",
-      },
-      {
-        path: "/#",
-        text: "Link 3",
-      }
-    ]
+    text: "Resources"
   },
 ]

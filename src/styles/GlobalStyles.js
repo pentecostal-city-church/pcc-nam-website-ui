@@ -280,7 +280,7 @@ blockquote {
     width: 600px;
   }
   @media(min-width:1200px) {
-    height: 750px;
+    height: 725px;
     width: 600px;
   }
   @media(min-width:1300px) {
@@ -289,26 +289,26 @@ blockquote {
   }
   @media(min-width:1400px) {
     height: 700px;
-    width: 750px;
+    width: 725px;
   }
   @media(min-width:1500px) {
-    height: 750px;
+    height: 700px;
     width: 750px;
   }
   @media(min-width:1600px) {
-    height: 750px;
+    height: 700px;
     width: 900px;
   }
   @media(min-width:1700px) {
-    height: 750px;
+    height: 725px;
     width: 950px;
   }
   @media(min-width:1800px) {
-    height: 750px;
+    height: 725px;
     width: 1050px;
   }
   @media(min-width:1900px) {
-    height: 750px;
+    height: 725px;
     width: 1150px;
   }
   @media(min-width:2000px) {
@@ -330,6 +330,10 @@ blockquote {
 }
 
 .hover-tooltip-container {
+}
+
+.hover-tooltip-container-transparent {
+  opacity: 0;
 }
 
 .population-text {
@@ -381,7 +385,7 @@ blockquote {
 }
 
 .subtitle-text {
-  font-size: 14px;
+  font-size: 11px;
   color: #fff;
   font-weight: 600;
   text-align: center;
@@ -517,6 +521,21 @@ svg.circular-text-svg {
   }
 }
 
+.training-button {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 16px 32px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+}
+
 .subtitle-text-container {
   margin-top: 32px;
   margin-left: 32px;
@@ -524,10 +543,10 @@ svg.circular-text-svg {
   display: flex;
   justify-content: center;
   @media(min-width:924px) {
-    margin-top: 64px;
+    margin-top: 0px;
   }
   @media(min-width:1000px) {
-    margin-top: 64px;
+    margin-top: 0px;
   }
 }
 
@@ -538,9 +557,8 @@ svg.circular-text-svg {
 }
 
 .church-planter-img {
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 260px;
+  width: 240px;
   border: 2px solid lightblue;
 }
 
@@ -571,5 +589,15 @@ svg.circular-text-svg {
   font-size: 16px;
   font-family: sans-serif;
   margin-top: 0px;
+}
+
+.social-icon {
+  color: rgb(215,215,215);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  &:hover {
+    color: rgb(255,255,255);
+  }
 }
 `

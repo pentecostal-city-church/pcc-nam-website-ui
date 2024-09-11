@@ -2,15 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
-import churchPlanter1 from '../img/church-planter/church-planter-1.png';
-import churchPlanter2 from '../img/church-planter/church-planter-2.png';
-import churchPlanter3 from '../img/church-planter/church-planter-3.png';
-import churchPlanter4 from '../img/church-planter/church-planter-4.png';
-import churchPlanter5 from '../img/church-planter/church-planter-5.png';
-import churchPlanter6 from '../img/church-planter/church-planter-6.png';
-import churchPlanter7 from '../img/church-planter/church-planter-7.png';
-import churchPlanter8 from '../img/church-planter/church-planter-8.png';
+import { HTMLContent } from "../components/Content";
+import churchPlanter1 from '../img/church-planter/church-planter-1.jpg';
+import churchPlanter2 from '../img/church-planter/church-planter-2.jpg';
+import churchPlanter3 from '../img/church-planter/church-planter-3.jpg';
+import churchPlanter4 from '../img/church-planter/church-planter-4.jpg';
+import churchPlanter5 from '../img/church-planter/church-planter-5.jpg';
+import churchPlanter6 from '../img/church-planter/church-planter-6.jpg';
+import churchPlanter7 from '../img/church-planter/church-planter-7.jpg';
+import churchPlanter8 from '../img/church-planter/church-planter-8.jpg';
 
 // eslint-disable-next-line
 export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
@@ -27,53 +27,47 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
           </p>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-          <p style={{ marginTop: '16px', marginBottom: '0px' }}>{`This site focuses on the vision of North American Missions in the state of Missouri.`}</p>
-          <p style={{ marginTop: '16px' }}>{`To find out more about the national vision of North American Missions, please click the following link:`}</p>
+          <p style={{ marginTop: '16px' }}>{`Below are the NAM Directors for each section of the southern California district. `}</p>
         </div>
         <div className="church-planter-container">
           <div className={`church-planter-row`}>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter6} />
+              <img className={'church-planter-img'} src={churchPlanter1} />
               <p className={'church-planter-text-1'}>{`Nathan Cupoli`}</p>
-              <p className={'church-planter-text-2'}>{`Director`}</p>
+              <p className={'church-planter-text-2'}>{`NAM Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
               <img className={'church-planter-img'} src={churchPlanter2} />
-              <p className={'church-planter-text-1'}>{`Estefan Garcia`}</p>
-              <p className={'church-planter-text-2'}>{`Secretary`}</p>
-            </div>
-            <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter8} />
-              <p className={'church-planter-text-1'}>{`Lakelie Lopez`}</p>
-              <p className={'church-planter-text-2'}>{`Promotions Director`}</p>
-            </div>
-            <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter4} />
-              <p className={'church-planter-text-1'}>{`Ezekiel Rodriguez`}</p>
+              <p className={'church-planter-text-1'}>{`Ezekial Rodriguez`}</p>
               <p className={'church-planter-text-2'}>{`Section 1 Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter5} />
-              <p className={'church-planter-text-1'}>{`Phillip Raya`}</p>
+              <img className={'church-planter-img'} src={churchPlanter3} />
+              <p className={'church-planter-text-1'}>{`Philip Raya`}</p>
               <p className={'church-planter-text-2'}>{`Section 2 Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter1} />
-              <p className={'church-planter-text-1'}>{`Effrin Garibay`}</p>
+              <img className={'church-planter-img'} src={churchPlanter4} />
+              <p className={'church-planter-text-1'}>{`Efrain Garibay`}</p>
               <p className={'church-planter-text-2'}>{`Section 3 Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <div className={'church-planter-img'} />
-              <p className={'church-planter-text-1'}>{`Vacant`}</p>
-              <p className={'church-planter-text-2'}>{`Section 4 Director`}</p>
-            </div>
-            <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter3} />
+              <img className={'church-planter-img'} src={churchPlanter5} />
               <p className={'church-planter-text-1'}>{`Dan Olivera`}</p>
               <p className={'church-planter-text-2'}>{`Section 5 Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter3} />
+              <img className={'church-planter-img'} src={churchPlanter6} />
+              <p className={'church-planter-text-1'}>{`Lakelie Lopez`}</p>
+              <p className={'church-planter-text-2'}>{`Promotions Director`}</p>
+            </div>
+            <div className={'church-planter-img-container'}>
+              <img className={'church-planter-img'} src={churchPlanter7} />
+              <p className={'church-planter-text-1'}>{`Stephen Garcia`}</p>
+              <p className={'church-planter-text-2'}>{`NAM Secretary`}</p>
+            </div>
+            <div className={'church-planter-img-container'}>
+              <img className={'church-planter-img'} src={churchPlanter8} />
               <p className={'church-planter-text-1'}>{`Javier Orozco`}</p>
               <p className={'church-planter-text-2'}>{`Spanish Liaison`}</p>
             </div>

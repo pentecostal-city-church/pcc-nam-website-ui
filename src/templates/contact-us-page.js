@@ -6,14 +6,13 @@ import { HTMLContent } from "../components/Content";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import 'react-phone-number-input/style.css';
-import axios from 'axios';
 import { FaCheckCircle } from "react-icons/fa";
 
 export const countryToFlag = (isoCode) => {
     return typeof String.fromCodePoint !== 'undefined'
       ? isoCode
-          .toUpperCase()
-          .replace(/./g, (char) =>
+          .toUpperCase?.()
+          .replace?.(/./g, (char) =>
             String.fromCodePoint(char.charCodeAt(0) + 127397),
           )
       : isoCode;
@@ -297,6 +296,10 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
     const [reason, setReason] = React.useState('');
     const [email, setEmail] = React.useState('');
     const [sent, setSent] = React.useState(false);
+    const [zipCode, setZipCode] = React.useState('');
+    const [targetCity, setTargetCity] = React.useState('');
+    const [contacted, setContacted] = React.useState(false);
+    const [existingChurch, setExistingChurch] = React.useState(false);
 
     const countriesMemo = React.useMemo(() => {
         return countries;
@@ -304,15 +307,6 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
 
     const selectOnChange = (e) => {
         setCountryCode(e.target.value);
-    }
-
-    const submitHandler = async () => {
-        const res = await axios.post('54.183.139.203/send_email.php', {
-            name: fName + ' ' + lName,
-            phone: countryCode + ' ' + phone,
-            subject: `Inquiry from ${fName} ${lName} - ${countryCode} ${phone}`,
-            message: reason
-        });
     }
 
     return sent ? (

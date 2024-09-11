@@ -36,10 +36,10 @@ const Footer = () => {
         siteMeta.linkedinUsername ? (
           <FooterMenuStyles className="footer__menu social__menu">
             <h5>
-              Follow SoCal UPCI<span>.</span>
+              Follow SoCal NAM<span>.</span>
             </h5>
             <ul>
-              {siteMeta.twitterUsername && (
+              {/* {siteMeta.twitterUsername && (
                 <li>
                   <a
                     href={`https://www.twitter.com/${siteMeta.twitterUsername}`}
@@ -49,7 +49,7 @@ const Footer = () => {
                     <Twitter />
                   </a>
                 </li>
-              )}
+              )} */}
               {siteMeta.facebookUsername && (
                 <li>
                   <a

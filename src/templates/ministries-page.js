@@ -30,6 +30,26 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
                 </div>
                 <div style={{ marginLeft: '64px', width: '560px' }}>
                     <div>
+                        <p style={{ color: 'white', fontSize: '20px', fontWeight: 300, fontFamily: 'sans-serif' }}>{`Christian Prisoner Ministry`}</p>
+                    </div>
+                    <div>
+                        <p style={{ color: 'white', fontSize: '14px' }}><a style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} src={`https://prisonministry.faith/`}>Christian Prisoner Ministry</a> is a non-profit ministry extending the hope and power of the gospel to over 7.3 million people currently behind bars, on probation, or on parole in North America's criminal justice system, as well as their families.</p>
+                    </div>
+                    <div>
+                        <p style={{ margin: '0px', color: 'white', fontSize: '14px' }}>Since 1982 CPM has trained and certified more than 3,000 volunteers for ministry in the correctional environment. Through CPM, you can contact a network of certified chaplains trained and dedicated to reaching your friends, family, and neighbors behind bars or in transitional living facilities. If you desire to serve in this ministry, CPM can equip and empower you to be involved. <a style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`mailto:jerrymenchaca@aol.com`} target="_blank">Jerry Menchaca</a> is the ministry director.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style={{ marginLeft: '128px', marginTop: '80px' }}>
+            <div style={{ display: 'flex' }}>
+                <div>
+                    <div>
+                        <img src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/6ef0cf62-77e4-4444-a5e7-4beebfbe83e7@2x.png`} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
+                    </div>
+                </div>
+                <div style={{ marginLeft: '64px', width: '560px' }}>
+                    <div>
                         <p style={{ color: 'white', fontSize: '20px', fontWeight: 300, fontFamily: 'sans-serif' }}>{`Church-In-A-Day`}</p>
                     </div>
                     <div>
