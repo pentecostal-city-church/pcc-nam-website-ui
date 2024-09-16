@@ -12,6 +12,7 @@ import LatestPosts from "../components/Post/LatestPosts";
 import MapChart from '../components/MapChart';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import CircularText from "../components/CircularText";
+import CountUp from 'react-countup';
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -87,8 +88,25 @@ export const IndexPageTemplate = ({
             {/* <br/> */}
             <hr className="purpose-column-divider" />
             {/* <br/> */}
-            <div className="purpose-column-section">
-            <p style={{ fontWeight: 400, fontSize: '20px' }} className="purpose-column-header">{`26 million souls from diverse backgrounds have gathered in the SoCal District, representing over 140 countries and 224 languages. The world has come to us and we have been commissioned to reach The Next Town with the Act 2:38 message of salvation. Help us Go. Gather. Grow.`}</p>
+            <div className="purpose-column-section" style={{ flexDirection: 'row' }}>
+              <CountUp
+                start={1}
+                end={26}
+                duration={7.75}
+                separator=""
+                decimals={0}
+                delay={0}
+                decimal=","
+                prefix="#"
+                suffix="M"
+              >
+                {({ countUpRef }) => (
+                  <div onClick={() => window.open('https://x.com/hashtag/26M?src=hashtag_click', 'blank')}>
+                    <p style={{ cursor: 'pointer', fontSize: '64px', fontWeight: 800, marginRight: '8px', color: '#00ACEE' }} ref={countUpRef} />
+                  </div>
+                )}
+              </CountUp>
+              <p style={{ fontWeight: 800, fontSize: '13px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`souls reside in SoCal District. Let's Go. Gather. Grow. The Next Town with the Acts 2:38 salvation message.`}</p>
             </div>
             <hr className="purpose-column-divider" style={{ marginBottom: '0px' }} />
             <div className="circular-text-gap" />

@@ -10,16 +10,16 @@ export const AffiliationPageTemplate = ({ title, content, contentComponent }) =>
   return (
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '180px' }}>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: 'sans-serif'  }}>
+          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
               {`NATIONAL`}
           </p>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
+          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
               {`NORTH AMERICAN MISSIONS`}
           </p>
         </div>
-        <div style={{ textAlign: 'center', marginTop: '32px', marginBottom: '32px' }}>
+        <div style={{ textAlign: 'center', marginTop: '32px', marginBottom: '12px' }}>
           <p style={{ margin: '0px' }}>{`This site focuses on the vision of North American Missions in the SoCal District.`}</p>
           <p style={{ margin: '0px' }}>{`To find out more about the national vision of North American Missions, please click the following link:`}</p>
         </div>
@@ -28,13 +28,13 @@ export const AffiliationPageTemplate = ({ title, content, contentComponent }) =>
         </div>
         <div style={{ marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/8aee7101-2018-46b0-9749-f5b1650edf7b.jpg")' }}/>
         <div style={{ textAlign: 'center' }}>
-          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
+          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
               {`UNITED PENTECOSTAL CHURCH`}
           </p>
-          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
+          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
               {`INTERNATIONAL`}
           </p>
-          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
+          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
               {`(UPCI)`}
           </p>
         </div>
@@ -42,13 +42,16 @@ export const AffiliationPageTemplate = ({ title, content, contentComponent }) =>
           <p style={{ margin: '0px' }}>{`Missouri District North American Missions and National North American Missions are both ministries of the international organization of the`}</p>
           <p style={{ margin: '0px' }}>{`United Pentecostal Church (UPCI). To learn more about the mission and values of the UPCI, please click the following link to learn more:`}</p>
         </div>
-        <div style={{ textAlign: 'center', marginTop: '24px', marginBottom: '128px' }}>
+        <div style={{ textAlign: 'center', marginTop: '12px', marginBottom: '128px' }}>
           <a rel="noreferrer" target="_blank" href={`https://www.upci.org`} style={{ fontSize: '28px', color: 'rgb(30, 150, 168)', margin: '0px' }}>{`www.upci.org`}</a>
         </div>
         <div style={{ marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/c18f840e-2813-40ee-9d0e-0eeec78307e9.jpg")' }}/>
-        <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
-            <p style={{ color: 'white' }}>{`SoCal District North American Missions Department`}</p>
-          </div>
+        <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+                    <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
+                </div>
+                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                  <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+                  </div>
     </div>
   );
 };

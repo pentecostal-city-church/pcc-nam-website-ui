@@ -3,14 +3,12 @@ import { motion } from "framer-motion"
 
 export const NavModuleStyles = styled.nav`
   .logo-container {
-    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
     padding: 12px var(--borderSpacing) 12px var(--borderSpacing);
     width: 320px;
-    background-color: rgba(0,0,0,1);
   }
 
   .nav {
-    background-color: rgba(255,255,255,1);
+    background-color: transparent;
     position: fixed;
     top: 0;
     left: 0;
@@ -51,7 +49,7 @@ export const NavModuleStyles = styled.nav`
   }
 
   .logo-image-circle {
-    height: 64px;
+    height: 76px;
   }
 
   .topnav-container {
@@ -61,7 +59,7 @@ export const NavModuleStyles = styled.nav`
   }
 
   .dropbtn {
-    color: black;
+    color: white;
     padding: 12px;
     font-size: 13px;
     font-weight: 600;
@@ -72,7 +70,7 @@ export const NavModuleStyles = styled.nav`
     text-transform: uppercase;
     cursor: pointer;
   }
-  
+
   .outlined {
     z-index: 1000;
     border: 1px solid black;
@@ -86,7 +84,7 @@ export const NavModuleStyles = styled.nav`
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #02314a;
     min-width: 105px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -97,13 +95,16 @@ export const NavModuleStyles = styled.nav`
   }
   
   .dropdown-content a {
-    color: black;
+    color: white;
     opacity: 0.85;
     text-transform: uppercase;
-    padding: 6px 16px;
+    padding: 16px;
     text-decoration: none;
+    font-weight: 800;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 12px;
     font-family: 'Heebo', sans-serif;
   }
@@ -125,7 +126,7 @@ export const NavModuleStyles = styled.nav`
   }
 
   .nav-title {
-    color: rgba(0,0,0,1);
+    color: white;
     text-decoration: none;
   }
 
@@ -204,17 +205,18 @@ export const NavModuleStyles = styled.nav`
   .more-dropdown-content {
     margin-top: 8px;
     position: absolute;
-    background-color: #fff;
+    background-color: #02314a;
     min-width: 105px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
 
   .more-dropdown-content a {
-    color: black;
+    color: white;
     opacity: 0.85;
+    font-weight: 800;
     text-transform: uppercase;
-    padding: 6px 16px;
+    padding: 16px;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -366,7 +368,7 @@ export const HamburgerStyles = styled(motion.button)`
 
   .bar {
     display: block;
-    background-color: rgba(0,0,0,1);
+    background-color: white;
     height: 2px;
     border-radius: 2px;
 

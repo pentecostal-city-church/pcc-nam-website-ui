@@ -12,21 +12,27 @@ export const NAMStatusPageTemplate = ({ title, content, contentComponent }) => {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '180px' }}>
+            <div style={{ margin: '0px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+                <p style={{ margin: '8px 0px 0px', maxWidth: '1050px', fontSize: '18px', color: 'white' }}>{`Before completing this NAM Status form. Please make sure you complete the online training.`}</p>
+            </div>
             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <p style={{ marginTop: '16px', maxWidth: '1050px' }}>{`Before completing this NAM Status form. Please make sure you complete the online training.`}</p>
+                <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>Please submit your NAM status form to: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <a target='_blank' href={`https://drive.google.com/file/d/1xASOa_PElGkp9s60JxaNEIyIDnwhwSim/view?usp=sharing`} style={{ fontWeight: 500, fontSize: '24px', color: 'rgb(30, 150, 168)', margin: '0px', textDecoration: 'none' }}>Click here to access the NAM Status form.</a>
+            <div style={{ margin: '8px 0px 0px', display: 'flex', justifyContent: 'center' }}>
+              <a target='_blank' href={`https://drive.google.com/file/d/1xASOa_PElGkp9s60JxaNEIyIDnwhwSim/view?usp=sharing`} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>Click here to access the NAM Status form.</a>
             </div>
-            <div style={{ justifyContent: 'center', margin: '24px 0px' }} className={'subtitle-text-container'}>
+            <div style={{ justifyContent: 'center', margin: '48px 0px' }} className={'subtitle-text-container'}>
                 <button onClick={startTrainingHandler} className={`training-button`}>
                 {`START ONLINE TRAINING!`}
                 </button>
             </div>
-            <div style={{ margin: '128px 0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/dfe810a1-46fe-4ca3-aeff-102f4dfbb111.jpg")' }}/>
-            <div style={{ marginTop: '96px', display: 'flex', justifyContent: 'center' }}>
-                <p style={{ color: 'white' }}>{`SoCal District North American Missions Department`}</p>
-            </div>
+            <div style={{ margin: '64px 0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/dfe810a1-46fe-4ca3-aeff-102f4dfbb111.jpg")' }}/>
+            <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+                    <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
+                </div>
+                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                  <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+                </div>
         </div>
     );
 };

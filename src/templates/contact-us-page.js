@@ -312,33 +312,42 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
     return sent ? (
         <div style={{ marginTop: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '98.5px' }}>
             <div style={{ display: 'flex', flexDirection: 'column', margin: '160px 0px 32px', width: '80%' }}>
-                <p style={{ fontSize: '36px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif', marginBottom: '4px' }}>
+                <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif', marginBottom: '4px' }}>
                     {`CONTACT US`}
                 </p>
-                <p style={{ margin: '0px', fontSize: '14px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif' }}>
+                <p style={{ margin: '0px', fontSize: '14px', fontWeight: 300, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
                     {`We would love to connect! Feel free to submit your information here and a member of our committee will contact you as soon as possible.`}
                 </p>
             </div>
             <FaCheckCircle />
             <p style={{ color: 'white' }}><b>Thank you!</b></p>
             <p style={{ marginTop: '0px', fontSize: '14px', color: 'white' }}>You will hear from someone on the SoCal District North American Missions Committee soon!</p>
-            <div style={{ marginTop: '180px', display: 'flex', justifyContent: 'center' }}>
-                <p style={{ color: 'white' }}>{`SoCal District North American Missions Department`}</p>
-            </div>
+            <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+                    <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
+                </div>
+                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                  <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+                </div>
         </div>
     ) : (
-        <div style={{ marginTop: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '98.5px' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', margin: '160px 0px 0px', width: '80%' }}>
-            <p style={{ fontSize: '36px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif', marginBottom: '4px' }}>
+        <div style={{ marginTop: '98.5px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', margin: '32px 0px 0px', paddingLeft: '75px' }}>
+            <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif', marginBottom: '4px' }}>
                 {`CONTACT US`}
             </p>
-            <p style={{ margin: '0px', fontSize: '14px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
-                {`We would love to connect! Feel free to submit your information here and a member of our committee will contact you as soon as possible.`}
+            <p style={{ margin: '0px', fontSize: '18px', fontWeight: 300, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
+                {`We would love to connect!`}
+            </p>
+            <p style={{ margin: '0px', fontSize: '18px', fontWeight: 300, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
+                Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a>.
+            </p>
+            <p style={{ margin: '0px', fontSize: '18px', fontWeight: 300, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
+                {`A member of our committee will contact you as soon as possible.`}
             </p>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', margin: '0px', width: '80%' }}>
+            {/* <div style={{ display: 'flex', flexDirection: 'column', margin: '0px', width: '80%' }}>
                 <div style={{ marginTop: '36px', alignSelf: 'flex-start' }}>
-                    <p style={{ fontSize: '36px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif', marginBottom: '4px' }}>
+                    <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: 'sans-serif', marginBottom: '4px' }}>
                         {`YOUR NAME`}
                     </p>
                 </div>
@@ -388,10 +397,14 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
                 <div>
                     <a onClick={() => setSent(true)} style={{ border: '2px solid #fff', backgroundColor: 'black', padding: '10px 40px', width: '150px', color: 'white', textTransform: 'uppercase', textDecoration: 'none', fontSize: '18px' }} href={`mailto:socalnorthamericanmissions@gmail.com?body=${reason}&subject=Inquiry from ${fName} ${lName}: +${countryCode} ${phone}`} target="_blank">Submit</a>
                 </div>
-            </div>
-            <div style={{ marginTop: '180px', display: 'flex', justifyContent: 'center' }}>
-                <p style={{ color: 'white' }}>{`SoCal District North American Missions Department`}</p>
-            </div>
+            </div> */}
+            {/* <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+                    <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
+                </div>
+                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                  <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`Please email us with questions or for more information at: socalnorthamericanmissions@gmail.com`}</p>
+                </div>
+        </div> */}
         </div>
     );
 };

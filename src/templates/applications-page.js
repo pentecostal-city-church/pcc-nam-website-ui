@@ -15,7 +15,7 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
         <div style={{ display: 'flex' }}>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '180px' }}>
                 <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                    <p style={{ margin: '0px 48px 32px', fontSize: '36px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
+                    <p style={{ margin: '0px 48px 32px', fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
                     {`NAM APPLICATIONS`}
                     </p>
                 </div>
@@ -28,7 +28,7 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
                       </div>
                       <div style={{ marginLeft: '64px', width: '560px' }}>
                           <div>
-                              <p style={{ color: 'white', fontSize: '20px', fontWeight: 300, fontFamily: 'sans-serif' }}>{`CHRISTMAS FOR CHRIST FUNDING APPLICATION`}</p>
+                              <p style={{ color: 'white', fontSize: '20px', fontWeight: 300, fontFamily: '"Heebo",sans-serif' }}>{`CHRISTMAS FOR CHRIST FUNDING APPLICATION`}</p>
                           </div>
                           <div>
                               <p style={{ color: 'white', fontSize: '14px' }}>Church planters can use this application to apply for personal or property support financed by Christmas for Christ. Application will be open from <a target="_blank" href={'https://wa.upci.org/nam'} style={{ textDecoration: 'underline', color: 'rgb(30, 150, 168)' }}>October 15 to January 15</a>. For application information, please read the <a target="_blank" href={'https://www.northamericanmissions.faith/s/CFC-Policy-and-FAQs-2022.pdf'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>Policy</a>. Applicant must complete required online <a target="_blank" href={'https://ministrycentral.com/courses/christmas-for-christ-training'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>CFC training</a> OR have attended <a target="_blank" href={'https://www.launchachurch.faith/'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>Launch Training</a>. Email <a target="_blank" href={'mailto:nam@upci.org'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>nam@upci.org</a> for more information.</p>
@@ -62,14 +62,17 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
                         <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} href={`/affiliation-application`}>{`Affiliation Application`}</a></li>
                     </ul>
                 </div>
-                <div style={{ justifyContent: 'flex-start', margin: '24px 48px' }} className={'subtitle-text-container'}>
+                <div style={{ justifyContent: 'flex-start', margin: '24px 0px' }} className={'subtitle-text-container'}>
                     <button onClick={startTrainingHandler} className={`training-button`}>
                     {`START ONLINE TRAINING!`}
                     </button>
                 </div>
-                <div style={{ marginTop: '96px', display: 'flex', justifyContent: 'center' }}>
-                    <p style={{ color: 'white' }}>{`SoCal District North American Missions Department`}</p>
+                <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+                    <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                 </div>
+                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                  <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+                  </div>
             </div>
             <div style={{ marginTop: '180px' }}>
                 <img style={{ border: '1px solid white', width: '330px', height: '426px' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/65f256a2-cae9-4720-90c2-dbcd16608276.jpg`}/>

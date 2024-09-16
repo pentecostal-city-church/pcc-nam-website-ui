@@ -17,7 +17,7 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
     return (
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '180px' }}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <p style={{ margin: '0px 0px 32px', fontSize: '44px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
+                <p style={{ margin: '0px 0px 32px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
                     {`CHRISTMAS FOR CHRIST (CFC)`}
                 </p>
             </div>
@@ -38,14 +38,14 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
                     <img style={{ border: '1px solid white' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/1cad4449-3f48-4e00-9d63-2597f43c0172.jpg`}/>
                 </div>
                 <div style={{ margin: '0px 80px' }}>
-                    <p style={{ color: 'white', fontSize: '36px', fontWeight: 200, fontFamiy: "Lato, 'Lato Light', sans-serif" }}>{`SOUTHERN CALIFORNIA INFLUENCE`}</p>
+                    <p style={{ color: 'white', fontSize: '36px', fontWeight: 200, fontFamiy: '"Heebo",sans-serif' }}>{`SOUTHERN CALIFORNIA INFLUENCE`}</p>
                     <p style={{ fontSize: '14px' }}>{`40% of all of the Christmas for Christ offerings stay right here in the SoCal District. That means, when you give, you are single-handedly making a difference right here in our own state and with our own neighbors! We always challenge our SoCal churches to give our best gift to Jesus at Christmas time. To give, just click on the link below and choose "North American Missions" and then choose "CFC" from the sub fund drop down box. `}</p>
                     <a href={'https://www.socalupci.org/Offerings-'} style={{ textDecoration: 'none', fontWeight: 600, color: 'rgb(30, 150, 168)' }}>{`Click here to give to Southern California District Christmas for Christ!`}</a>
                 </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', marginTop: '48px' }}>
-                <p style={{ margin: '0px', color: 'white', fontFamiy: "Lato, 'Lato Light', sans-serif", fontWeight: 300, fontSize: '36px' }}>{`THE BEGINNING OF`}</p>
-                <p style={{ margin: '0px', color: 'white', fontFamiy: "Lato, 'Lato Light', sans-serif", fontWeight: 300, fontSize: '36px' }}>{`CHRISTMAS FOR CHRIST`}</p>
+                <p style={{ margin: '0px', color: 'white', fontFamiy: '"Heebo",sans-serif', fontWeight: 300, fontSize: '36px' }}>{`THE BEGINNING OF`}</p>
+                <p style={{ margin: '0px', color: 'white', fontFamiy: '"Heebo",sans-serif', fontWeight: 300, fontSize: '36px' }}>{`CHRISTMAS FOR CHRIST`}</p>
             </div>
             <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'center' }}>
                 <p style={{ fontSize: '14px' }}>{`We invite you to watch a short video about how, where, and why Christmas for Christ began!`}</p>
@@ -83,8 +83,8 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
                     </div>
                     <div style={{ display: 'flex', marginTop: '240px' }}>
                         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', margin: ' 0px 32px' }}>
-                            <p style={{ fontSize: '28px',  }}>{'RESOURCES FOR PASTORS'}</p>
-                            <p style={{ fontSize: '14px', textAlign: 'right'  }}>{`If you are a Southern California District Pastor looking for other videos, testimonies to show your church, bulletin inserts, or slides, feel free to visit the national CFC website to gain access to all of these things.`}</p>
+                            <p style={{ fontSize: '28px', fontFamily: '"Heebo", sans-serif' }}>{'RESOURCES FOR PASTORS'}</p>
+                            <p style={{ fontSize: '14px', textAlign: 'right', fontFamily: '"Heebo", sans-serif' }}>{`If you are a Southern California District Pastor looking for other videos, testimonies to show your church, bulletin inserts, or slides, feel free to visit the national CFC website to gain access to all of these things.`}</p>
                             <a target="_blank" style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} href={'http://www.christmasforchrist.faith/#home'}>{`Click here for more CFC resources!`}</a>
                         </div>
                         <div>
@@ -95,9 +95,12 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
             </div>
 
 
-            <div style={{ marginTop: '96px', display: 'flex', justifyContent: 'center' }}>
-                <p style={{ color: 'white' }}>{`SoCal District North American Missions Department`}</p>
-            </div>
+            <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+                    <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
+                </div>
+                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                  <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+                  </div>
         </div>
     );
 };

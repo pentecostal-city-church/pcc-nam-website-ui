@@ -13,7 +13,7 @@ export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => 
     return (
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '180px' }}>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <p style={{ margin: '0px', fontSize: '44px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
+        <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif' }}>
             {`SOCAL DISTRICT NAM POLICY`}
         </p>
       </div>
@@ -23,14 +23,14 @@ export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => 
         <p style={{ margin: '0px' }}>{`a church in Missouri. Please read through the summarized system form below, and feel free to scroll down to the bottom of the page`}</p>
         <p style={{ margin: '0px' }}>{`to download and print the entire policy packet for your benefit.`}</p>
       </div>
-      <div style={{ justifyContent: 'center', margin: '24px 48px 96px' }} className={'subtitle-text-container'}>
+      <div style={{ justifyContent: 'center', margin: '24px 0px 96px' }} className={'subtitle-text-container'}>
             <button onClick={startTrainingHandler} className={`training-button`}>
             {`START ONLINE TRAINING!`}
             </button>
         </div>
       <div style={{ marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/09450eb0-ea2a-4beb-8b65-543aeb91fec5.jpeg")' }}/>
       <div style={{ textAlign: 'center' }}>
-        <p style={{ margin: '0px', fontSize: '44px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
+        <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif' }}>
             {`PATH TO PLANTING A CHURCH`}
         </p>
       </div>
@@ -90,11 +90,14 @@ export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => 
         </div> */}
       </div>
       <div style={{ textAlign: 'center', margin: '24px 120px 128px' }}>
-        <a rel="noreferrer" target="_blank" href={`https://ministrycentral.com/the-launch-button`} style={{ fontWeight: 500, fontSize: '36px', color: 'rgb(30, 150, 168)', margin: '0px', textDecoration: 'none' }}>{`Click here to start online training that prepares you for the church-planting process!`}</a>
+        <a rel="noreferrer" target="_blank" href={`https://ministrycentral.com/the-launch-button`} style={{ fontWeight: 500, fontSize: '20px', color: 'rgb(30, 150, 168)', margin: '0px', textDecoration: 'none' }}>{`Click here to start online training that prepares you for the church-planting process!`}</a>
+      </div>
+      <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+        <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
       </div>
       <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
-          <p style={{ color: 'white' }}>{`SoCal District North American Missions Department`}</p>
-        </div>
+        <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+      </div>
   </div>
     );
 };

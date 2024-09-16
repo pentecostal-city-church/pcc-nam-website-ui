@@ -7,6 +7,7 @@ import { countries, countryToFlag } from "./contact-us-page";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
+import { withPrefix } from "gatsby";
 
 export const states = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
 export const countryList = [
@@ -310,78 +311,88 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '180px 0px 0px' }}>
-            <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '22px'}}>{`Before completing this Daughter Work application form, please make sure you have`}</p>
+            <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+                <img style={{ height: '120px', borderRadius: '60px' }} className={'logo-image-circle'} src={withPrefix('/img/dwp.png')} />
+                <p style={{ margin: '24px 0px 0px', maxWidth: '1050px', color: 'white', fontSize: '18px'}}>{`Before completing this Daughter Work application form, please make sure you have`}</p>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '22px' }}>read through the <a target="_blank" href={'https://drive.google.com/file/d/1SPYxNMy3Wm3WUWG-UHl1D_C96oLNKyM3/view'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>SoCal District Policy Form</a>. Contact us with any questions. Once you</p>
+                <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>read through the <a href={'/pcc-nam-website-ui/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>SoCal District Policy Form</a>. Contact us with any questions. Once you</p>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '22px' }}>{`have read through that, feel free to submit your online application here. `}</p>
+                <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>feel free to submit your online application to: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
             </div>
 
-            <div style={{ justifyContent: 'center', margin: '32px 48px' }} className={'subtitle-text-container'}>
+            <div style={{ justifyContent: 'center', margin: '32px 0px' }} className={'subtitle-text-container'}>
                 <button onClick={startTrainingHandler} className={`training-button`}>
                 {`START ONLINE TRAINING!`}
                 </button>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+            <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>{`Daughter Work Project Grant Application`}</p>
+            <a target="_blank" href={'https://drive.google.com/file/d/1SEbuEYw8b0MgVqvTvcOKH4YtO0ow7bYA/view?usp=sharing'} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`Click here to access the application form.`}</a>
             </div>
             {sent ? (
                 <div style={{ display: 'flex', justifyContent: 'center', margin: '48px 72px' }}>
                     <FaCheckCircle />
                     <p style={{ color: 'white' }}><b>Thank you!</b></p>
                     <p style={{ marginTop: '0px', fontSize: '14px', color: 'white' }}>You will hear from someone on the SoCal District North American Missions Committee soon!</p>
-                    <div style={{ marginTop: '180px', display: 'flex', justifyContent: 'center' }}>
-                        <p style={{ color: 'white' }}>{`SoCal District North American Missions Department`}</p>
+                    <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+                        <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
+                    </div>
+                    <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                        <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: 
+                            <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a>
+                        </p>
                     </div>
                 </div>
             ) : (
                 <div>
-                <div style={{ margin: '96px 0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/acdedf91-25c8-4193-965a-7c0f26f71557.jpeg")' }}/>
-                <div style={{ margin: '0px 72px' }}>
+                <div style={{ margin: '48px 0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover', height: '360px', width: '100%', backgroundImage: 'url("https://i.redd.it/t2j51hl4qfwb1.jpg")' }}/>
+                {/* <div style={{ margin: '0px 72px' }}>
                     <div>
-                        <p style={{ fontSize: '36px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif', marginBottom: '4px' }}>SOCAL DISTRICT DAUGHTER WORK APPLICATION</p>
+                        <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif', marginBottom: '4px' }}>SOCAL DISTRICT DAUGHTER WORK APPLICATION</p>
                     </div>
                     <p style={{ color: 'white', fontSize: '14px' }}>{`To be completed by the mother church pastor only.`}</p>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', margin: '0px 72px', width: '80%' }}>
                     <div style={{ marginTop: '24px' }}>
-                        <p style={{ fontSize: '36px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif', marginBottom: '0px' }}>MOTHER CHURCH PASTOR</p>
+                        <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif', marginBottom: '0px' }}>MOTHER CHURCH PASTOR</p>
                     </div>
                     <div style={{ marginTop: '20px', width: '80%', maxWidth: '512px', alignSelf: 'flex-start' }}>
                         <div style={{ marginBottom: '24px' }}>
-                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>First Name</p></div>
+                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>First Name</p></div>
                             <div><input value={fName} onChange={(e) => {console.log(e.target.value);setFName(e.target.value);}} style={{ padding: '0px 16px', color: 'white', border: '2px solid #fff', width: '100%', backgroundColor: 'black', maxWidth: '512px', height: '60px' }} /></div>
                         </div>
                         <div style={{ marginBottom: '24px' }}>
-                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Last Name</p></div>
+                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Last Name</p></div>
                             <div><input value={lName} onChange={(e) => setLName(e.target.value)} style={{ padding: '0px 16px', border: '2px solid #fff', color: 'white', width: '100%', backgroundColor: 'black', maxWidth: '512px', height: '60px' }} /></div>
                         </div>
                         <div style={{ marginBottom: '24px' }}>
-                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Name of Mother Church</p></div>
+                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Name of Mother Church</p></div>
                             <div><input value={motherChurch} onChange={(e) => setMotherChurch(e.target.value)} style={{ padding: '0px 16px', border: '2px solid #fff', color: 'white', width: '100%', backgroundColor: 'black', maxWidth: '512px', height: '60px' }} /></div>
                         </div>
                     </div>
     
                     <div style={{ marginTop: '24px' }}>
-                        <p style={{ fontSize: '36px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif', marginBottom: '0px' }}>ADDRESS OF MOTHER CHURCH</p>
+                        <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif', marginBottom: '0px' }}>ADDRESS OF MOTHER CHURCH</p>
                     </div>
                     <div style={{ marginTop: '20px', width: '80%', maxWidth: '512px', alignSelf: 'flex-start' }}>
                         <div style={{ marginBottom: '24px' }}>
-                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Address Line 1</p></div>
+                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Address Line 1</p></div>
                             <div><input value={fName} onChange={(e) => {setAddress1(e.target.value)}} style={{ padding: '0px 16px', color: 'white', border: '2px solid #fff', width: '100%', backgroundColor: 'black', maxWidth: '512px', height: '60px' }} /></div>
                         </div>
                         <div style={{ marginBottom: '24px' }}>
-                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Address Line 2</p></div>
+                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Address Line 2</p></div>
                             <div><input value={lName} onChange={(e) => setAddress2(e.target.value)} style={{ padding: '0px 16px', border: '2px solid #fff', color: 'white', width: '100%', backgroundColor: 'black', maxWidth: '512px', height: '60px' }} /></div>
                         </div>
                         <div style={{ marginBottom: '24px' }}>
-                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>City</p></div>
+                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>City</p></div>
                             <div><input value={motherChurch} onChange={(e) => setMotherChurch(e.target.value)} style={{ padding: '0px 16px', border: '2px solid #fff', color: 'white', width: '100%', backgroundColor: 'black', maxWidth: '512px', height: '60px' }} /></div>
                         </div>
                     </div>
                     <div style={{ marginBottom: '24px' }}>
                         <div>
-                            <p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>
+                            <p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>
                                 State
                             </p>
                         </div>
@@ -399,7 +410,7 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
                     </div>
                     <div style={{ marginBottom: '24px' }}>
                         <div>
-                            <p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>
+                            <p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>
                                 Country
                             </p>
                         </div>
@@ -416,12 +427,12 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
                         </div>
                     </div>
                     <div style={{ marginBottom: '24px' }}>
-                        <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Zip Code</p></div>
+                        <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Zip Code</p></div>
                         <div><input value={zipcode} onChange={(e) => setZipcode(e.target.value)} style={{ padding: '0px 16px', border: '2px solid #fff', color: 'white', width: '100%', backgroundColor: 'black', maxWidth: '512px', height: '60px' }} /></div>
                     </div>
                     <div style={{ marginBottom: '24px' }}>
                         <div>
-                            <p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>
+                            <p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>
                                 Phone Number
                             </p>
                         </div>
@@ -441,16 +452,16 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
                         </div>
                     </div>
                     <div style={{ marginBottom: '24px' }}>
-                        <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Email of Mother Church Pastor</p></div>
+                        <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Email of Mother Church Pastor</p></div>
                         <div style={{ display: 'flex', alignItems: 'center' }}><MdEmail style={{ width: '20px', height: '20px' }} /><input value={email} onChange={(e) => setEmail(e.target.value)} style={{ color: 'white', marginLeft: '16px', padding: '0px 16px', border: '2px solid #fff', width: '100%', backgroundColor: 'black', maxWidth: '512px', height: '60px' }} /></div>
                     </div>
                     <div style={{ marginBottom: '24px' }}>
-                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Target City for Daughter Work</p></div>
+                            <div><p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>Target City for Daughter Work</p></div>
                             <div><input value={targetCity} onChange={(e) => setTargetCity(e.target.value)} style={{ padding: '0px 16px', border: '2px solid #fff', color: 'white', width: '100%', backgroundColor: 'black', maxWidth: '512px', height: '60px' }} /></div>
                     </div>
                     <div style={{ marginBottom: '24px' }}>
                         <div>
-                            <p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>
+                            <p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>
                             Have you contacted the Presbyter of this section?
                             </p>
                         </div>
@@ -468,7 +479,7 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
                     </div>
                     <div style={{ marginBottom: '24px' }}>
                         <div>
-                            <p style={{ color: 'rgb(177, 177, 177)', fontFamily: 'sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>
+                            <p style={{ color: 'rgb(177, 177, 177)', fontFamily: '"Heebo",sans-serif', marginBottom: '4px', fontSize: '22px', fontWeight: 300 }}>
                             Is there a UPC Church in this area?
                             </p>
                         </div>
@@ -489,9 +500,12 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
                         <a onClick={() => setSent(true)} style={{ border: '2px solid #fff', backgroundColor: 'black', padding: '10px 40px', width: '150px', color: 'white', textTransform: 'uppercase', textDecoration: 'none', fontSize: '18px' }} href={`mailto:socalnorthamericanmissions@gmail.com?body=${reason}&subject=Inquiry from ${fName} ${lName} (${motherChurch}): +${countryCode} ${phone}`} target="_blank">Submit</a>
                     </div>
                 </div>
+                </div> */}
+                <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+                    <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                 </div>
-                <div style={{ marginTop: '96px', display: 'flex', justifyContent: 'center' }}>
-                    <p style={{ color: 'white' }}>{`SoCal District North American Missions Department`}</p>
+                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                  <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
                 </div>
                 </div>
             )}

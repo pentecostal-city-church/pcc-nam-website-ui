@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   const siteMeta = UseSiteMetadata()
   return (
-    <FooterStyles style={{ marginBottom: 0 }} className="section">
+    <FooterStyles style={{ marginBottom: 0, marginTop: '72px' }} className="section">
       <div className="container container__tight">
         {/* <FooterMenuStyles className="footer__menu">
           <h5>Links</h5>
@@ -36,7 +36,7 @@ const Footer = () => {
         siteMeta.linkedinUsername ? (
           <FooterMenuStyles className="footer__menu social__menu">
             <h5>
-              Follow SoCal NAM<span>.</span>
+              FOLLOW SOCAL NAM<span>.</span>
             </h5>
             <ul>
               {/* {siteMeta.twitterUsername && (

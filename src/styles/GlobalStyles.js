@@ -455,7 +455,7 @@ svg.circular-text-svg {
 
 .purpose-column-header {
   margin-top: 0px;
-  font-family: sans-serif;
+  font-family: "Heebo", sans-serif;
   font-weight: 300;
   color: #fff;
   font-size: 20px;
@@ -524,7 +524,7 @@ svg.circular-text-svg {
 .training-button {
   cursor: pointer;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   padding: 16px 32px;
   background-color: black;
   color: white;
@@ -557,9 +557,9 @@ svg.circular-text-svg {
 }
 
 .church-planter-img {
-  height: 260px;
-  width: 240px;
-  border: 2px solid lightblue;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
 }
 
 .church-planter-row {
@@ -570,24 +570,24 @@ svg.circular-text-svg {
 }
 
 .church-planter-container {
-  margin-top: 48px;
+  margin-top: 8px;
   display: flex;
   justify-content: center;
 }
 
 .church-planter-text-1 {
   color: rgb(30, 150, 168);
-  font-family: sans-serif;
-  font-size: 21px;
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
   font-weight: 300;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .church-planter-text-2 {
   color: white;
   font-weight: 300;
-  font-size: 16px;
-  font-family: sans-serif;
+  font-size: 14px;
+  font-family: "Heebo", sans-serif;
   margin-top: 0px;
 }
 

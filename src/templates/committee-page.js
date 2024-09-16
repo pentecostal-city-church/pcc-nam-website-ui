@@ -17,17 +17,17 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '180px' }}>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
+          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
               {`NORTH AMERICAN MISSIONS`}
           </p>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
+          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
               {`DISTRICT LEADERSHIP`}
           </p>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-          <p style={{ marginTop: '16px' }}>{`Below are the NAM Directors for each section of the southern California district. `}</p>
+          <p style={{ marginTop: '32px', marginBottom: '16px', fontSize: '14px' }}>{`Below are the NAM Directors for each section of the southern California district. `}</p>
         </div>
         <div className="church-planter-container">
           <div className={`church-planter-row`}>
@@ -35,6 +35,16 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
               <img className={'church-planter-img'} src={churchPlanter1} />
               <p className={'church-planter-text-1'}>{`Nathan Cupoli`}</p>
               <p className={'church-planter-text-2'}>{`NAM Director`}</p>
+            </div>
+            <div className={'church-planter-img-container'}>
+              <img className={'church-planter-img'} src={churchPlanter7} />
+              <p className={'church-planter-text-1'}>{`Stephen Garcia`}</p>
+              <p className={'church-planter-text-2'}>{`NAM Secretary`}</p>
+            </div>
+            <div className={'church-planter-img-container'}>
+              <img className={'church-planter-img'} src={churchPlanter6} />
+              <p className={'church-planter-text-1'}>{`Lakelie Lopez`}</p>
+              <p className={'church-planter-text-2'}>{`Promotions Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
               <img className={'church-planter-img'} src={churchPlanter2} />
@@ -57,25 +67,18 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
               <p className={'church-planter-text-2'}>{`Section 5 Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter6} />
-              <p className={'church-planter-text-1'}>{`Lakelie Lopez`}</p>
-              <p className={'church-planter-text-2'}>{`Promotions Director`}</p>
-            </div>
-            <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter7} />
-              <p className={'church-planter-text-1'}>{`Stephen Garcia`}</p>
-              <p className={'church-planter-text-2'}>{`NAM Secretary`}</p>
-            </div>
-            <div className={'church-planter-img-container'}>
               <img className={'church-planter-img'} src={churchPlanter8} />
               <p className={'church-planter-text-1'}>{`Javier Orozco`}</p>
               <p className={'church-planter-text-2'}>{`Spanish Liaison`}</p>
             </div>
           </div>
         </div>
-        <div style={{ marginTop: '96px', display: 'flex', justifyContent: 'center' }}>
-            <p style={{ color: 'white' }}>{`SoCal District North American Missions Department`}</p>
-          </div>
+        <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+            <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
+        </div>
+        <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+          <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+        </div>
     </div>
   );
 };

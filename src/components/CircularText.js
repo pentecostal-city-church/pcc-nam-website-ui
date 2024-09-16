@@ -2,7 +2,7 @@ import * as React from "react";
 
 const circularTextArr = [
     ` SoCal District - UPCI - NAM - `,
-    ` Online - SoCal - Nevada - `,
+    ` Inspire - Equip - Sustain - `,
     ` 26 Million Souls - 12 counties - `
 ];
 

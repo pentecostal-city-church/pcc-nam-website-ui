@@ -13,12 +13,12 @@ export const GivePageTemplate = ({ title, content, contentComponent }) => {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '180px' }}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <p style={{ margin: '0px', fontSize: '44px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
+                <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>
                     {`SUPPORT SOCAL DISTRICT`}
                 </p>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <p style={{ margin: '0px', fontSize: '44px', fontWeight: 300, color: 'white', fontFamily: 'sans-serif'  }}>
+                <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>
                     {`NORTH AMERICAN MISSIONS`}
                 </p>
             </div>
@@ -30,9 +30,9 @@ export const GivePageTemplate = ({ title, content, contentComponent }) => {
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <ul style={{ margin: '0px' }}>
-                    <li><p>{`Click the "Make a Donation" tab.`}</p></li>
-                    <li><p>{`Choose "North American Missions" from the first dropdown box.`}</p></li>
-                    <li><p>{`Then choose whatever ministry you desire to support in the second dropdown box.`}</p></li>
+                    <li><p style={{ fontSize: '16px' }}>{`Click the "Make a Donation" tab.`}</p></li>
+                    <li><p style={{ fontSize: '16px' }}>{`Choose "North American Missions" from the first dropdown box.`}</p></li>
+                    <li><p style={{ fontSize: '16px' }}>{`Then choose whatever ministry you desire to support in the second dropdown box.`}</p></li>
                 </ul>
             </div>
             <div style={{ marginTop: '48px' }} className={'subtitle-text-container'}>
@@ -40,9 +40,12 @@ export const GivePageTemplate = ({ title, content, contentComponent }) => {
                     {`MAKE A DONATION`}
                 </button>
             </div>
-            <div style={{ marginTop: '96px', display: 'flex', justifyContent: 'center' }}>
-                <p style={{ color: 'white' }}>{`SoCal District North American Missions Department`}</p>
-            </div>
+            <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+                    <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
+                </div>
+                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                  <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+                </div>
         </div>
     );
 };

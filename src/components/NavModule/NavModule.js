@@ -89,7 +89,9 @@ const NavModule = () => {
                     layout="constrained"
                     placeholder="logo-dark"
                   /> */}
-                  <img className={'logo-image-circle'} src={withPrefix('/img/socal-nam-logo-dark.png')} />
+                  <p style={{ position: 'relative', top: '6px', margin: '0px', color: 'white', fontSize: '12px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>SOCAL</p>
+                  <img className={'logo-image-circle'} src={withPrefix('/img/NAM+LOGO+WHITE+NO+TEXT.png')} />
+                  <p style={{ position: 'relative', bottom: '12px', margin: '0px', color: 'white', fontSize: '11px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>NORTH AMERICA MISSIONS</p>
                   {/* {title}
                   <span>.</span> */}
                 </Link>
@@ -202,7 +204,9 @@ const NavModule = () => {
             {title && (
               <LogoStyles>
                 <Link to="/">
-                  <img className={'logo-image-circle'} src={withPrefix('/img/socal-nam-logo-dark.png')} />
+                <p style={{ width: '208px', position: 'relative', top: '10px', margin: '0px', color: 'white', fontSize: '18px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>SOCAL</p>
+                  <img className={'logo-image-circle'} src={withPrefix('/img/NAM+LOGO+WHITE+NO+TEXT.png')} />
+                  <p style={{ width: '208px', position: 'relative', bottom: '18px', margin: '0px', color: 'white', fontSize: '16px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>NORTH AMERICA MISSIONS</p>
                   {/* <StaticImage
                     className={'logo-image-circle'}
                     src="../../../static/img/socal-nam-dark-logo.png"
@@ -248,7 +252,7 @@ const NavModule = () => {
                       if (index < 3) {
                         return null;
                       }
-                      return <a target="_blank" index={index} class={`show-more-${index+1}`} href={menuItem.path}>{menuItem.text}</a>;
+                      return <a index={index} class={`show-more-${index+1}`} href={menuItem.path}>{menuItem.text}</a>;
                     })
                   )}
                 </div>)}

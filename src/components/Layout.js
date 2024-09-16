@@ -4,6 +4,7 @@ import AnimMain from "./AnimMain/AnimMain"
 import Footer from "./Footer/Footer"
 import { motion } from "framer-motion"
 import { GlobalStyle } from "../styles/GlobalStyles"
+import { withPrefix } from "gatsby";
 
 const Layout = ({ children }) => {
   return (
@@ -15,11 +16,14 @@ const Layout = ({ children }) => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.75 }}
       >
-        <NavModule />
-        <AnimMain>
-          {children}
-          <Footer />
-        </AnimMain>
+
+          <div style={{ width: '100vw', height: '100vh', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover', backgroundImage: `url("${withPrefix('/img/welcome.jpeg')}")` }}>
+            <NavModule />
+            <AnimMain>
+              {children}
+              <Footer />
+            </AnimMain>
+          </div>
       </motion.div>
     </>
   )
