@@ -8,6 +8,20 @@ import { withPrefix } from "gatsby";
 import window from 'global';
 
 const Layout = ({ children }) => {
+  const [resetState, setResetState] = React.useState(false);
+  const intervalRef = React.useRef(null);
+
+  React.useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setResetState(!resetState);
+    }, 1000);
+
+    return () => {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  }, []);
+
   return (
     <>
       <GlobalStyle />
