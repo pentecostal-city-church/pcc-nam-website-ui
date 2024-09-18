@@ -89,9 +89,9 @@ const NavModule = () => {
                     layout="constrained"
                     placeholder="logo-dark"
                   /> */}
-                  <p style={{ position: 'relative', top: '6px', margin: '0px', color: 'white', fontSize: '12px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>SOCAL</p>
+                  <p style={{ position: 'relative', top: '6px', margin: '0px', color: 'white', fontSize: '22px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>SOCAL</p>
                   <img className={'logo-image-circle'} src={withPrefix('/img/NAM+LOGO+WHITE+NO+TEXT.png')} />
-                  <p style={{ position: 'relative', bottom: '12px', margin: '0px', color: 'white', fontSize: '11px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>NORTH AMERICA MISSIONS</p>
+                  <p style={{ position: 'relative', bottom: '12px', margin: '0px', color: 'white', fontSize: '20px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>NORTH AMERICA MISSIONS</p>
                   {/* {title}
                   <span>.</span> */}
                 </Link>
@@ -197,16 +197,16 @@ const NavModule = () => {
           </NavTopLevel>
         </motion.div>
       </div>
-      <div className="topnav-container">
+      <div id="topnav-container" className="topnav-container">
         <div className="nav">
           <div className="container">
             <div className="logo-container">
             {title && (
               <LogoStyles>
                 <Link to="/">
-                <p style={{ width: '208px', position: 'relative', top: '10px', margin: '0px', color: 'white', fontSize: '18px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>SOCAL</p>
+                <p style={{ width: '208px', position: 'relative', top: '10px', margin: '0px', color: 'white', fontSize: '22px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>SOCAL</p>
                   <img className={'logo-image-circle'} src={withPrefix('/img/NAM+LOGO+WHITE+NO+TEXT.png')} />
-                  <p style={{ width: '208px', position: 'relative', bottom: '18px', margin: '0px', color: 'white', fontSize: '16px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>NORTH AMERICA MISSIONS</p>
+                  <p style={{ width: '248px', position: 'relative', bottom: '18px', margin: '0px', color: 'white', fontSize: '20px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>NORTH AMERICA MISSIONS</p>
                   {/* <StaticImage
                     className={'logo-image-circle'}
                     src="../../../static/img/socal-nam-dark-logo.png"
@@ -240,11 +240,12 @@ const NavModule = () => {
               })}
               <div ref={moreDropdownRef} class="dropdown outlined more-dropdown">
                 <div
+                  style={{ marginLeft: '4px' }}
                   onClick={toggleMoreNav}
                   class="dropbtn flex"
                 >
                   More
-                  <div class="chevron-container">{isMoreNavOpen ? <ChevronUp style={{ color: 'black' }} /> : <ChevronDown style={{ color: 'black' }} />}</div>
+                  <div class="chevron-container">{isMoreNavOpen ? <ChevronUp style={{ color: 'white' }} /> : <ChevronDown style={{ color: 'white' }} />}</div>
                 </div>
                 {isMoreNavOpen && (<div class="more-dropdown-content">
                   {menuItems?.length && (

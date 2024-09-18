@@ -13,6 +13,8 @@ import MapChart from '../components/MapChart';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import CircularText from "../components/CircularText";
 import CountUp from 'react-countup';
+import { FiChevronDown as ChevronDown } from "react-icons/fi";
+import { FiChevronUp as ChevronUp } from "react-icons/fi";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -32,6 +34,10 @@ export const IndexPageTemplate = ({
     return screenWidth;
   };
 
+  const scrollDownHandler = () => {
+    document.getElementById('geo-map').scrollIntoView();
+  };
+  
   React.useEffect(() => {
     intervalRef.current = setInterval(() => {
       setScreenWidth(getMapSize());
@@ -53,66 +59,81 @@ export const IndexPageTemplate = ({
     <div>
       <Seo title="Home" />
       <Layout>
-        <div className={'landing-main-container'}>
-          <div className={'map-column'}>
-            <div>
+        <div id="purpose" className={'landing-main-container'}>
+          <div className={'purpose-column'}>
+            <div className="purpose-column-section">
+              <div className="purpose-column-section">
+                <p style={{ marginTop: '0px', marginBottom: '32px' }} className="purpose-column-header">OUR PURPOSE</p>
+                <h2 className="purpose-column-title">INSPIRING.</h2>
+                <h2 className="purpose-column-title">EQUIPPING.</h2>
+                <h2 className="purpose-column-title">SUSTAINING.</h2>
+                <p style={{ marginTop: '32px' }} className="purpose-column-header">PLANTING CHURCHES IN SOCAL DISTRICT.</p>
+              </div>
+            </div>
+            {/* <br/> */}
+          </div>
+        </div>
+        <div className={'down-button-container'} onClick={scrollDownHandler}><ChevronDown style={{ cursor: 'pointer', height: '48px', width: '48px', color: 'white' }} /></div>
+          <div id="geo-map" className={'map-column'}>
+            <div className={'geo-map-column'}>
               <MapChart widthScale={screenWidth} />
               <ReactTooltip
                 id={'county-geo'}
                 place='bottom'
               />
-            </div>
-            <div className={'subtitle-text-container'}>
-              <div className={'subtitle-text'} style={{ display: 'flex', justifyContent: 'center', width: '75%', maxWidth: '440px' }}>
-                {`Southern California NAM County Map`}
+              <div className={'subtitle-text-container'}>
+                <div className={'subtitle-text'} style={{ display: 'flex', justifyContent: 'center', width: '75%', maxWidth: '440px' }}>
+                  {`Southern California NAM District Map`}
+                </div>
               </div>
             </div>
-            <div style={{ marginTop: '24px' }} className={'subtitle-text-container'}>
-              <div style={{ marginBottom: '24px' }}>
-                <a href={`/policy-form`} style={{ textDecoration: 'underline', color: 'rgb(30, 150, 168)', fontSize: '20px' }}>{`Click here to see the SoCal District path to planting a church.`}</a>
-              </div>
-            </div>
-            <div className={'subtitle-text-container'}>
-                <button onClick={startTrainingHandler} className={`training-button`}>
-                  {`START ONLINE TRAINING!`}
-                </button>
-              </div>
-          </div>
-          <div className={'purpose-column'}>
-            <div className="purpose-column-section">
-              <div className="purpose-column-section">
-                <p className="purpose-column-header">OUR PURPOSE:</p>
-                <h2 className="purpose-column-title">INSPIRE, EQUIP AND SUSTAIN THE OPERATION OF CHURCH PLANTING.</h2>
-              </div>
-            </div>
-            {/* <br/> */}
-            <hr className="purpose-column-divider" />
-            {/* <br/> */}
-            <div className="purpose-column-section" style={{ flexDirection: 'row' }}>
-              <CountUp
-                start={1}
-                end={26}
-                duration={7.75}
-                separator=""
-                decimals={0}
-                delay={0}
-                decimal=","
-                prefix="#"
-                suffix="M"
-              >
-                {({ countUpRef }) => (
-                  <div onClick={() => window.open('https://x.com/hashtag/26M?src=hashtag_click', 'blank')}>
-                    <p style={{ cursor: 'pointer', fontSize: '64px', fontWeight: 800, marginRight: '8px', color: '#00ACEE' }} ref={countUpRef} />
+            <hr className="purpose-column-divider hide-on-expand" style={{ marginLeft: '96px' }} />
+            <div style={{ marginTop: '96px' }} className={'geo-map-column'}>
+              <div className="purpose-column-section" style={{ flexDirection: 'row' }}>
+                  <CountUp
+                    start={1}
+                    end={26}
+                    duration={7.75}
+                    separator=""
+                    decimals={0}
+                    delay={0}
+                    decimal=","
+                    prefix="#"
+                    suffix="M"
+                  >
+                    {({ countUpRef }) => (
+                      <div onClick={() => window.open('https://x.com/hashtag/26M?src=hashtag_click', 'blank')}>
+                        <p style={{ cursor: 'pointer', fontSize: '96px', fontWeight: 800, marginRight: '8px', color: '#00ACEE' }} ref={countUpRef} />
+                      </div>
+                    )}
+                  </CountUp>
+                  <div style={{ position: 'relative', bottom: '8px' }}>
+                    <p style={{ margin: '0px', fontWeight: 800, fontSize: '19px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`souls reside in the SoCal District. We are `}</p>
+                    <p style={{ margin: '0px', fontWeight: 800, fontSize: '19px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`commissioned to reach The Next Town with the Acts 2:38`}</p>
+                    <p style={{ margin: '0px', fontWeight: 800, fontSize: '19px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`salvation message. Help us Go. Gather. Grow.`}</p>
                   </div>
-                )}
-              </CountUp>
-              <p style={{ fontWeight: 800, fontSize: '13px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`souls reside in SoCal District. Let's Go. Gather. Grow. The Next Town with the Acts 2:38 salvation message.`}</p>
+                </div>
+                <hr className="purpose-column-divider" style={{ margin: '0px 96px' }} />
+                <div>
+                  <div style={{ margin: '48px 0px' }}>
+                  <div className={'subtitle-text-container'}>
+                    <div style={{ marginBottom: '24px' }}>
+                      <a href={`/policy-form`} style={{ textDecoration: 'none', fontWeight: 800, color: 'rgb(30, 150, 168)', fontSize: '20px' }}>{`Click here to see the SoCal District path to planting a church.`}</a>
+                    </div>
+                  </div>
+                  <div className={'subtitle-text-container'}>
+                    <button onClick={startTrainingHandler} className={`training-button`}>
+                      {`START ONLINE TRAINING!`}
+                    </button>
+                  </div>
+                  </div>
+                  <hr className="purpose-column-divider" style={{ margin: '0px 96px', marginBottom: '0px' }} />
+                  <div className="circular-text-gap" />
+                  <CircularText />
+                </div>
             </div>
-            <hr className="purpose-column-divider" style={{ marginBottom: '0px' }} />
-            <div className="circular-text-gap" />
-            <CircularText />
           </div>
-        </div>
+          {/* <div style={{ alignSelf: 'center', marginTop: '136px', backgroundColor: 'transparent', boxShadow: 'none' }} onClick={scrollUpHandler}><ChevronUp style={{ cursor: 'pointer', height: '48px', width: '48px', color: 'white' }} /></div> */}
         {/* <BasicTextModule
           title="A super-fast theme that is easy to get started, using the power of
             GatsbyJS"

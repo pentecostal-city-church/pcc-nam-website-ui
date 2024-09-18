@@ -310,7 +310,7 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
     const reason = `Mother Church Address: ${address1}, ${address2}, ${targetCity}, ${zipcode} ${usState}, ${country}. Mother Church Pastor Email: ${email}. Target City for Daughter Work: ${targetCity}. Have you contacted the Presbyter of this section? ${contacted}. Is there a UPC Church in this area? ${upciChurchPresent}.`;
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '180px 0px 0px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '32px 0px 0px' }}>
             <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <img style={{ height: '120px', borderRadius: '60px' }} className={'logo-image-circle'} src={withPrefix('/img/dwp.png')} />
                 <p style={{ margin: '24px 0px 0px', maxWidth: '1050px', color: 'white', fontSize: '18px'}}>{`Before completing this Daughter Work application form, please make sure you have`}</p>

@@ -9,7 +9,6 @@ export const NavModuleStyles = styled.nav`
 
   .nav {
     background-color: transparent;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -49,7 +48,7 @@ export const NavModuleStyles = styled.nav`
   }
 
   .logo-image-circle {
-    height: 76px;
+    height: 96px;
   }
 
   .topnav-container {
@@ -61,7 +60,7 @@ export const NavModuleStyles = styled.nav`
   .dropbtn {
     color: white;
     padding: 12px;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     font-family: 'Heebo', sans-serif;
     opacity: 0.85;
@@ -73,7 +72,7 @@ export const NavModuleStyles = styled.nav`
 
   .outlined {
     z-index: 1000;
-    border: 1px solid black;
+    border: 1px solid white;
   }
 
   .dropdown {
@@ -105,7 +104,7 @@ export const NavModuleStyles = styled.nav`
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Heebo', sans-serif;
   }
 
@@ -220,7 +219,7 @@ export const NavModuleStyles = styled.nav`
     text-decoration: none;
     display: flex;
     justify-content: center;
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Heebo', sans-serif;
   }
 

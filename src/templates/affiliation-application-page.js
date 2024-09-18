@@ -18,7 +18,7 @@ export const AffiliationApplicationPageTemplate = ({ title, content, contentComp
     }
 
     return (
-        <div style={{ marginTop: '240px', display: 'flex', flexDirection: 'column' }}>
+        <div style={{ marginTop: '32px', display: 'flex', flexDirection: 'column' }}>
 
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <p style={{ margin: '0px 48px 32px', fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>

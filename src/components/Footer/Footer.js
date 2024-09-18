@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   const siteMeta = UseSiteMetadata()
   return (
-    <FooterStyles style={{ marginBottom: 0, marginTop: '72px' }} className="section">
+    <FooterStyles style={{ paddingTop: '64px', marginBottom: 0, marginTop: '72px', backgroundColor: 'rgb(2, 49, 74)' }} className="section">
       <div className="container container__tight">
         {/* <FooterMenuStyles className="footer__menu">
           <h5>Links</h5>
@@ -39,7 +39,7 @@ const Footer = () => {
               FOLLOW SOCAL NAM<span>.</span>
             </h5>
             <ul>
-              {/* {siteMeta.twitterUsername && (
+              {siteMeta.twitterUsername && (
                 <li>
                   <a
                     href={`https://www.twitter.com/${siteMeta.twitterUsername}`}
@@ -49,7 +49,7 @@ const Footer = () => {
                     <Twitter />
                   </a>
                 </li>
-              )} */}
+              )}
               {siteMeta.facebookUsername && (
                 <li>
                   <a

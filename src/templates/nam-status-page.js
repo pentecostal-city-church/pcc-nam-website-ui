@@ -11,7 +11,7 @@ export const NAMStatusPageTemplate = ({ title, content, contentComponent }) => {
 }
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '180px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
             <div style={{ margin: '0px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <p style={{ margin: '8px 0px 0px', maxWidth: '1050px', fontSize: '18px', color: 'white' }}>{`Before completing this NAM Status form. Please make sure you complete the online training.`}</p>
             </div>

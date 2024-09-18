@@ -8,7 +8,7 @@ import { HTMLContent } from "../components/Content";
 // eslint-disable-next-line
 export const AffiliationPageTemplate = ({ title, content, contentComponent }) => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '180px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
               {`NATIONAL`}

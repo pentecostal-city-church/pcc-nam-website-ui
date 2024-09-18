@@ -15,7 +15,7 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
     }
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '180px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <p style={{ margin: '0px 0px 32px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
                     {`CHRISTMAS FOR CHRIST (CFC)`}

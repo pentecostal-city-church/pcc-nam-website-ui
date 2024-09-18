@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
-
+import { withPrefix } from "gatsby";
 
 // eslint-disable-next-line
 export const MinistriesPageTemplate = ({ title, content, contentComponent }) => {
@@ -22,6 +22,23 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
           <p style={{ margin: '0px', fontSize: '14px' }}>{`Below is a list of the various ministries that fall under the umbrella of our District North American Missions Department.`}</p>
         </div>
         <div style={{ marginLeft: '128px', marginTop: '8px' }}>
+            <div style={{ display: 'flex' }}>
+                <div>
+                    <div style={{ marginTop: '36px' }}>
+                        <img src={withPrefix('/img/pk-retreat.png')} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
+                    </div>
+                </div>
+                <div style={{ marginLeft: '64px', width: '560px' }}>
+                    <div>
+                        <p style={{ color: 'white', fontSize: '20px', fontWeight: 300, fontFamily: '"Heebo", sans-serif' }}>{`PK Retreat`}</p>
+                    </div>
+                    <div>
+                        <p style={{ margin: '0px', color: 'white', fontSize: '14px' }}>SoCal North American Missions produces and oversees one of the District’s most vital ministries: PK Retreat. This wonderful ministry provides a unique opportunity for the children of licensed ministers to receive spiritual mentorship in a curated environment designed just for them. We are privileged to contribute to the development of future leaders in our movement and approach this ministry with the utmost dedication. If you would like to support this ministry, please click <a style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`/pcc-nam-website-ui/give`} >here</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style={{ marginLeft: '128px', marginTop: '80px' }}>
             <div style={{ display: 'flex' }}>
                 <div>
                     <div style={{ marginTop: '36px' }}>

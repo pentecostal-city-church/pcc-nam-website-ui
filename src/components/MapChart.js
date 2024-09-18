@@ -54,14 +54,14 @@ const sizeScale = (width) => {
             // height: 400,
             // width: 300,
             // scale: 1000,
-            center: [-21, 35]
+            center: [-19, 35]
         };
     } else if (width > 2500) {
         return {
             // height: 400,
             // width: 300,
             scale: 1225,
-            center: [-22, 39]
+            center: [-20, 39]
         };
         
     } else if (width > 2400) {
@@ -69,7 +69,7 @@ const sizeScale = (width) => {
             // height: 400,
             // width: 300,
             scale: 1200,
-            center: [-22, 39]
+            center: [-20, 39]
         };
         
     } else if (width > 2200) {
@@ -77,7 +77,7 @@ const sizeScale = (width) => {
             // height: 400,
             // width: 300,
             scale: 1200,
-            center: [-22, 39]
+            center: [-20, 39]
         };
         
     } else if (width > 2000) {
@@ -85,7 +85,7 @@ const sizeScale = (width) => {
             // height: 400,
             // width: 300,
             scale: 1150,
-            center: [-22, 39.5]
+            center: [-20, 39.5]
         };
         
     } else if (width > 1800) {
@@ -93,7 +93,7 @@ const sizeScale = (width) => {
             // height: 400,
             // width: 300,
             scale: 1100,
-            center: [-26, 39.5]
+            center: [-20, 39.5]
         };
         
     } else if (width > 1600) {
@@ -101,7 +101,7 @@ const sizeScale = (width) => {
             // height: 400,
             // width: 300,
             scale: 1100,
-            center: [-22.5, 39.5]
+            center: [-20.5, 39.5]
         };
         
     } else if (width > 1400) {
@@ -118,63 +118,63 @@ const sizeScale = (width) => {
             // width: 300,
             // scale: 500,
             scale: 1100,
-            center: [-21, 39]
+            center: [-21.5, 39]
         };
     } else if (width > 1000) {
         return {
             // height: 400,
             // width: 300,
             scale: 1100,
-            center: [-21, 39]
+            center: [-22, 39]
         };
     } else if (width > 924) {
         return {
             // height: 400,
             // width: 300,
             scale: 1250,
-            center: [-22.5, 39]
+            center: [-20.5, 39]
         };
     } else if (width > 800) {
         return {
             // height: 400,
             // width: 300,
             scale: 1250,
-            center: [-23.5, 39]
+            center: [-22.5, 39]
         };
     } else if (width > 600) {
         return {
             // height: 400,
             // width: 300,
             scale: 1250,
-            center: [-23, 39]
+            center: [-21, 39]
         };
     } else if (width > 500) {
         return {
             // height: 400,
             // width: 300,
             scale: 1250,
-            center: [-22, 38]
+            center: [-20, 38]
         };
     } else if (width > 400) {
         return {
             // height: 400,
             // width: 300,
             scale: 1250,
-            center: [-23, 38]
+            center: [-21, 38]
         };
     } else if (width > 300) {
         return {
             // height: 400,
             // width: 300,
             scale: 1250,
-            center: [-22, 39]
+            center: [-20, 39]
         };
     } else {
         return {
             // height: 400,
             // width: 300,
             // scale: 1000,
-            center: [-22, 41]
+            center: [-20, 41]
         };
     }
 }
