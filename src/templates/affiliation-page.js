@@ -3,11 +3,14 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
+import NavModule from "../components/NavModule/NavModule";
 
 
 // eslint-disable-next-line
 export const AffiliationPageTemplate = ({ title, content, contentComponent }) => {
   return (
+    <div>
+    <NavModule />
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
@@ -52,6 +55,7 @@ export const AffiliationPageTemplate = ({ title, content, contentComponent }) =>
                 <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                   <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
                   </div>
+    </div>
     </div>
   );
 };

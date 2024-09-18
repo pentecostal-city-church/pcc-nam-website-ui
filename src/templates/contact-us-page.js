@@ -7,6 +7,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import 'react-phone-number-input/style.css';
 import { FaCheckCircle } from "react-icons/fa";
+import NavModule from "../components/NavModule/NavModule";
 
 export const countryToFlag = (isoCode) => {
     return typeof String.fromCodePoint !== 'undefined'
@@ -310,6 +311,8 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
     }
 
     return sent ? (
+        <div>
+        <NavModule />
         <div style={{ marginTop: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '98.5px' }}>
             <div style={{ display: 'flex', flexDirection: 'column', margin: '160px 0px 32px', width: '80%' }}>
                 <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif', marginBottom: '4px' }}>
@@ -329,7 +332,10 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
                   <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
                 </div>
         </div>
+        </div>
     ) : (
+        <div>
+        <NavModule />
         <div style={{ marginTop: '98.5px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{ display: 'flex', flexDirection: 'column', margin: '32px 0px 0px', paddingLeft: '75px' }}>
             <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif', marginBottom: '4px' }}>
@@ -405,6 +411,7 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
                   <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`Please email us with questions or for more information at: socalnorthamericanmissions@gmail.com`}</p>
                 </div>
         </div> */}
+        </div>
         </div>
     );
 };

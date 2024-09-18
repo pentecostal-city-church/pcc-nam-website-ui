@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
+import NavModule from "../components/NavModule/NavModule";
 
 
 // eslint-disable-next-line
@@ -12,6 +13,8 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
     }
 
     return (
+        <div>
+        <NavModule />
         <div style={{ display: 'flex', justifyContent: 'center' }}>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px', alignItems: 'center' }}>
                 <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
@@ -77,6 +80,7 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
             <div style={{ marginTop: '32px' }}>
                 <img style={{ border: '1px solid white', width: '330px', height: '426px' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/65f256a2-cae9-4720-90c2-dbcd16608276.jpg`}/>
             </div>
+        </div>
         </div>
     );
 };

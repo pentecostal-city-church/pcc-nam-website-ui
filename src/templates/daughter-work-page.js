@@ -8,6 +8,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 import { withPrefix } from "gatsby";
+import NavModule from "../components/NavModule/NavModule";
 
 export const states = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
 export const countryList = [
@@ -310,6 +311,8 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
     const reason = `Mother Church Address: ${address1}, ${address2}, ${targetCity}, ${zipcode} ${usState}, ${country}. Mother Church Pastor Email: ${email}. Target City for Daughter Work: ${targetCity}. Have you contacted the Presbyter of this section? ${contacted}. Is there a UPC Church in this area? ${upciChurchPresent}.`;
 
     return (
+        <div>
+        <NavModule />
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '32px 0px 0px' }}>
             <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <img style={{ height: '120px', borderRadius: '60px' }} className={'logo-image-circle'} src={withPrefix('/img/dwp.png')} />
@@ -509,6 +512,7 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
                 </div>
                 </div>
             )}
+        </div>
         </div>
     );
 };

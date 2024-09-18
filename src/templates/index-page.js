@@ -15,6 +15,8 @@ import CircularText from "../components/CircularText";
 import CountUp from 'react-countup';
 import { FiChevronDown as ChevronDown } from "react-icons/fi";
 import { FiChevronUp as ChevronUp } from "react-icons/fi";
+import NavModule from "../components/NavModule/NavModule";
+import { withPrefix } from "gatsby";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -56,9 +58,10 @@ export const IndexPageTemplate = ({
   }
 
   return (
-    <div>
+    <div style={{ width: '100vw', height: '100vh', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover', backgroundImage: `url("${withPrefix('/img/welcome.jpeg')}")` }}>
       <Seo title="Home" />
       <Layout>
+        <NavModule />
         <div id="purpose" className={'landing-main-container'}>
           <div className={'purpose-column'}>
             <div className="purpose-column-section">
@@ -134,26 +137,27 @@ export const IndexPageTemplate = ({
             </div>
           </div>
           {/* <div style={{ alignSelf: 'center', marginTop: '136px', backgroundColor: 'transparent', boxShadow: 'none' }} onClick={scrollUpHandler}><ChevronUp style={{ cursor: 'pointer', height: '48px', width: '48px', color: 'white' }} /></div> */}
-        {/* <BasicTextModule
-          title="A super-fast theme that is easy to get started, using the power of
-            GatsbyJS"
-          content="Using modern CSS properties such as grid, this theme is optmised for
-            speed and mobile devices. Giving users an excellent experience on
-            any device. Future-proofing your product."
-          link="/products"
-          linkText="View Products"
-        />
-        <PerksModule>
-          <Perk title="The Title" content="The content" />
-        </PerksModule>
-        <Features
-          title="Featured Products from Barcadia."
-          introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
-        />
-        <LatestPosts
-          title="The Latest from Barcadia"
-          introduction="Cras scelerisque, tellus sed gravida tincidunt, velit tellus blandit justo, nec viverra augue erat in erat. Maecenas iaculis sed purus non fringilla."
-        /> */}
+          {/* <BasicTextModule
+            title="A super-fast theme that is easy to get started, using the power of
+              GatsbyJS"
+            content="Using modern CSS properties such as grid, this theme is optmised for
+              speed and mobile devices. Giving users an excellent experience on
+              any device. Future-proofing your product."
+            link="/products"
+            linkText="View Products"
+          />
+          <PerksModule>
+            <Perk title="The Title" content="The content" />
+          </PerksModule>
+          <Features
+            title="Featured Products from Barcadia."
+            introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
+          />
+          <LatestPosts
+            title="The Latest from Barcadia"
+            introduction="Cras scelerisque, tellus sed gravida tincidunt, velit tellus blandit justo, nec viverra augue erat in erat. Maecenas iaculis sed purus non fringilla."
+          /> */}
+
       </Layout>
     </div>
   );

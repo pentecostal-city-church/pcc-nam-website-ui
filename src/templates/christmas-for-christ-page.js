@@ -6,6 +6,7 @@ import { HTMLContent } from "../components/Content";
 import { GoMail } from "react-icons/go";
 import { TbBrandFacebook } from "react-icons/tb";
 import { TfiTwitter } from "react-icons/tfi";
+import NavModule from "../components/NavModule/NavModule";
 
 // eslint-disable-next-line
 export const ChristmasForChristPageTemplate = ({ title, content, contentComponent }) => {
@@ -15,6 +16,8 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
     }
 
     return (
+        <div>
+        <NavModule />
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <p style={{ margin: '0px 0px 32px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
@@ -101,6 +104,7 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
                 <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                   <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
                   </div>
+        </div>
         </div>
     );
 };

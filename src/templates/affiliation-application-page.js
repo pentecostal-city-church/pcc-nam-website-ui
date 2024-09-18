@@ -6,6 +6,7 @@ import { HTMLContent } from "../components/Content";
 import { GoMail } from "react-icons/go";
 import { TbBrandFacebook } from "react-icons/tb";
 import { TfiTwitter } from "react-icons/tfi";
+import NavModule from "../components/NavModule/NavModule";
 
 // eslint-disable-next-line
 export const AffiliationApplicationPageTemplate = ({ title, content, contentComponent }) => {
@@ -18,6 +19,8 @@ export const AffiliationApplicationPageTemplate = ({ title, content, contentComp
     }
 
     return (
+      <div>
+        <NavModule />
         <div style={{ marginTop: '32px', display: 'flex', flexDirection: 'column' }}>
 
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -44,6 +47,7 @@ export const AffiliationApplicationPageTemplate = ({ title, content, contentComp
                 <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                   <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
                 </div>
+        </div>
         </div>
     );
 };

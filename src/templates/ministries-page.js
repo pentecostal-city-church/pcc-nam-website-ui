@@ -4,10 +4,13 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
 import { withPrefix } from "gatsby";
+import NavModule from "../components/NavModule/NavModule";
 
 // eslint-disable-next-line
 export const MinistriesPageTemplate = ({ title, content, contentComponent }) => {
   return (
+    <div>
+    <NavModule />
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '98.5px' }}>
         <div style={{ marginBottom: '48px', width: '100%', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/gallery/slides/mobile_6eb558c6-4997-4125-8dbc-b1581041608d.jpeg")' }}/>
         <div style={{ textAlign: 'center' }}>
@@ -142,6 +145,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
         <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
             <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
         </div>
+    </div>
     </div>
   );
 };

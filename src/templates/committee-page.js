@@ -11,10 +11,13 @@ import churchPlanter5 from '../img/church-planter/church-planter-5.jpg';
 import churchPlanter6 from '../img/church-planter/church-planter-6.jpg';
 import churchPlanter7 from '../img/church-planter/church-planter-7.jpg';
 import churchPlanter8 from '../img/church-planter/church-planter-8.jpg';
+import NavModule from "../components/NavModule/NavModule";
 
 // eslint-disable-next-line
 export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
   return (
+    <div>
+    <NavModule />
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
@@ -79,6 +82,7 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
         <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
           <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
         </div>
+    </div>
     </div>
   );
 };
