@@ -1,6 +1,6 @@
 export const menuItems = [
   {
-    path: "/",
+    path: "/pcc-nam-website-ui/",
     text: "Welcome",
   },
   {
