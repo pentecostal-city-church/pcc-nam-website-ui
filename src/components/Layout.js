@@ -7,7 +7,6 @@ import { GlobalStyle } from "../styles/GlobalStyles"
 import { withPrefix } from "gatsby";
 
 const Layout = ({ children }) => {
-  console.log('location', window.location)
   return (
     <>
       <GlobalStyle />
