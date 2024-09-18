@@ -8,7 +8,7 @@ module.exports = {
     facebookUsername: "socalupci",
     instagramUsername: "socal_upci",
     linkedinUsername: "",
-    image: "/macbook-color.jpg",
+    image: "img/SOCAL-NAM-Logo-Full-Color-01.jpg",
     siteUrl: "https://socalupci.org",
     developerName: "",
     developerUrl: "",
