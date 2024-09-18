@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_decap_cms=self.webpackChunkgatsby_starter_decap_cms||[]).push([[957],{5439:function(e,t,a){a.r(t);var s=a(6540),c=a(9941);t.default=()=>s.createElement(c.A,null,s.createElement("section",{className:"section"},s.createElement("div",{className:"container"},s.createElement("div",{className:"content"},s.createElement("h1",null,"Thank you!"),s.createElement("p",null,"This is a custom thank you page for form submissions")))))}}]);
+//# sourceMappingURL=component---src-pages-contact-thanks-js-03a3495edb0e2e78a834.js.map
