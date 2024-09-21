@@ -14,7 +14,7 @@ export const GivePageTemplate = ({ title, content, contentComponent }) => {
     return (
       <div>
       <NavModule />
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
+        <div style={{ margin: '32px 156px 0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>
                     {`SUPPORT SOCAL DISTRICT`}
@@ -25,13 +25,13 @@ export const GivePageTemplate = ({ title, content, contentComponent }) => {
                     {`NORTH AMERICAN MISSIONS`}
                 </p>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'flex-start', marginTop: '32px' }}>
                 <p style={{ marginTop: '16px', maxWidth: '1050px' }}>{`There are a number of ways that you can partner with a North American Missionary. Below are just a handful of ministries where you can direct your support. `}</p>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ display: 'flex', justifyContent: 'flex-start', flexDirection: 'column', alignItems: 'flex-start' }}>
                 <p style={{ marginTop: '16px', maxWidth: '1050px' }}>{`After reading about the various points of ministry below, just follow these steps:`}</p>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ display: 'flex', justifyContent: 'flex-start', flexDirection: 'column', alignItems: 'flex-start' }}>
                 <ul style={{ margin: '0px' }}>
                     <li><p style={{ fontSize: '16px' }}>{`Click the "Make a Donation" tab.`}</p></li>
                     <li><p style={{ fontSize: '16px' }}>{`Choose "North American Missions" from the first dropdown box.`}</p></li>
@@ -43,7 +43,8 @@ export const GivePageTemplate = ({ title, content, contentComponent }) => {
                     {`MAKE A DONATION`}
                 </button>
             </div>
-            <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+            <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
+            <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                     <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                 </div>
                 <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>

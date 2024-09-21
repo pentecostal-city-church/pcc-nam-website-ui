@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { menuItems } from "../../constants/links"
+import { withPrefix } from "gatsby"
 import { FooterStyles, FooterMenuStyles, CopyrightStyles } from "./FooterStyles"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 import {
@@ -35,7 +35,7 @@ const Footer = () => {
         siteMeta.instagramUsername ||
         siteMeta.linkedinUsername ? (
           <FooterMenuStyles className="footer__menu social__menu">
-            <h5>
+            <h5 style={{ borderBottom: '1px solid white' }}>
               FOLLOW SOCAL NAM<span>.</span>
             </h5>
             <ul>
@@ -46,7 +46,7 @@ const Footer = () => {
                     target="_blank"
                     rel="nofollow noreferrer noopener"
                   >
-                    <Twitter />
+                    <Twitter style={{ color: 'white' }} />
                   </a>
                 </li>
               )}
@@ -57,18 +57,19 @@ const Footer = () => {
                     target="_blank"
                     rel="nofollow noreferrer noopener"
                   >
-                    <Facebook />
+                    <Facebook style={{ color: 'white' }} />
                   </a>
                 </li>
               )}
               {siteMeta.instagramUsername && (
-                <li>
+                <li >
                   <a
+                    style={{ height: '24px', width: '24px' }}
                     href={`https://www.instagram.com/${siteMeta.instagramUsername}`}
                     target="_blank"
                     rel="nofollow noreferrer noopener"
                   >
-                    <Instagram />
+                    <Instagram style={{ color: 'white' }} />
                   </a>
                 </li>
               )}
@@ -88,6 +89,9 @@ const Footer = () => {
         ) : (
           ""
         )}
+        <Link to="/">
+        <img style={{ height: '96px' }} src={withPrefix('/img/socal-nam-logo-transparent.png')} />
+        </Link>
       </div>
       {/* <CopyrightStyles>
         <div className="container container__tight">

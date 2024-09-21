@@ -95,7 +95,8 @@ export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => 
       <div style={{ textAlign: 'center', margin: '24px 120px 128px' }}>
         <a rel="noreferrer" target="_blank" href={`https://ministrycentral.com/the-launch-button`} style={{ fontWeight: 500, fontSize: '20px', color: 'rgb(30, 150, 168)', margin: '0px', textDecoration: 'none' }}>{`Click here to start online training that prepares you for the church-planting process!`}</a>
       </div>
-      <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+      <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
+      <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
         <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
       </div>
       <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>

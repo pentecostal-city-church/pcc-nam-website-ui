@@ -325,7 +325,8 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
             <FaCheckCircle />
             <p style={{ color: 'white' }}><b>Thank you!</b></p>
             <p style={{ marginTop: '0px', fontSize: '14px', color: 'white' }}>You will hear from someone on the SoCal District North American Missions Committee soon!</p>
-            <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+            <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
+            <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                     <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                 </div>
                 <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>

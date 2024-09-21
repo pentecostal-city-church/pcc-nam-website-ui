@@ -315,7 +315,7 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
         <NavModule />
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '32px 0px 0px' }}>
             <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <img style={{ height: '120px', borderRadius: '60px' }} className={'logo-image-circle'} src={withPrefix('/img/dwp.png')} />
+                <img style={{ height: '210px', borderRadius: '105px' }} className={'logo-image-circle'} src={withPrefix('/img/dwp.png')} />
                 <p style={{ margin: '24px 0px 0px', maxWidth: '1050px', color: 'white', fontSize: '18px'}}>{`Before completing this Daughter Work application form, please make sure you have`}</p>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
@@ -331,8 +331,8 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
                 </button>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-            <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>{`Daughter Work Project Grant Application`}</p>
-            <a target="_blank" href={'https://drive.google.com/file/d/1SEbuEYw8b0MgVqvTvcOKH4YtO0ow7bYA/view?usp=sharing'} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`Click here to access the application form.`}</a>
+                <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>{`Daughter Work Project Grant Application`}</p>
+                <a target="_blank" href={'https://drive.google.com/file/d/1SEbuEYw8b0MgVqvTvcOKH4YtO0ow7bYA/view?usp=sharing'} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`Click here to access the application form.`}</a>
             </div>
             {sent ? (
                 <div style={{ display: 'flex', justifyContent: 'center', margin: '48px 72px' }}>
@@ -504,7 +504,8 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
                     </div>
                 </div>
                 </div> */}
-                <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+                <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
+                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                     <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                 </div>
                 <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>

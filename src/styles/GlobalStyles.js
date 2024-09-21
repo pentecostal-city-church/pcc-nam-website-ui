@@ -252,7 +252,7 @@ blockquote {
     width: 375px;
   }
   @media(min-width:500px) {
-    height: 375px;
+    height: 400px;
     width: 600px;
   }
   @media(min-width:600px) {
@@ -261,14 +261,14 @@ blockquote {
   }
   @media(min-width:700px) {
     height: 525px;
-    width: 675px;
+    width: 700px;
   }
   @media(min-width:800px) {
     height: 600px;
     width: 100%;
   }
   @media(min-width:924px) {
-    height: 550px;
+    height: 650px;
     width: 100%;
   }
   @media(min-width:1000px) {
@@ -276,7 +276,7 @@ blockquote {
     width: 100%;
   }
   @media(min-width:1100px) {
-    height: 650px;
+    height: 750px;
     width: 600px;
   }
   @media(min-width:1200px) {
@@ -285,7 +285,7 @@ blockquote {
   }
   @media(min-width:1300px) {
     height: 700px;
-    width: 700px;
+    width: 600px;
   }
   @media(min-width:1400px) {
     height: 700px;
@@ -296,7 +296,7 @@ blockquote {
     width: 750px;
   }
   @media(min-width:1600px) {
-    height: 700px;
+    height: 800px;
     width: 900px;
   }
   @media(min-width:1700px) {
@@ -385,9 +385,9 @@ blockquote {
 }
 
 .subtitle-text {
-  font-size: 11px;
+  font-size: 14px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
   letter-spacing: 3.6px;
   font-family: "Heebo", sans-serif;
@@ -410,7 +410,7 @@ text {
 }
 
 svg.circular-text-svg {
-  max-width: 28vmin;
+  width: 320px;
   transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
@@ -484,6 +484,19 @@ svg.circular-text-svg {
   justify-content: center;
 }
 
+.purpose-column-section-2 {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @media(min-width:1100px) {
+    flex-direction: row;
+  }
+}
+
 .purpose-column-title {
   font-size: 36px;
   width: 100%;
@@ -508,7 +521,7 @@ svg.circular-text-svg {
 .circular-text-gap {
   margin-top: 0px;
   @media(min-width:924px) {
-    margin-top: 36px;
+    margin-top: 0px;
   }
   @media(min-width:1200px) {
     margin-top: 0px;
@@ -567,9 +580,20 @@ svg.circular-text-svg {
 }
 
 .church-planter-img {
-  height: 180px;
-  width: 180px;
-  border-radius: 50%;
+  height: 240px;
+  width: 200px;
+}
+
+.cta-button {
+  background-color: white;
+  padding: 24px;
+  text-decoration: none;
+  font-weight: 800;
+  color: rgb(30, 150, 168);
+  font-size: 18px;
+  &:hover {
+    background-color: rgb(240, 240, 240);
+  }
 }
 
 .church-planter-row {

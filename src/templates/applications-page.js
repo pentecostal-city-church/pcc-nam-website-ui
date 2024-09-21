@@ -15,17 +15,17 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
     return (
         <div>
         <NavModule />
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '32px' }}>
+            <p style={{ margin: '0px 48px 0px', fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
+            {`NAM APPLICATIONS`}
+            </p>
+        </div>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px', alignItems: 'center' }}>
-                <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                    <p style={{ margin: '0px 48px 32px', fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
-                    {`NAM APPLICATIONS`}
-                    </p>
-                </div>
                 <div>
                   <div style={{ display: 'flex' }}>
                       <div>
-                          <div>
+                          <div style={{ marginTop: '8px', cursor: 'pointer' }} onClick={() => window.open('http://www.christmasforchrist.faith/#home', '_blank')}>
                               <img src={`https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/c376af9c-2598-4040-a896-c58ae80ac76c/CFC-BUTTON-1.jpg`} style={{ width: '180px', height: '180px' }} />
                           </div>
                       </div>
@@ -41,7 +41,7 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
                           </div>
                       </div>
                   </div>
-              </div>
+                </div>
                 <div style={{ margin: '48px 48px 0px', display: 'flex', flexDirection: 'column' }}>
                     <div style={{ display: 'flex', flexDirection: 'column' }}>
                         <p style={{ margin: '0px', maxWidth: '1050px', color: 'white' }}>{`We are excited to offer all of our applications online! Please click below to read about guidelines,`}</p>
@@ -53,16 +53,17 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
                         <p style={{ margin: '0px', maxWidth: '1050px', color: 'white' }}>{`Team.`}</p>
                     </div>
                 </div>
-                <div style={{ margin: '32px 48px 0px', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ alignSelf: 'flex-start', margin: '32px 48px 0px', display: 'flex', flexDirection: 'column' }}>
+                <hr style={{ border: '1px solid white', margin: '24px 0px 64px', width: '100%' }} className="purpose-column-divider"/>
                     <div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'flex-start' }}>
-                        <p style={{ margin: '0px', maxWidth: '1050px', color: 'white' }}>Please click on our <a href={'/pcc-nam-website-ui/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>Policy Form</a> before submitting any of these applications.</p>
+                        <p style={{ fontSize: '24px', margin: '0px', maxWidth: '1050px', color: 'white' }}>Please click on our <a href={'/pcc-nam-website-ui/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>Policy Form</a> before submitting any of these applications.</p>
                     </div>
                 </div>
                 <div style={{ margin: '0px 48px', alignSelf: 'flex-start' }}>
                     <ul style={{ margin: '16px 0px' }}>
-                        <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} href={`/pcc-nam-website-ui/daughter-work`}>{`Daughter Work`}</a></li>
-                        <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} href={`/pcc-nam-website-ui/nam-status`}>{`NAM Status`}</a></li>
-                        <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} href={`/pcc-nam-website-ui/affiliation-application`}>{`Affiliation Application`}</a></li>
+                        <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600, fontSize: '28px' }} href={`/pcc-nam-website-ui/daughter-work`}>{`Daughter Work`}</a></li>
+                        <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600, fontSize: '28px' }} href={`/pcc-nam-website-ui/nam-status`}>{`NAM Status`}</a></li>
+                        <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600, fontSize: '28px' }} href={`/pcc-nam-website-ui/affiliation-application`}>{`Affiliation Application`}</a></li>
                     </ul>
                 </div>
                 <div style={{ justifyContent: 'flex-start', margin: '24px 48px' }} className={'subtitle-text-container'}>
@@ -70,17 +71,19 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
                     {`START ONLINE TRAINING!`}
                     </button>
                 </div>
-                <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
-                    <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
-                </div>
-                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
-                  <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
-                  </div>
             </div>
             <div style={{ marginTop: '32px' }}>
                 <img style={{ border: '1px solid white', width: '330px', height: '426px' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/65f256a2-cae9-4720-90c2-dbcd16608276.jpg`}/>
             </div>
+
         </div>
+        <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
+        <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+                    <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
+                </div>
+                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                  <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+                </div>
         </div>
     );
 };

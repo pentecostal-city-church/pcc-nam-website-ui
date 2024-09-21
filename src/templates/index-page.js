@@ -4,20 +4,11 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Seo from "../components/SEO";
 // import BannerModule from "../components/BannerModule/BannerModule";
-import BasicTextModule from "../components/BasicTextModule/BasicTextModule";
-import PerksModule from "../components/PerksModule/PerksModule";
-import Perk from "../components/PerksModule/Perk";
-import Features from "../components/Features/Features";
-import LatestPosts from "../components/Post/LatestPosts";
-import MapChart from '../components/MapChart';
-import { Tooltip as ReactTooltip } from 'react-tooltip';
-import CircularText from "../components/CircularText";
-import CountUp from 'react-countup';
 import { FiChevronDown as ChevronDown } from "react-icons/fi";
-import { FiChevronUp as ChevronUp } from "react-icons/fi";
 import NavModule from "../components/NavModule/NavModule";
 import { withPrefix } from "gatsby";
-
+import { GeoMap } from './geo-map';
+import { motion } from "framer-motion"
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
@@ -28,37 +19,45 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => {
-  const intervalRef = React.useRef(null);
-  const [screenWidth, setScreenWidth] = React.useState(typeof window !== 'undefined' ? window?.innerWidth : 1200);
-
-  const getMapSize = () => { 
-    const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
-    return screenWidth;
-  };
-
+  const [startAnim, setStartAnim] = React.useState('inactive');
+  const observerRef = React.useRef(null);
   const scrollDownHandler = () => {
     document.getElementById('geo-map').scrollIntoView();
   };
+
+  const variants = {
+    active: {
+        opacity: 1
+    },
+    inactive: {
+      opacity: 0,
+      transition: { delay: 5000 }
+    }
+  };
   
   React.useEffect(() => {
-    intervalRef.current = setInterval(() => {
-      setScreenWidth(getMapSize());
-    }, [2500]);
+    observerRef.current = new IntersectionObserver(entries => {
+      // We will fill in the callback later...
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // It's visible. Add the animation class here!
+          setStartAnim('active');
+        }
+      });
+    });
 
+    // Tell the observer which elements to track
+    observerRef.current.observe(document.querySelector('#geo-map'), {
+      subtree: true,
+      childList: true,
+    });
     return () => {
-      try {
-        clearInterval(intervalRef);
-        intervalRef.current = null;
-      } catch (e) {}
-    }
+      
+    };
   }, []);
 
-  const startTrainingHandler = () => {
-    window.open('https://ministrycentral.com/the-launch-button', 'blank');
-  }
-
   return (
-    <div style={{ width: '100vw', height: '100vh', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover', backgroundImage: `url("${withPrefix('/img/welcome.jpeg')}")` }}>
+    <div style={{ width: '100vw', height: '100vh', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'lighten', backgroundColor: 'rgba(100, 139, 194, 0.1)', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover', backgroundImage: `url("${withPrefix('/img/welcome.jpeg')}")` }}>
       <Seo title="Home" />
       <Layout>
         <NavModule />
@@ -70,94 +69,19 @@ export const IndexPageTemplate = ({
                 <h2 className="purpose-column-title">INSPIRING.</h2>
                 <h2 className="purpose-column-title">EQUIPPING.</h2>
                 <h2 className="purpose-column-title">SUSTAINING.</h2>
-                <p style={{ marginTop: '32px' }} className="purpose-column-header">PLANTING CHURCHES IN SOCAL DISTRICT.</p>
+                <p style={{ marginTop: '32px' }} className="purpose-column-header">TO REACH THE NEXT TOWN.</p>
               </div>
             </div>
             {/* <br/> */}
           </div>
         </div>
         <div className={'down-button-container'} onClick={scrollDownHandler}><ChevronDown style={{ cursor: 'pointer', height: '48px', width: '48px', color: 'white' }} /></div>
-          <div id="geo-map" className={'map-column'}>
-            <div className={'geo-map-column'}>
-              <MapChart widthScale={screenWidth} />
-              <ReactTooltip
-                id={'county-geo'}
-                place='bottom'
-              />
-              <div className={'subtitle-text-container'}>
-                <div className={'subtitle-text'} style={{ display: 'flex', justifyContent: 'center', width: '75%', maxWidth: '440px' }}>
-                  {`Southern California NAM District Map`}
-                </div>
-              </div>
-            </div>
-            <hr className="purpose-column-divider hide-on-expand" style={{ marginLeft: '96px' }} />
-            <div style={{ marginTop: '96px' }} className={'geo-map-column'}>
-              <div className="purpose-column-section" style={{ flexDirection: 'row' }}>
-                  <CountUp
-                    start={1}
-                    end={26}
-                    duration={7.75}
-                    separator=""
-                    decimals={0}
-                    delay={0}
-                    decimal=","
-                    prefix="#"
-                    suffix="M"
-                  >
-                    {({ countUpRef }) => (
-                      <div onClick={() => window.open('https://x.com/hashtag/26M?src=hashtag_click', 'blank')}>
-                        <p style={{ cursor: 'pointer', fontSize: '96px', fontWeight: 800, marginRight: '8px', color: '#00ACEE' }} ref={countUpRef} />
-                      </div>
-                    )}
-                  </CountUp>
-                  <div style={{ position: 'relative', bottom: '8px' }}>
-                    <p style={{ margin: '0px', fontWeight: 800, fontSize: '19px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`souls reside in the SoCal District. We are `}</p>
-                    <p style={{ margin: '0px', fontWeight: 800, fontSize: '19px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`commissioned to reach The Next Town with the Acts 2:38`}</p>
-                    <p style={{ margin: '0px', fontWeight: 800, fontSize: '19px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`salvation message. Help us Go. Gather. Grow.`}</p>
-                  </div>
-                </div>
-                <hr className="purpose-column-divider" style={{ margin: '0px 96px' }} />
-                <div>
-                  <div style={{ margin: '48px 0px' }}>
-                  <div className={'subtitle-text-container'}>
-                    <div style={{ marginBottom: '24px' }}>
-                      <a href={`/policy-form`} style={{ textDecoration: 'none', fontWeight: 800, color: 'rgb(30, 150, 168)', fontSize: '20px' }}>{`Click here to see the SoCal District path to planting a church.`}</a>
-                    </div>
-                  </div>
-                  <div className={'subtitle-text-container'}>
-                    <button onClick={startTrainingHandler} className={`training-button`}>
-                      {`START ONLINE TRAINING!`}
-                    </button>
-                  </div>
-                  </div>
-                  <hr className="purpose-column-divider" style={{ margin: '0px 96px', marginBottom: '0px' }} />
-                  <div className="circular-text-gap" />
-                  <CircularText />
-                </div>
-            </div>
-          </div>
-          {/* <div style={{ alignSelf: 'center', marginTop: '136px', backgroundColor: 'transparent', boxShadow: 'none' }} onClick={scrollUpHandler}><ChevronUp style={{ cursor: 'pointer', height: '48px', width: '48px', color: 'white' }} /></div> */}
-          {/* <BasicTextModule
-            title="A super-fast theme that is easy to get started, using the power of
-              GatsbyJS"
-            content="Using modern CSS properties such as grid, this theme is optmised for
-              speed and mobile devices. Giving users an excellent experience on
-              any device. Future-proofing your product."
-            link="/products"
-            linkText="View Products"
-          />
-          <PerksModule>
-            <Perk title="The Title" content="The content" />
-          </PerksModule>
-          <Features
-            title="Featured Products from Barcadia."
-            introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
-          />
-          <LatestPosts
-            title="The Latest from Barcadia"
-            introduction="Cras scelerisque, tellus sed gravida tincidunt, velit tellus blandit justo, nec viverra augue erat in erat. Maecenas iaculis sed purus non fringilla."
-          /> */}
-
+        <motion.div
+          variants={variants}
+          animate={startAnim}
+        >
+        <GeoMap />
+        </motion.div>
       </Layout>
     </div>
   );

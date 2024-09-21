@@ -41,7 +41,8 @@ export const AffiliationApplicationPageTemplate = ({ title, content, contentComp
                         <p style={{ margin: '0px', maxWidth: '1050px' }}><a href={`https://drive.google.com/file/d/1uKJly9TYXB4w5bbD2vUeaZl9xQLLhkkj/view`} target="_blank" style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>CLICK HERE TO ACCESS APPLICATION</a></p>
                     </div>
                 </div>
-                <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+                <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
+                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                     <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                 </div>
                 <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>

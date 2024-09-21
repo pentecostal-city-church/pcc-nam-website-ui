@@ -3,7 +3,7 @@ import * as React from "react";
 const circularTextArr = [
     ` SoCal District - UPCI - NAM - `,
     ` Inspire - Equip - Sustain - `,
-    ` 26 Million Souls - 12 counties - `
+    ` 26 Million Souls - 10 counties - `
 ];
 
 const textChangeInterval = 6500;

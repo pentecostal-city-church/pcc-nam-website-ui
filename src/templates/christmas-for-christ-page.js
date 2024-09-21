@@ -97,8 +97,8 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
                 </div>
             </div>
 
-
-            <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+            <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
+            <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                     <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                 </div>
                 <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>

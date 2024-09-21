@@ -4,7 +4,7 @@ module.exports = {
     title: "SoCal NAM",
     description: "",
     author: "",
-    twitterUsername: "SoCalUPCI",
+    twitterUsername: "",
     facebookUsername: "socalupci",
     instagramUsername: "socal_upci",
     linkedinUsername: "",

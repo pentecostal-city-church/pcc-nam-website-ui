@@ -48,7 +48,7 @@ export const NavModuleStyles = styled.nav`
   }
 
   .logo-image-circle {
-    height: 96px;
+    height: 120px;
   }
 
   .topnav-container {

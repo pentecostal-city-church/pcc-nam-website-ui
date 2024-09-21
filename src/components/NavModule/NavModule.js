@@ -89,9 +89,7 @@ const NavModule = () => {
                     layout="constrained"
                     placeholder="logo-dark"
                   /> */}
-                  <p style={{ position: 'relative', top: '6px', margin: '0px', color: 'white', fontSize: '22px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>SOCAL</p>
-                  <img className={'logo-image-circle'} src={withPrefix('/img/NAM+LOGO+WHITE+NO+TEXT.png')} />
-                  <p style={{ position: 'relative', bottom: '12px', margin: '0px', color: 'white', fontSize: '20px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>NORTH AMERICA MISSIONS</p>
+                  <img className={'logo-image-circle'} src={withPrefix('/img/socal-nam-logo-transparent.png')} />
                   {/* {title}
                   <span>.</span> */}
                 </Link>
@@ -204,9 +202,7 @@ const NavModule = () => {
             {title && (
               <LogoStyles>
                 <Link to="/">
-                <p style={{ width: '208px', position: 'relative', top: '10px', margin: '0px', color: 'white', fontSize: '22px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>SOCAL</p>
-                  <img className={'logo-image-circle'} src={withPrefix('/img/NAM+LOGO+WHITE+NO+TEXT.png')} />
-                  <p style={{ width: '248px', position: 'relative', bottom: '18px', margin: '0px', color: 'white', fontSize: '20px', fontWeight: 800, fontFamily: '"Heebo", sans-serif' }}>NORTH AMERICA MISSIONS</p>
+                  <img className={'logo-image-circle'} src={withPrefix('/img/socal-nam-logo-transparent.png')} />
                   {/* <StaticImage
                     className={'logo-image-circle'}
                     src="../../../static/img/socal-nam-dark-logo.png"

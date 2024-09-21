@@ -36,7 +36,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
                         <p style={{ color: 'white', fontSize: '20px', fontWeight: 300, fontFamily: '"Heebo", sans-serif' }}>{`PK Retreat`}</p>
                     </div>
                     <div>
-                        <p style={{ margin: '0px', color: 'white', fontSize: '14px' }}>SoCal North American Missions produces and oversees one of the District’s most vital ministries: PK Retreat. This wonderful ministry provides a unique opportunity for the children of licensed ministers to receive spiritual mentorship in a curated environment designed just for them. We are privileged to contribute to the development of future leaders in our movement and approach this ministry with the utmost dedication. If you would like to support this ministry, please click <a style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`/pcc-nam-website-ui/give`} >here</a>.</p>
+                        <p style={{ margin: '0px', color: 'white', fontSize: '14px' }}>SoCal North American Missions produces and oversees one of the District’s most vital ministries: PK Retreat. This wonderful ministry provides a unique opportunity for the children of licensed ministers to receive spiritual mentorship in a curated environment designed just for them. We are privileged to contribute to the development of future leaders in our movement and approach this ministry with the utmost dedication. If you would like to support this ministry, please click <a style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`/pcc-nam-website-ui/give`} >here</a> to make an offering and select 'PK Retreat' from the dropdown list.</p>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
             <div style={{ display: 'flex' }}>
                 <div>
                     <div style={{ marginTop: '36px' }}>
-                        <img src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/6ef0cf62-77e4-4444-a5e7-4beebfbe83e7@2x.png`} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
+                        <img src={withPrefix('/img/christian-prisoner-ministry.png')} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
                     </div>
                 </div>
                 <div style={{ marginLeft: '64px', width: '560px' }}>
@@ -53,10 +53,17 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
                         <p style={{ color: 'white', fontSize: '20px', fontWeight: 300, fontFamily: '"Heebo", sans-serif' }}>{`Christian Prisoner Ministry`}</p>
                     </div>
                     <div>
-                        <p style={{ color: 'white', fontSize: '14px' }}><a target="_blank" style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`https://prisonministry.faith/`}>Christian Prisoner Ministry</a> is a non-profit ministry extending the hope and power of the gospel to over 7.3 million people currently behind bars, on probation, or on parole in North America's criminal justice system, as well as their families.</p>
+                        <p style={{ color: 'white', fontSize: '14px' }}>Christian Prisoner Ministry is a non-profit ministry extending the hope and power of the gospel to over 7.3 million people currently behind bars, on probation, or on parole in North America's criminal justice system, as well as their families.</p>
                     </div>
                     <div>
-                        <p style={{ margin: '0px', color: 'white', fontSize: '14px' }}>Since 1982 CPM has trained and certified more than 3,000 volunteers for ministry in the correctional environment. Through CPM, you can contact a network of certified chaplains trained and dedicated to reaching your friends, family, and neighbors behind bars or in transitional living facilities. If you desire to serve in this ministry, CPM can equip and empower you to be involved. <a style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`mailto:jerrymenchaca@aol.com`} target="_blank">Jerry Menchaca</a> is the ministry director.</p>
+                        <p style={{ margin: '0px', color: 'white', fontSize: '14px' }}>Since 1982 CPM has trained and certified more than 3,000 volunteers for ministry in the correctional environment. Through CPM, you can contact a network of certified chaplains trained and dedicated to reaching your friends, family, and neighbors behind bars or in transitional living facilities. If you desire to serve in this ministry, CPM can equip and empower you to be involved. Jerry Menchaca (<a style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`mailto:jerrymenchaca@aol.com`} target="_blank">jerrymenchaca@aol.com</a>) is the ministry director.</p>
+                    </div>
+                    <br />
+                    <div>
+                        <p style={{ margin: '0px', color: 'white' }}>Link to <i>National</i> Ministry Information:</p>
+                    </div>
+                    <div>
+                        <a target="_blank" style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`https://prisonministry.faith/`}>{`www.prisonministry.faith`}</a>
                     </div>
                 </div>
             </div>
@@ -107,7 +114,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
                 </div>
             </div>
         </div>
-        <div style={{ marginLeft: '128px', marginTop: '80px' }}>
+        <div style={{ marginLeft: '128px', marginTop: '80px', marginBottom: '64px' }}>
             <div style={{ display: 'flex' }}>
                 <div>
                     <div style={{ marginTop: '36px' }}>
@@ -139,7 +146,8 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
             </div>
         </div> */}
         <div style={{ marginTop: '48px', marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/685b8f5d-41cb-464b-aed9-9addeef456e7.jpeg")' }}/>
-        <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+        <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
+        <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
             <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
         </div>
         <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>

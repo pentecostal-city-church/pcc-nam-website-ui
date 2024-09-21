@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
 import NavModule from "../components/NavModule/NavModule";
+import { withPrefix } from "gatsby";
 
 // eslint-disable-next-line
 export const NAMStatusPageTemplate = ({ title, content, contentComponent }) => {
@@ -13,7 +14,7 @@ export const NAMStatusPageTemplate = ({ title, content, contentComponent }) => {
 
     return (
       <div>
-      <NavModule />
+        <NavModule />
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
             <div style={{ margin: '0px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <p style={{ margin: '8px 0px 0px', maxWidth: '1050px', fontSize: '18px', color: 'white' }}>{`Before completing this NAM Status form. Please make sure you complete the online training.`}</p>
@@ -29,15 +30,16 @@ export const NAMStatusPageTemplate = ({ title, content, contentComponent }) => {
                 {`START ONLINE TRAINING!`}
                 </button>
             </div>
-            <div style={{ margin: '64px 0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/dfe810a1-46fe-4ca3-aeff-102f4dfbb111.jpg")' }}/>
-            <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
+            <div style={{ margin: '64px 0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: `url("${withPrefix('/img/nam-status.jpeg')}")` }}/>
+            <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
+            <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                     <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                 </div>
                 <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                   <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
                 </div>
         </div>
-        </div>
+      </div>
     );
 };
 
