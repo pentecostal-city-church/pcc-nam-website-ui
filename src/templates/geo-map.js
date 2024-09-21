@@ -77,8 +77,8 @@ export const GeoMap = () => {
                         </div>
                         <hr className="purpose-column-divider" style={{ margin: '0px 96px' }} />
                         <div>
-                        <div style={{ margin: '48px 0px' }}>
-                        <div style={{ marginLeft: '0px' }} className={'subtitle-text-container'}>
+                        <div style={{ margin: '48px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <div style={{ marginLeft: '0px', width: 'max-content' }} className={'subtitle-text-container'}>
                             <div style={{ marginBottom: '48px', marginTop: '24px' }}>
                             <a className={'cta-button'} href={`/policy-form`} style={{ margin: '24px 0px' }}>{`Click here to see the SoCal District path to church planting.`}</a>
                             </div>
