@@ -1,6 +1,6 @@
 ---
 templateKey: 'daughter-work-page'
-path: /pcc-nam-website-ui/daughter-work
+path: /daughter-work
 title: NORTH AMERICAN MISSIONS DISTRICT LEADERSHIP
 ---
 ### Shade-grown coffee

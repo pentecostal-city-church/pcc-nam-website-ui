@@ -1,6 +1,6 @@
 ---
 templateKey: 'applications-page'
-path: /pcc-nam-website-ui/applications
+path: /applications
 title: NORTH AMERICAN MISSIONS DISTRICT LEADERSHIP
 ---
 ### Shade-grown coffee

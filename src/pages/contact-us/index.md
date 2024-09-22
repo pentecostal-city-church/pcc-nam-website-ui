@@ -1,6 +1,6 @@
 ---
 templateKey: 'contact-us-page'
-path: /pcc-nam-website-ui/contact-us
+path: /contact-us
 title: NORTH AMERICAN MISSIONS DISTRICT LEADERSHIP
 ---
 ### Shade-grown coffee

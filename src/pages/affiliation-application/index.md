@@ -1,6 +1,6 @@
 ---
 templateKey: 'affiliation-application-page'
-path: /pcc-nam-website-ui/affiliation-application
+path: /affiliation-application
 title: NORTH AMERICAN MISSIONS DISTRICT LEADERSHIP
 ---
 ### Shade-grown coffee

@@ -1,6 +1,6 @@
 ---
 templateKey: 'nam-status-page'
-path: /pcc-nam-website-ui/nam-status
+path: /nam-status
 title: NORTH AMERICAN MISSIONS DISTRICT LEADERSHIP
 ---
 ### Shade-grown coffee

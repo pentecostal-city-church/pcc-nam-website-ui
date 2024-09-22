@@ -56,14 +56,14 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
                 <div style={{ alignSelf: 'flex-start', margin: '32px 48px 0px', display: 'flex', flexDirection: 'column' }}>
                 <hr style={{ border: '1px solid white', margin: '24px 0px 64px', width: '100%' }} className="purpose-column-divider"/>
                     <div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'flex-start' }}>
-                        <p style={{ fontSize: '24px', margin: '0px', maxWidth: '1050px', color: 'white' }}>Please click on our <a href={'/pcc-nam-website-ui/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>Policy Form</a> before submitting any of these applications.</p>
+                        <p style={{ fontSize: '24px', margin: '0px', maxWidth: '1050px', color: 'white' }}>Please click on our <a href={'/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>Policy Form</a> before submitting any of these applications.</p>
                     </div>
                 </div>
                 <div style={{ margin: '0px 48px', alignSelf: 'flex-start' }}>
                     <ul style={{ margin: '16px 0px' }}>
-                        <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600, fontSize: '28px' }} href={`/pcc-nam-website-ui/daughter-work`}>{`Daughter Work`}</a></li>
-                        <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600, fontSize: '28px' }} href={`/pcc-nam-website-ui/nam-status`}>{`NAM Status`}</a></li>
-                        <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600, fontSize: '28px' }} href={`/pcc-nam-website-ui/affiliation-application`}>{`Affiliation Application`}</a></li>
+                        <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600, fontSize: '28px' }} href={`/daughter-work`}>{`Daughter Work`}</a></li>
+                        <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600, fontSize: '28px' }} href={`/nam-status`}>{`NAM Status`}</a></li>
+                        <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600, fontSize: '28px' }} href={`/affiliation-application`}>{`Affiliation Application`}</a></li>
                     </ul>
                 </div>
                 <div style={{ justifyContent: 'flex-start', margin: '24px 48px' }} className={'subtitle-text-container'}>

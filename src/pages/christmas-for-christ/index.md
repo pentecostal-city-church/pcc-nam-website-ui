@@ -1,6 +1,6 @@
 ---
 templateKey: 'christmas-for-christ-page'
-path: /pcc-nam-website-ui/christmas-for-christ
+path: /christmas-for-christ
 title: NORTH AMERICAN MISSIONS DISTRICT LEADERSHIP
 ---
 ### Shade-grown coffee

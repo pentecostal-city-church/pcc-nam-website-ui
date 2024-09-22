@@ -1,6 +1,6 @@
 ---
 templateKey: 'policy-form-page'
-path: /pcc-nam-website-ui/policy-form
+path: /policy-form
 title: NORTH AMERICAN MISSIONS DISTRICT LEADERSHIP
 ---
 ### Shade-grown coffee

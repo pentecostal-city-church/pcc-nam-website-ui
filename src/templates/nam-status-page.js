@@ -9,7 +9,7 @@ import NavModule from "../components/NavModule/NavModule";
 export const NAMStatusPageTemplate = ({ title, content, contentComponent }) => {
   const startTrainingHandler = () => {
     window.open('https://ministrycentral.com/the-launch-button', 'blank');
-}
+  }
 
     return (
       <div>

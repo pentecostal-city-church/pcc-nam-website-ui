@@ -318,7 +318,7 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
                 <p style={{ margin: '24px 0px 0px', maxWidth: '1050px', color: 'white', fontSize: '18px'}}>{`Before completing this Daughter Work application form, please make sure you have`}</p>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>read through the <a href={'/pcc-nam-website-ui/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>SoCal District Policy Form</a>. Contact us with any questions. Once you</p>
+                <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>read through the <a href={'/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>SoCal District Policy Form</a>. Contact us with any questions. Once you</p>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>feel free to submit your online application to: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>

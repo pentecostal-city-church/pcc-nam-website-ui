@@ -1,6 +1,6 @@
 ---
 templateKey: 'ministries-page'
-path: /pcc-nam-website-ui/ministries
+path: /ministries
 title: NORTH AMERICAN MISSIONS DISTRICT LEADERSHIP
 ---
 ### Shade-grown coffee

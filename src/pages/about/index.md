@@ -1,6 +1,6 @@
 ---
 templateKey: 'committee-page'
-path: /pcc-nam-website-ui/about
+path: /about
 title: About our values
 ---
 ### Shade-grown coffee
