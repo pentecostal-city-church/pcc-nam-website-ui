@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
-import { withPrefix } from "gatsby";
 import NavModule from "../components/NavModule/NavModule";
 
 // eslint-disable-next-line
@@ -28,7 +27,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
             <div style={{ display: 'flex' }}>
                 <div>
                     <div style={{ marginTop: '36px' }}>
-                        <img src={withPrefix('/img/pk-retreat.png')} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
+                        <img src={'http://socalnam.org/img/pk-retreat.png'} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
                     </div>
                 </div>
                 <div style={{ marginLeft: '64px', width: '560px' }}>
@@ -45,7 +44,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
             <div style={{ display: 'flex' }}>
                 <div>
                     <div style={{ marginTop: '36px' }}>
-                        <img src={withPrefix('/img/christian-prisoner-ministry.png')} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
+                        <img src={'http://socalnam.org/img/christian-prisoner-ministry.png'} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
                     </div>
                 </div>
                 <div style={{ marginLeft: '64px', width: '560px' }}>

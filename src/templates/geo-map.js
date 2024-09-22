@@ -3,7 +3,6 @@ import MapChart from '../components/MapChart';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import CircularText from "../components/CircularText";
 import CountUp from 'react-countup';
-import { withPrefix } from "gatsby";
 
 // eslint-disable-next-line
 export const GeoMap = () => {
@@ -35,7 +34,7 @@ export const GeoMap = () => {
     
     return (
         <div id="geo-map">
-            <div style={{ margin: '0px 0px 64px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'contain', height: '240px', width: '100%', backgroundImage: `url("${withPrefix('/img/next+town+repeat+banner+2.png')}")` }}>
+            <div style={{ margin: '0px 0px 64px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'contain', height: '240px', width: '100%', backgroundImage: `url("http://socalnam.org/img/next+town+repeat+banner+2.png")` }}>
             <h2 style={{ paddingTop: '72px' }} className="purpose-column-title">THE NEXT TOWN</h2>
             </div>
                 <div className={'map-column'}>

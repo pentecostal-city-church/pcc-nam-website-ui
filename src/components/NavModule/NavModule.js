@@ -20,7 +20,6 @@ import {
   menuList,
   subMenuNavVariants,
 } from "./NavAnim";
-import { withPrefix } from "gatsby";
 
 const NavModule = (props) => {
   const [isOpen, setNav] = useContext(MenuContext);
@@ -89,7 +88,7 @@ const NavModule = (props) => {
                     layout="constrained"
                     placeholder="logo-dark"
                   /> */}
-                  <img className={'logo-image-circle'} src={withPrefix('/img/socal-nam-logo-transparent.png')} />
+                  <img className={'logo-image-circle'} src={'http://socalnam.org/img/socal-nam-logo-transparent.png'} />
                   {/* {title}
                   <span>.</span> */}
                 </Link>
@@ -202,7 +201,7 @@ const NavModule = (props) => {
             {title && (
               <LogoStyles>
                 <Link to="/">
-                  <img className={'logo-image-circle'} src={withPrefix('/img/socal-nam-logo-transparent.png')} />
+                  <img className={'logo-image-circle'} src={'http://socalnam.org/img/socal-nam-logo-transparent.png'} />
                   {/* <StaticImage
                     className={'logo-image-circle'}
                     src="../../../static/img/socal-nam-dark-logo.png"

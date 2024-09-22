@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { withPrefix } from "gatsby"
 import { FooterStyles, FooterMenuStyles, CopyrightStyles } from "./FooterStyles"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 import {
@@ -90,7 +89,7 @@ const Footer = () => {
           ""
         )}
         <Link to="/">
-        <img style={{ height: '96px' }} src={withPrefix('/img/socal-nam-logo-transparent.png')} />
+        <img style={{ height: '96px' }} src={'http://socalnam.org/img/socal-nam-logo-transparent.png'} />
         </Link>
       </div>
       {/* <CopyrightStyles>

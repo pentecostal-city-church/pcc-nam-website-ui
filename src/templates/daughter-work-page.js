@@ -7,7 +7,6 @@ import { countries, countryToFlag } from "./contact-us-page";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
-import { withPrefix } from "gatsby";
 import NavModule from "../components/NavModule/NavModule";
 
 export const states = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
@@ -315,7 +314,7 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
         <NavModule />
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '32px 0px 0px' }}>
             <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <img style={{ height: '210px', borderRadius: '105px' }} className={'logo-image-circle'} src={withPrefix('/img/dwp.png')} />
+                <img style={{ height: '210px', borderRadius: '105px' }} className={'logo-image-circle'} src={'http://socalnam.org/img/dwp.png'} />
                 <p style={{ margin: '24px 0px 0px', maxWidth: '1050px', color: 'white', fontSize: '18px'}}>{`Before completing this Daughter Work application form, please make sure you have`}</p>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>

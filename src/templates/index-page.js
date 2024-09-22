@@ -6,7 +6,6 @@ import Seo from "../components/SEO";
 // import BannerModule from "../components/BannerModule/BannerModule";
 import { FiChevronDown as ChevronDown } from "react-icons/fi";
 import NavModule from "../components/NavModule/NavModule";
-import { withPrefix } from "gatsby";
 import { GeoMap } from './geo-map';
 import { motion } from "framer-motion"
 // eslint-disable-next-line
@@ -66,7 +65,7 @@ export const IndexPageTemplate = ({
           <p style={{ fontSize: '48px', marginLeft: '16px', marginTop: '0px', marginBottom: '32px', color: 'black' }} className="purpose-column-header">OUR <b style={{ color: 'rgb(246, 68, 55)' }}>PURPOSE</b></p>
           </div>
 
-        <div id="purpose" className={'parallelogram landing-main-container'} style={{ display: 'flex', alignItems: 'center', width: 'calc(100vw - 20%)', height: 'calc(100vh - 154.5px)', backgroundPositionX: '50%', backgroundPositionY: '200%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 194, 0.1)', backgroundAttachment: 'fixed', backgroundSize: 'unset', backgroundImage: `url("${withPrefix('/img/welcome.jpeg')}")` }}>
+        <div id="purpose" className={'parallelogram landing-main-container'} style={{ display: 'flex', alignItems: 'center', width: 'calc(100vw - 20%)', height: 'calc(100vh - 154.5px)', backgroundPositionX: '50%', backgroundPositionY: '200%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 194, 0.1)', backgroundAttachment: 'fixed', backgroundSize: 'unset', backgroundImage: `url("http://socalnam.org/img/welcome.jpeg")` }}>
           <div style={{ marginTop: '0px' }} className={'purpose-column'}>
             <div className="purpose-column-section">
               <div  className="purpose-column-section">

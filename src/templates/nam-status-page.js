@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
 import NavModule from "../components/NavModule/NavModule";
-import { withPrefix } from "gatsby";
 
 // eslint-disable-next-line
 export const NAMStatusPageTemplate = ({ title, content, contentComponent }) => {
@@ -30,7 +29,7 @@ export const NAMStatusPageTemplate = ({ title, content, contentComponent }) => {
                 {`START ONLINE TRAINING!`}
                 </button>
             </div>
-            <div style={{ margin: '64px 0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: `url("${withPrefix('/img/nam-status.jpeg')}")` }}/>
+            <div style={{ margin: '64px 0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: `url("http://socalnam.org/img/nam-status.jpeg")` }}/>
             <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
             <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                     <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
