@@ -428,11 +428,11 @@ svg.circular-text-svg {
 }
 
 .landing-main-container {
-  height: calc(100vh - 308px);
+  height: calc(100vh - 273px);
   justify-content: center;
   @media(min-width:924px) {
     display: flex;
-    height: calc(100vh - 192.5px);
+    height: calc(100vh - 154px);
   }
 }
 
@@ -454,6 +454,7 @@ svg.circular-text-svg {
 }
 
 .down-button-container {
+  height: 0px;
   align-self: center;
   background-color: transparent;
   box-shadow: none;
@@ -510,7 +511,7 @@ svg.circular-text-svg {
     font-size: 80px;
   }
   @media(min-width:1200px) {
-    font-size: 88px;
+    font-size: 98px;
   }
 }
 
@@ -526,6 +527,13 @@ svg.circular-text-svg {
   @media(min-width:1200px) {
     margin-top: 0px;
   }
+}
+
+.parallelogram {
+  --p: 300px; /* control the shape (can be percentage) */
+  width: 180px;
+  aspect-ratio: 2/3;
+  clip-path: polygon(0 var(--p),0 100%,100% calc(100% - var(--p)),100% 0);
 }
 
 .hide-on-expand {

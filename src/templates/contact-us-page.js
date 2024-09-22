@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
-import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
+import { withPrefix } from "gatsby";
 import 'react-phone-number-input/style.css';
 import { FaCheckCircle } from "react-icons/fa";
 import NavModule from "../components/NavModule/NavModule";
@@ -337,12 +336,16 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
     ) : (
         <div>
         <NavModule />
-        <div style={{ marginTop: '98.5px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', margin: '32px 0px 0px', paddingLeft: '75px' }}>
-            <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif', marginBottom: '4px' }}>
+        <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("${withPrefix('/img/Silhouettes-of-Business-People-Working-000066600625_Large.jpeg')}")` }}>
+            <h2 style={{ marginTop: '260px' }} className="purpose-column-title">CONNECT</h2>
+                <p style={{ marginTop: '16px' }} className="purpose-column-header">WITH US</p>
+            </div>
+            <div style={{ alignSelf: 'center', border: '8px solid white', width: 'fit-content', padding: '24px 32px 32px', display: 'flex', flexDirection: 'column', margin: '180px 0px 136px', alignItems: 'center' }}>
+            <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif', marginBottom: '16px' }}>
                 {`CONTACT US`}
             </p>
-            <p style={{ margin: '0px', fontSize: '18px', fontWeight: 300, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
+            <p style={{ margin: '0px 0px 16px', fontSize: '18px', fontWeight: 300, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
                 {`We would love to connect!`}
             </p>
             <p style={{ margin: '0px', fontSize: '18px', fontWeight: 300, color: 'white', fontFamily: '"Heebo",sans-serif' }}>

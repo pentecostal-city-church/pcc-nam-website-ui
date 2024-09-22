@@ -16,6 +16,15 @@ export const NavModuleStyles = styled.nav`
   }
 
   .container {
+    background-color: rgb(2, 49, 74);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .container-2 {
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -57,25 +57,33 @@ export const IndexPageTemplate = ({
   }, []);
 
   return (
-    <div style={{ width: '100vw', height: '100vh', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'lighten', backgroundColor: 'rgba(100, 139, 194, 0.1)', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover', backgroundImage: `url("${withPrefix('/img/welcome.jpeg')}")` }}>
+    <div >
       <Seo title="Home" />
       <Layout>
         <NavModule />
-        <div id="purpose" className={'landing-main-container'}>
-          <div className={'purpose-column'}>
+        <div style={{ backgroundColor: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div style={{ position: 'absolute', left: '12.5%', top: '22.5%' }}>
+          <p style={{ fontSize: '48px', marginLeft: '16px', marginTop: '0px', marginBottom: '32px', color: 'black' }} className="purpose-column-header">OUR <b style={{ color: 'rgb(246, 68, 55)' }}>PURPOSE</b></p>
+          </div>
+
+        <div id="purpose" className={'parallelogram landing-main-container'} style={{ display: 'flex', alignItems: 'center', width: 'calc(100vw - 20%)', height: 'calc(100vh - 154.5px)', backgroundPositionX: '50%', backgroundPositionY: '200%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 194, 0.1)', backgroundAttachment: 'fixed', backgroundSize: 'unset', backgroundImage: `url("${withPrefix('/img/welcome.jpeg')}")` }}>
+          <div style={{ marginTop: '0px' }} className={'purpose-column'}>
             <div className="purpose-column-section">
-              <div className="purpose-column-section">
-                <p style={{ marginTop: '0px', marginBottom: '32px' }} className="purpose-column-header">OUR PURPOSE</p>
+              <div  className="purpose-column-section">
                 <h2 className="purpose-column-title">INSPIRING.</h2>
                 <h2 className="purpose-column-title">EQUIPPING.</h2>
                 <h2 className="purpose-column-title">SUSTAINING.</h2>
-                <p style={{ marginTop: '32px' }} className="purpose-column-header">TO REACH THE NEXT TOWN.</p>
               </div>
             </div>
             {/* <br/> */}
           </div>
         </div>
-        <div className={'down-button-container'} onClick={scrollDownHandler}><ChevronDown style={{ cursor: 'pointer', height: '48px', width: '48px', color: 'white' }} /></div>
+        <div style={{ position: 'absolute', right: '12.5%', bottom: '5%' }}>
+        <p style={{ fontSize: '32px', marginTop: '32px', color: 'black' }} className="purpose-column-header">TO REACH <b style={{ color: 'rgb(246, 68, 55)' }}>THE NEXT TOWN.</b></p>
+        </div>
+        </div>
+
+        <div className={'down-button-container'} onClick={scrollDownHandler}><ChevronDown style={{ cursor: 'pointer', height: '48px', width: '48px', color: 'black' }} /></div>
         <motion.div
           variants={variants}
           animate={startAnim}

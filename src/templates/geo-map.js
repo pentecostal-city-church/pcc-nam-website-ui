@@ -3,6 +3,7 @@ import MapChart from '../components/MapChart';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import CircularText from "../components/CircularText";
 import CountUp from 'react-countup';
+import { withPrefix } from "gatsby";
 
 // eslint-disable-next-line
 export const GeoMap = () => {
@@ -30,11 +31,13 @@ export const GeoMap = () => {
 
     const startTrainingHandler = () => {
         window.open('https://ministrycentral.com/the-launch-button', 'blank');
-      }
+    }
     
     return (
         <div id="geo-map">
-            <h2 style={{ marginTop: '64px', marginBottom: '32px' }} className="purpose-column-title">GO. GATHER. GROW.</h2>
+            <div style={{ margin: '0px 0px 64px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'contain', height: '240px', width: '100%', backgroundImage: `url("${withPrefix('/img/next+town+repeat+banner+2.png')}")` }}>
+            <h2 style={{ paddingTop: '72px' }} className="purpose-column-title">THE NEXT TOWN</h2>
+            </div>
                 <div className={'map-column'}>
                     <div className={'geo-map-column'}>
                     <MapChart widthScale={screenWidth} />
@@ -77,7 +80,7 @@ export const GeoMap = () => {
                         </div>
                         <hr className="purpose-column-divider" style={{ margin: '0px 96px' }} />
                         <div>
-                        <div style={{ margin: '48px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <div style={{ margin: '32px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <div style={{ marginLeft: '0px', width: 'max-content' }} className={'subtitle-text-container'}>
                             <div style={{ marginBottom: '48px', marginTop: '24px' }}>
                             <a className={'cta-button'} href={`/policy-form`} style={{ margin: '24px 0px' }}>{`Click here to see the SoCal District path to church planting.`}</a>

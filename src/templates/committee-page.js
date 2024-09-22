@@ -18,21 +18,27 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
   return (
     <div>
     <NavModule />
-    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '0px' }}>
+      <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1698958055723-89PIVDX0D4LFRV7Z74T5/LAUNCH-WEBSITE-PIC.jpg")` }}>
+          <h2 style={{ marginTop: '260px' }} className="purpose-column-title">SOCAL NAM</h2>
+          <p style={{ marginTop: '16px' }} className="purpose-column-header">COMMITTEE</p>
+        </div>
+        <div style={{ backgroundColor: 'rgb(2, 49, 74)' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '32px' }}>
           <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
-              {`NORTH AMERICAN MISSIONS`}
+              {`SOUTHERN CALIFORNIA DISTRICT`}
           </p>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
-              {`DISTRICT LEADERSHIP`}
+          <p style={{ margin: '0px', fontSize: '32px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
+              {`NAM LEADERSHIP`}
           </p>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-          <p style={{ marginTop: '32px', marginBottom: '16px', fontSize: '14px' }}>{`Below are the NAM Directors for each section of the southern California district. `}</p>
+          <p style={{ color: 'white', marginTop: '16px', marginBottom: '24px', fontSize: '14px' }}>{`Below are the NAM Directors for each section of the southern California district. `}</p>
         </div>
-        <div className="church-planter-container">
+        </div>
+        <div style={{ marginTop: '120px' }} className="church-planter-container">
           <div className={`church-planter-row`}>
             <div className={'church-planter-img-container'}>
               <img className={'church-planter-img'} src={churchPlanter1} />

@@ -22,7 +22,7 @@ import {
 } from "./NavAnim";
 import { withPrefix } from "gatsby";
 
-const NavModule = () => {
+const NavModule = (props) => {
   const [isOpen, setNav] = useContext(MenuContext);
   const [isMoreNavOpen, setMoreNav] = useState(false);
   const [subNavIndex, setSubNavIndex] = useState(0);
@@ -77,7 +77,7 @@ const NavModule = () => {
     <NavModuleStyles>
       <div className="menu-container">
         <div className="nav">
-          <div className="container">
+          <div className={props.transparentBackground ? 'container-2' : 'container'}>
             <div className="logo-container">
             {title && (
               <LogoStyles>
@@ -197,7 +197,7 @@ const NavModule = () => {
       </div>
       <div id="topnav-container" className="topnav-container">
         <div className="nav">
-          <div className="container">
+        <div className={props.transparentBackground ? 'container-2' : 'container'}>
             <div className="logo-container">
             {title && (
               <LogoStyles>
