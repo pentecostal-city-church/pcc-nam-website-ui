@@ -608,7 +608,7 @@ svg.circular-text-svg {
   padding: 0px;
   text-decoration: none;
   font-weight: 800;
-  color: rgb(30, 150, 168);
+  color: white;
   font-size: 18px;
 }
 
