@@ -39,6 +39,26 @@ $ gatsby clean
 $ npm run start
 ```
 
+### Deployment
+
+Stage any changes and then commit to main branch and push.
+
+```
+$ git add .
+$ git commit -m "[commit message goes here]"
+$ git push
+```
+
+Deploy changes to github pages
+
+```
+$ gatsby clean
+$ npm run deploy
+```
+
+Go to the [repo page settings](https://github.com/pentecostal-city-church/pcc-nam-website-ui/settings/pages) 
+and enter www.socalnam.org into the custom domain and save.
+
 
 # CONTRIBUTING
 
@@ -47,4 +67,5 @@ please read the [code of conduct](CODE_OF_CONDUCT.md).
 
 # CONTACT
 
+Developers:
 Austin Liu - austin.th.liu@gmail.com
