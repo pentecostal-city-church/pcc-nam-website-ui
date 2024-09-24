@@ -81,7 +81,7 @@ export const GeoMap = () => {
                         <div>
                         <div style={{ margin: '32px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <div style={{ marginLeft: '0px', width: 'fit-content' }} className={'subtitle-text-container'}>
-                            <div style={{ marginBottom: '48px', marginTop: '24px', textAlign: 'center' }}>
+                            <div style={{ marginBottom: '48px', marginTop: '24px', textAlign: 'center', padding: '24px', backgroundColor: 'rgb(246, 68, 55)' }}>
                             <a className={'cta-button'} href={`/policy-form`} style={{ margin: '24px 0px' }}>{`Click here to see the SoCal District path to church planting.`}</a>
                             </div>
                         </div>
