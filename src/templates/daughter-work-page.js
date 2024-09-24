@@ -7,7 +7,6 @@ import { countries, countryToFlag } from "./contact-us-page";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
-import NavModule from "../components/NavModule/NavModule";
 
 export const states = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
 export const countryList = [
@@ -311,7 +310,6 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
 
     return (
         <div>
-        <NavModule />
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '32px 0px 0px' }}>
             <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <img style={{ height: '210px', borderRadius: '105px' }} className={'logo-image-circle'} src={'http://socalnam.org/img/dwp.png'} />
@@ -341,7 +339,7 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
                     <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
                         <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                     </div>
-                    <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                    <div style={{ textAlign: 'center', marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                         <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: 
                             <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a>
                         </p>
@@ -507,7 +505,7 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
                 <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                     <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                 </div>
-                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                <div style={{ textAlign: 'center', marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                   <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
                 </div>
                 </div>

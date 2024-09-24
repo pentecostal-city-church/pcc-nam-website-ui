@@ -464,6 +464,18 @@ svg.circular-text-svg {
   bottom: 64px;
 }
 
+.purpose-column-header-1 {
+  margin-top: 0px;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 32px;
+  @media(min-width:700px) {
+    font-size: 48px;
+  }
+}
+
 .purpose-column-header {
   margin-top: 0px;
   text-align: center;
@@ -593,15 +605,11 @@ svg.circular-text-svg {
 }
 
 .cta-button {
-  background-color: white;
-  padding: 24px;
+  padding: 0px;
   text-decoration: none;
   font-weight: 800;
   color: rgb(30, 150, 168);
   font-size: 18px;
-  &:hover {
-    background-color: rgb(240, 240, 240);
-  }
 }
 
 .church-planter-row {
@@ -633,6 +641,29 @@ svg.circular-text-svg {
   margin-top: 0px;
 }
 
+.purpose-container {
+  @media(min-width:924px) {
+    align-self: flex-start;
+  }
+}
+
+.var-height-1 {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  @media(min-width:600px) {
+    height: 240px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.next-town-container {
+  @media(min-width:924px) {
+    align-self: flex-end;
+  }
+}
+
 .social-icon {
   color: rgb(215,215,215);
   display: flex;
@@ -643,10 +674,23 @@ svg.circular-text-svg {
   }
 }
 
+.down-arrow {
+  cursor: pointer; 
+  height: 48px;
+  width: 48px;
+  color: white;
+  &:hover {
+    color: rgb(246, 68, 55);
+  }
+  &:focus {
+    color: rgb(246, 68, 55);
+  }
+}
+
 .geo-map-column {
   width: 100%;
   @media(min-width:924px) {
-    width: 50%;
+    width: 50vw;
   }
 }
 `

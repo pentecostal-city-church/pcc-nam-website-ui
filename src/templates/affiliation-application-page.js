@@ -3,24 +3,22 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
-import { GoMail } from "react-icons/go";
-import { TbBrandFacebook } from "react-icons/tb";
-import { TfiTwitter } from "react-icons/tfi";
-import NavModule from "../components/NavModule/NavModule";
+// import { GoMail } from "react-icons/go";
+// import { TbBrandFacebook } from "react-icons/tb";
+// import { TfiTwitter } from "react-icons/tfi";
 
 // eslint-disable-next-line
 export const AffiliationApplicationPageTemplate = ({ title, content, contentComponent }) => {
-    const [showDropdown, setShowDropdown] = React.useState(false);
-    const toggleDropdown = () => {
-        setShowDropdown(!showDropdown);
-    }
-    const startTrainingHandler = () => {
-        window.open('https://ministrycentral.com/the-launch-button', 'blank');
-    }
+    // const [showDropdown, setShowDropdown] = React.useState(false);
+    // const toggleDropdown = () => {
+    //     setShowDropdown(!showDropdown);
+    // }
+    // const startTrainingHandler = () => {
+    //     window.open('https://ministrycentral.com/the-launch-button', 'blank');
+    // }
 
     return (
       <div>
-        <NavModule />
         <div style={{ marginTop: '32px', display: 'flex', flexDirection: 'column' }}>
 
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -45,7 +43,7 @@ export const AffiliationApplicationPageTemplate = ({ title, content, contentComp
                 <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                     <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                 </div>
-                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                <div style={{ textAlign: 'center', marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                   <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
                 </div>
         </div>

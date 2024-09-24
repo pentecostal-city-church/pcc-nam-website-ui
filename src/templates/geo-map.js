@@ -34,8 +34,8 @@ export const GeoMap = () => {
     
     return (
         <div id="geo-map">
-            <div style={{ margin: '0px 0px 64px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'contain', height: '240px', width: '100%', backgroundImage: `url("http://socalnam.org/img/next+town+repeat+banner+2.png")` }}>
-            <h2 style={{ paddingTop: '72px' }} className="purpose-column-title">THE NEXT TOWN</h2>
+            <div className={'var-height-1'} style={{ margin: '0px 0px 64px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'contain', width: '100%', backgroundImage: `url("http://socalnam.org/img/next+town+repeat+banner+2.png")` }}>
+            <h2 className="purpose-column-title">THE NEXT TOWN</h2>
             </div>
                 <div className={'map-column'}>
                     <div className={'geo-map-column'}>
@@ -80,8 +80,8 @@ export const GeoMap = () => {
                         <hr className="purpose-column-divider" style={{ margin: '0px 96px' }} />
                         <div>
                         <div style={{ margin: '32px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <div style={{ marginLeft: '0px', width: 'max-content' }} className={'subtitle-text-container'}>
-                            <div style={{ marginBottom: '48px', marginTop: '24px' }}>
+                        <div style={{ marginLeft: '0px', width: 'fit-content' }} className={'subtitle-text-container'}>
+                            <div style={{ marginBottom: '48px', marginTop: '24px', textAlign: 'center' }}>
                             <a className={'cta-button'} href={`/policy-form`} style={{ margin: '24px 0px' }}>{`Click here to see the SoCal District path to church planting.`}</a>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ export const GeoMap = () => {
             <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                 <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
             </div>
-            <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+            <div style={{ textAlign: 'center', marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                 <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
             </div>
         </div>

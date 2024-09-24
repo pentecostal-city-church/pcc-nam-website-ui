@@ -5,7 +5,6 @@ import Layout from "../components/Layout";
 import Seo from "../components/SEO";
 // import BannerModule from "../components/BannerModule/BannerModule";
 import { FiChevronDown as ChevronDown } from "react-icons/fi";
-import NavModule from "../components/NavModule/NavModule";
 import { GeoMap } from './geo-map';
 import { motion } from "framer-motion"
 // eslint-disable-next-line
@@ -59,14 +58,12 @@ export const IndexPageTemplate = ({
     <div >
       <Seo title="Home" />
       <Layout>
-        <NavModule />
-        <div style={{ backgroundColor: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <div style={{ position: 'absolute', left: '12.5%', top: '22.5%' }}>
-          <p style={{ fontSize: '48px', marginLeft: '16px', marginTop: '0px', marginBottom: '32px', color: 'black' }} className="purpose-column-header">OUR <b style={{ color: 'rgb(246, 68, 55)' }}>PURPOSE</b></p>
-          </div>
-
-        <div id="purpose" className={'parallelogram landing-main-container'} style={{ display: 'flex', alignItems: 'center', width: 'calc(100vw - 20%)', height: 'calc(100vh - 154.5px)', backgroundPositionX: '50%', backgroundPositionY: '200%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 194, 0.1)', backgroundAttachment: 'fixed', backgroundSize: 'unset', backgroundImage: `url("http://socalnam.org/img/welcome.jpeg")` }}>
-          <div style={{ marginTop: '0px' }} className={'purpose-column'}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div id="purpose" className={'landing-main-container'} style={{ display: 'flex', alignItems: 'center', width: 'calc(100vw)', height: 'calc(100vh - 154.5px)', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 194, 0.1)', backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundImage: `url("http://socalnam.org/img/welcome.jpeg")` }}>
+          <div style={{ marginTop: '0px', width: '100%', maxWidth: '880px'}} className={'purpose-column'}>
+          <div className={'purpose-container'}>
+              <p style={{ marginLeft: '16px', marginTop: '0px', marginBottom: '32px', color: 'white' }} className="purpose-column-header-1">OUR <b style={{ color: 'rgb(246, 68, 55)' }}>PURPOSE</b></p>
+            </div>
             <div className="purpose-column-section">
               <div  className="purpose-column-section">
                 <h2 className="purpose-column-title">INSPIRING.</h2>
@@ -74,20 +71,20 @@ export const IndexPageTemplate = ({
                 <h2 className="purpose-column-title">SUSTAINING.</h2>
               </div>
             </div>
+            <div className={'next-town-container'}>
+          <p style={{ fontSize: '32px', marginTop: '32px', color: 'white' }} className="purpose-column-header">TO REACH <b style={{ color: 'rgb(246, 68, 55)' }}>THE NEXT TOWN.</b></p>
+        </div>
             {/* <br/> */}
           </div>
         </div>
-        <div style={{ position: 'absolute', right: '12.5%', bottom: '5%' }}>
-        <p style={{ fontSize: '32px', marginTop: '32px', color: 'black' }} className="purpose-column-header">TO REACH <b style={{ color: 'rgb(246, 68, 55)' }}>THE NEXT TOWN.</b></p>
-        </div>
         </div>
 
-        <div className={'down-button-container'} onClick={scrollDownHandler}><ChevronDown style={{ cursor: 'pointer', height: '48px', width: '48px', color: 'black' }} /></div>
+        <div className={'down-button-container'} onClick={scrollDownHandler}><ChevronDown className="down-arrow" /></div>
         <motion.div
           variants={variants}
           animate={startAnim}
         >
-        <GeoMap />
+          <GeoMap />
         </motion.div>
       </Layout>
     </div>

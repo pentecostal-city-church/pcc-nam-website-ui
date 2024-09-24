@@ -244,7 +244,7 @@ const MapChart = (props) => {
                         stroke="rgb(157,157,157)"
                         strokeWidth={0.25}
                         data-tooltip-id={'county-geo'}
-                        data-tooltip-html={`<div class="hover-tooltip-container"><b>${cur ? cur.name : ''}, ${cur ? cur.state_id : ''} </b><br /><p class="population-text">Population: ${
+                        data-tooltip-html={`<div className="hover-tooltip-container"><b>${cur ? cur.name : ''}, ${cur ? cur.state_id : ''} </b><br /><p className="population-text">Population: ${
                             cur ? populationTextFormatter(cur.population) : ''
                         }</p></div>`}
                         // data-tooltip-content={`${cur ? cur.name : ''}, ${cur ? cur.state_id : ''} — pop. ${

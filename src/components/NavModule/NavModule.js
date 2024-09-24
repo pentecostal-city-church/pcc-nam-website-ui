@@ -127,11 +127,11 @@ const NavModule = (props) => {
         >
           <NavTopLevel>
             {menuItems.map((item, index) => (
-              <li class="side-nav-list-item" key={index}>
+              <li className="side-nav-list-item" key={index}>
                 {item.accordion ? (
                   <>
                     <button
-                      class={`side-nav-link ${pathname === item.path ? 'highlighted' : null}`}
+                      className={`side-nav-link ${pathname === item.path ? 'highlighted' : null}`}
                       type="button"
                       onClick={() => {
                         if (subNavIndex === index) {
@@ -155,15 +155,15 @@ const NavModule = (props) => {
                       initial="closed"
                       animate={subNavIndex === index ? "open" : "closed"}
                       variants={subMenuNavVariants}
-                      // class='no-margin'
+                      // className='no-margin'
                     >
                       <hr />
                       {item.accordion.map((accordionItem, accordionIndexndex) => {
                         const { path, text } = accordionItem;
                         return (
-                          <li class='side-nav-sublink' key={accordionIndexndex}>
+                          <li className='side-nav-sublink' key={accordionIndexndex}>
                             <Link
-                              class={`side-nav-link ${pathname === path ? 'highlighted' : null}`}
+                              className={`side-nav-link ${pathname === path ? 'highlighted' : null}`}
                               onClick={toggleNav}
                               onKeyDown={toggleNav}
                               to={path}
@@ -178,7 +178,7 @@ const NavModule = (props) => {
                   </>
                 ) : (
                   <Link
-                    class={`side-nav-link ${pathname === item.path ? 'highlighted' : null}`}
+                    className={`side-nav-link ${pathname === item.path ? 'highlighted' : null}`}
                     onClick={toggleNav}
                     onKeyDown={toggleNav}
                     to={item.path}
@@ -221,10 +221,10 @@ const NavModule = (props) => {
                   return null;
                 }
                 return (
-                  <div key={index} class={`dropdown ${index >= 3 ? 'show-' + (index + 1) : null}`}>
-                    <div class={`dropbtn ${(pathname === menuItem.path) ? 'highlighted' : null}`}><a class="nav-title" href={menuItem.path}>{menuItem.text}</a></div>
+                  <div key={index} className={`dropdown ${index >= 3 ? 'show-' + (index + 1) : null}`}>
+                    <div className={`dropbtn ${(pathname === menuItem.path) ? 'highlighted' : null}`}><a className="nav-title" href={menuItem.path}>{menuItem.text}</a></div>
                     {menuItem.accordion ? (
-                      <div class="dropdown-content">
+                      <div className="dropdown-content">
                         {menuItem.accordion.map((accordionItem, accordionIndex) => {
                           return <a key={accordionIndex} href={accordionItem.path}>{accordionItem.text}</a>
                         })}
@@ -233,22 +233,22 @@ const NavModule = (props) => {
                   </div>
                 )
               })}
-              <div ref={moreDropdownRef} class="dropdown outlined more-dropdown">
+              <div ref={moreDropdownRef} className="dropdown outlined more-dropdown">
                 <div
                   style={{ marginLeft: '4px' }}
                   onClick={toggleMoreNav}
-                  class="dropbtn flex"
+                  className="dropbtn flex"
                 >
                   More
-                  <div class="chevron-container">{isMoreNavOpen ? <ChevronUp style={{ color: 'white' }} /> : <ChevronDown style={{ color: 'white' }} />}</div>
+                  <div className="chevron-container">{isMoreNavOpen ? <ChevronUp style={{ color: 'white' }} /> : <ChevronDown style={{ color: 'white' }} />}</div>
                 </div>
-                {isMoreNavOpen && (<div class="more-dropdown-content">
+                {isMoreNavOpen && (<div className="more-dropdown-content">
                   {menuItems?.length && (
                     menuItems.map((menuItem, index) => {
                       if (index < 3) {
                         return null;
                       }
-                      return <a index={index} class={`show-more-${index+1}`} href={menuItem.path}>{menuItem.text}</a>;
+                      return <a key={index} index={index} className={`show-more-${index+1}`} href={menuItem.path}>{menuItem.text}</a>;
                     })
                   )}
                 </div>)}

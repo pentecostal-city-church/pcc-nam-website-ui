@@ -35,7 +35,7 @@ export const FooterStyles = styled.footer`
 export const FooterMenuStyles = styled.div`
   @media (min-width: 768px) {
     flex-grow: 1;
-    width: 33.333%;
+
   }
 
   h5 {

@@ -11,13 +11,11 @@ import churchPlanter5 from '../img/church-planter/church-planter-5.jpg';
 import churchPlanter6 from '../img/church-planter/church-planter-6.jpg';
 import churchPlanter7 from '../img/church-planter/church-planter-7.jpg';
 import churchPlanter8 from '../img/church-planter/church-planter-8.jpg';
-import NavModule from "../components/NavModule/NavModule";
 
 // eslint-disable-next-line
 export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
   return (
     <div>
-    <NavModule />
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '0px' }}>
       <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1698958055723-89PIVDX0D4LFRV7Z74T5/LAUNCH-WEBSITE-PIC.jpg")` }}>
           <h2 style={{ marginTop: '260px' }} className="purpose-column-title">SOCAL NAM</h2>
@@ -86,7 +84,7 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
         <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
             <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
         </div>
-        <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+        <div style={{ textAlign: 'center', marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
           <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
         </div>
     </div>

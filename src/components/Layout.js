@@ -32,6 +32,7 @@ const Layout = ({ children }) => {
       >
 
             <div>
+              <NavModule />
               <AnimMain>
                 {children}
                 <Footer />

@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
-import NavModule from "../components/NavModule/NavModule";
 
 // eslint-disable-next-line
 export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
@@ -13,7 +12,6 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
 
     return (
       <div>
-      <NavModule />
         <div>
             <div style={{ display: 'flex', margin: '72px' }}>
                 <div style={{ marginTop: '32px' }}>
@@ -51,7 +49,7 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
             <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
                     <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                 </div>
-                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+                <div style={{ textAlign: 'center', marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                   <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a>.</p>
                 </div>
         </div>

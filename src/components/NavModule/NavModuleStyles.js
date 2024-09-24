@@ -57,7 +57,10 @@ export const NavModuleStyles = styled.nav`
   }
 
   .logo-image-circle {
-    height: 120px;
+    height: 60px;
+    @media only screen and (min-width: 430px) {
+      height: 120px;
+    }
   }
 
   .topnav-container {
@@ -92,6 +95,7 @@ export const NavModuleStyles = styled.nav`
   .dropdown-content {
     display: none;
     position: absolute;
+    right: -24px;
     background-color: #02314a;
     min-width: 105px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -145,7 +149,7 @@ export const NavModuleStyles = styled.nav`
   }
 
   .show-5 {
-    @media only screen and (max-width: 1093px) {
+    @media only screen and (max-width: 1150px) {
       display: none;
     }
   }
@@ -169,7 +173,7 @@ export const NavModuleStyles = styled.nav`
   }
 
   .more-dropdown .more-dropdown-content .show-more-5 {
-    @media only screen and (min-width: 1094px) {
+    @media only screen and (min-width: 1151px) {
       display: none;
     }
   }
@@ -215,6 +219,7 @@ export const NavModuleStyles = styled.nav`
     position: absolute;
     background-color: #02314a;
     min-width: 105px;
+    right: -24px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -366,6 +371,7 @@ export const HamburgerStyles = styled(motion.button)`
   height: 30px;
   padding: 1px;
   margin: 0px 36px;
+  z-index: 9999999;
   cursor: pointer;
   outline: none;
 

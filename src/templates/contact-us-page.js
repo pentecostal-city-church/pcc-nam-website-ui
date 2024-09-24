@@ -5,7 +5,6 @@ import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
 import 'react-phone-number-input/style.css';
 import { FaCheckCircle } from "react-icons/fa";
-import NavModule from "../components/NavModule/NavModule";
 
 export const countryToFlag = (isoCode) => {
     return typeof String.fromCodePoint !== 'undefined'
@@ -300,17 +299,8 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
     const [contacted, setContacted] = React.useState(false);
     const [existingChurch, setExistingChurch] = React.useState(false);
 
-    const countriesMemo = React.useMemo(() => {
-        return countries;
-    }, [countries]);
-
-    const selectOnChange = (e) => {
-        setCountryCode(e.target.value);
-    }
-
     return sent ? (
         <div>
-        <NavModule />
         <div style={{ marginTop: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '98.5px' }}>
             <div style={{ display: 'flex', flexDirection: 'column', margin: '160px 0px 32px', width: '80%' }}>
                 <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif', marginBottom: '4px' }}>
@@ -334,7 +324,6 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
         </div>
     ) : (
         <div>
-        <NavModule />
         <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("http://socalnam.org/img/Silhouettes-of-Business-People-Working-000066600625_Large.jpeg")` }}>
             <h2 style={{ marginTop: '260px' }} className="purpose-column-title">CONNECT</h2>
@@ -347,7 +336,7 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
             <p style={{ margin: '0px 0px 16px', fontSize: '18px', fontWeight: 300, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
                 {`We would love to connect!`}
             </p>
-            <p style={{ margin: '0px', fontSize: '18px', fontWeight: 300, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
+            <p style={{ textAlign: 'center', margin: '0px', fontSize: '18px', fontWeight: 300, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
                 Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a>.
             </p>
             <p style={{ margin: '0px', fontSize: '18px', fontWeight: 300, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
