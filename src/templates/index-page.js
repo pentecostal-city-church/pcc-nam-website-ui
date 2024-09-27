@@ -59,7 +59,7 @@ export const IndexPageTemplate = ({
       <Seo title="Home" />
       <Layout>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <div id="purpose" className={'landing-main-container'} style={{ display: 'flex', alignItems: 'center', width: 'calc(100vw)', height: 'calc(100vh - 154.5px)', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 194, 0.1)', backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundImage: `url("http://socalnam.org/img/welcome.jpeg")` }}>
+        <div id="purpose" className={'landing-main-container'} style={{ display: 'flex', alignItems: 'center', width: 'calc(100vw)', height: 'calc(100vh - 154.5px)', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 194, 0.1)', backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundImage: `url("http://socalnam.org/img/main.jpg")` }}>
           <div style={{ marginTop: '0px', width: '100%', maxWidth: '880px'}} className={'purpose-column'}>
           <div className={'purpose-container'}>
               <p style={{ marginLeft: '16px', marginTop: '0px', marginBottom: '32px', color: 'white' }} className="purpose-column-header-1">OUR <b style={{ color: 'rgb(246, 68, 55)' }}>PURPOSE</b></p>
