@@ -6,8 +6,15 @@ import Seo from "../components/SEO";
 // import BannerModule from "../components/BannerModule/BannerModule";
 import { FiChevronDown as ChevronDown } from "react-icons/fi";
 import { GeoMap } from './geo-map';
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 // eslint-disable-next-line
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 1.0
+}
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -32,51 +39,61 @@ export const IndexPageTemplate = ({
       transition: { delay: 5000 }
     }
   };
+
+  const callbackFunction = (entries) => {
+    const [entry] = entries;
+    if (startAnim === 'inactive') {
+      setStartAnim(entry.isIntersecting ? 'active' : 'inactive');
+    }
+  }
   
   React.useEffect(() => {
-    observerRef.current = new IntersectionObserver(entries => {
-      // We will fill in the callback later...
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // It's visible. Add the animation class here!
-          setStartAnim('active');
-        }
-      });
-    });
+    const observer = new IntersectionObserver(callbackFunction, options);
+    if (observerRef.current) {
+      observer.observe(observerRef.current);
+    }
 
-    // Tell the observer which elements to track
-    observerRef.current.observe(document.querySelector('#geo-map'), {
-      subtree: true,
-      childList: true,
-    });
     return () => {
-      
+      if (observerRef.current) {
+        observer.unobserve(observerRef.current);
+      }
     };
-  }, []);
+  }, [observerRef, options]);
 
   return (
     <div >
       <Seo title="Home" />
       <Layout>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <div id="purpose" className={'landing-main-container'} style={{ display: 'flex', alignItems: 'center', width: 'calc(100vw)', height: 'calc(100vh - 154.5px)', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 194, 0.1)', backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundImage: `url("http://socalnam.org/img/main.JPG")` }}>
-          <div style={{ marginTop: '0px', width: '100%', maxWidth: '880px'}} className={'purpose-column'}>
-          <div className={'purpose-container'}>
-              <p style={{ marginLeft: '16px', marginTop: '0px', marginBottom: '32px', color: 'white' }} className="purpose-column-header-1">OUR <b style={{ color: 'rgb(246, 68, 55)' }}>PURPOSE</b></p>
-            </div>
-            <div className="purpose-column-section">
-              <div  className="purpose-column-section">
-                <h2 className="purpose-column-title">INSPIRING.</h2>
-                <h2 className="purpose-column-title">EQUIPPING.</h2>
-                <h2 className="purpose-column-title">SUSTAINING.</h2>
+        <AnimatePresence>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{
+            duration: 6
+          }}
+        >
+          <div id="purpose" className={'landing-main-container'} style={{ display: 'flex', alignItems: 'center', width: 'calc(100vw)', height: 'calc(100vh - 154.5px)', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 194, 0.1)', backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundImage: `url("http://socalnam.org/img/main.JPG")` }}>
+            <div style={{ marginTop: '0px', width: '100%', maxWidth: '880px'}} className={'purpose-column'}>
+            <div className={'purpose-container'}>
+                <p style={{ marginLeft: '16px', marginTop: '0px', marginBottom: '32px', color: 'white' }} className="purpose-column-header-1">OUR <b style={{ color: 'rgb(246, 68, 55)' }}>PURPOSE</b></p>
               </div>
-            </div>
-            <div className={'next-town-container'}>
-          <p style={{ fontSize: '32px', marginTop: '32px', color: 'white' }} className="purpose-column-header">TO REACH <b style={{ color: 'rgb(246, 68, 55)' }}>THE NEXT TOWN.</b></p>
-        </div>
-            {/* <br/> */}
+              <div className="purpose-column-section">
+                <div  className="purpose-column-section">
+                  <h2 className="purpose-column-title">INSPIRING.</h2>
+                  <h2 className="purpose-column-title">EQUIPPING.</h2>
+                  <h2 className="purpose-column-title">SUSTAINING.</h2>
+                </div>
+              </div>
+              <div className={'next-town-container'}>
+            <p style={{ fontSize: '32px', marginTop: '32px', color: 'white' }} className="purpose-column-header">TO REACH <b style={{ color: 'rgb(246, 68, 55)' }}>THE NEXT TOWN.</b></p>
           </div>
-        </div>
+              {/* <br/> */}
+            </div>
+          </div>
+          </motion.div>
+        </AnimatePresence>
         </div>
 
         <div className={'down-button-container'} onClick={scrollDownHandler}><ChevronDown className="down-arrow" /></div>
@@ -84,7 +101,9 @@ export const IndexPageTemplate = ({
           variants={variants}
           animate={startAnim}
         >
+          <div ref={observerRef}>
           <GeoMap />
+          </div>
         </motion.div>
       </Layout>
     </div>

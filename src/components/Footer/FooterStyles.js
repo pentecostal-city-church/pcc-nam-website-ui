@@ -5,8 +5,6 @@ export const FooterStyles = styled.footer`
     padding: 0 var(--borderSpacing) var(--gap) var(--borderSpacing);
 
     .container {
-      display: flex;
-      flex-direction: column;
       gap: var(--gap);
 
       @media (min-width: 768px) {
@@ -29,6 +27,24 @@ export const FooterStyles = styled.footer`
         }
       }
     }
+  }
+  
+  .footer-nav-link {
+    text-decoration: none;
+    color: white;
+
+  }
+
+  .footer-nav-header {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .footer-nav-sub {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 4px;
   }
 `
 

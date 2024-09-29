@@ -16,7 +16,7 @@ export const NavModuleStyles = styled.nav`
   }
 
   .container {
-    background-color: rgb(2, 49, 74);
+    background: linear-gradient(rgb(2,49,74), rgb(2,49,97));
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,7 +96,7 @@ export const NavModuleStyles = styled.nav`
     display: none;
     position: absolute;
     right: -24px;
-    background-color: #02314a;
+    background: linear-gradient(rgb(2,49,74), rgb(2,49,97));
     min-width: 105px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -217,7 +217,7 @@ export const NavModuleStyles = styled.nav`
   .more-dropdown-content {
     margin-top: 8px;
     position: absolute;
-    background-color: #02314a;
+    background: linear-gradient(rgb(2,49,74), rgb(2,49,97));
     min-width: 105px;
     right: -24px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);

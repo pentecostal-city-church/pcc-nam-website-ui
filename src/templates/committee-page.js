@@ -21,7 +21,7 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
           <h2 style={{ marginTop: '260px' }} className="purpose-column-title">SOCAL NAM</h2>
           <p style={{ marginTop: '16px' }} className="purpose-column-header">COMMITTEE</p>
         </div>
-        <div style={{ backgroundColor: 'rgb(2, 49, 74)' }}>
+        <div style={{ background: 'linear-gradient(rgb(2,49,74), rgb(2,49,97))', padding: '16px 0px 32px' }}>
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '32px' }}>
           <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
               {`SOUTHERN CALIFORNIA DISTRICT`}

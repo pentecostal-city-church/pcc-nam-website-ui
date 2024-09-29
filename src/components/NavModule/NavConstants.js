@@ -30,10 +30,6 @@ export const menuItems = [
     text: "Give",
     accordion: [
       {
-        path: "/give",
-        text: "Give",
-      },
-      {
         path: "/christmas-for-christ",
         text: "Christmas For Christ",
       }
