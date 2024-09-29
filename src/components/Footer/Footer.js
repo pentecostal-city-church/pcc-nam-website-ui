@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { FooterStyles, FooterMenuStyles, CopyrightStyles } from "./FooterStyles";
+import { FooterStyles, FooterMenuStyles } from "./FooterStyles";
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata";
 import {
   FaFacebookSquare as Facebook,
@@ -9,40 +9,10 @@ import {
   FaLinkedin as Linkedin,
 } from "react-icons/fa"
 import { menuItems } from "../NavModule/NavConstants";
-import { FiChevronDown as ChevronDown } from "react-icons/fi";
-import { FiChevronUp as ChevronUp } from "react-icons/fi";
-import MenuContext from "../MenuContext";
 
 const Footer = () => {
   const siteMeta = UseSiteMetadata();
-  const [isOpen, setNav] = React.useContext(MenuContext);
-  const [isMoreNavOpen, setMoreNav] = React.useState(false);
-  const [subNavIndex, setSubNavIndex] = React.useState(0);
-  const moreDropdownRef = React.useRef(null);
 
-  const toggleMoreNav = () => {
-    setMoreNav((isOpen) => !isOpen);
-  }
-
-  const toggleSubNavIndex = (index) => {
-    setSubNavIndex(index);
-  }
-
-  const toggleNav = () => {
-    setNav((isOpen) => !isOpen);
-  }
-
-  const pathname = React.useMemo(() => {
-    try {
-      if (typeof window !== 'undefined'){
-        return window?.location?.pathname;
-      } else {
-        return '/';
-      }
-    } catch (e) {
-      return '/';
-    }
-  });
 
   return (
     <FooterStyles style={{ paddingTop: '48px', marginBottom: '0px', paddingBottom: '0px', marginTop: '72px', background: 'linear-gradient(rgb(2,49,74), rgb(2,49,97))' }} className="section">
