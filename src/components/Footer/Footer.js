@@ -117,47 +117,44 @@ const Footer = () => {
                 <div className="side-nav-list-item" style={{ marginBottom: '8px' }} key={index}>
                   {item.accordion ? (
                     <div style={{ margin: '0px 16px' }}>
-                    <Link
+                    <a
                       className={`footer-nav-link footer-nav-header`}
-                      onClick={toggleNav}
-                      onKeyDown={toggleNav}
+                      // onClick={toggleNav}
+                      // onKeyDown={toggleNav}
                       to={item.path}
-                      activeClassName="menu__item--active"
+                      // activeClassName="menu__item--active"
                     >
                       {item.text}
-                      <span>.</span>
-                    </Link>
+                    </a>
                     {item.accordion.map((accordionItem, accordionIndexndex) => {
                           const { path, text } = accordionItem;
                           return (
                             <div key={accordionIndexndex}>
-                              <Link
+                              <a
                                 className={`footer-nav-link footer-nav-sub`}
-                                onClick={toggleNav}
-                                onKeyDown={toggleNav}
-                                to={path}
+                                // onClick={toggleNav}
+                                // onKeyDown={toggleNav}
+                                href={path}
                               >
                                 {text}
-                              </Link>
+                              </a>
                               </div>
                           )
                     })}
                     </div>
                   ) : (
                     <div style={{ margin: '0px 16px' }}>
-                    <Link
+                    <a
                       className={`footer-nav-link footer-nav-header`}
-                      onClick={toggleNav}
-                      onKeyDown={toggleNav}
-                      to={item.path}
-                      activeClassName="menu__item--active"
+                      // onClick={toggleNav}
+                      // onKeyDown={toggleNav}
+                      href={item.path}
+                      // activeClassName="menu__item--active"
                     >
                       {item.text}
-                      <span>.</span>
-                    </Link>
+                    </a>
                     </div>
                   )}
-
                 </div>
               ))}
           </div>
