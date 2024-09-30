@@ -39,64 +39,68 @@ export const GeoMap = () => {
             </div>
                 <div className={'map-column'}>
                     <div className={'geo-map-column'}>
-                    <MapChart widthScale={screenWidth} />
-                    <ReactTooltip
-                        id={'county-geo'}
-                        place='bottom'
-                    />
-                    <div className={'subtitle-text-container'}>
-                        <div className={'subtitle-text'} style={{ display: 'flex', justifyContent: 'center', width: '75%', maxWidth: '440px' }}>
-                        {`Southern California NAM District Map`}
+                        <MapChart widthScale={screenWidth} />
+                        <ReactTooltip
+                            id={'county-geo'}
+                            place='bottom'
+                        />
+                        <div className={'subtitle-text-container'} style={{ marginLeft: '0px' }}>
+                            <div className={'subtitle-text'} style={{ display: 'flex', justifyContent: 'center', width: '75%', maxWidth: '440px' }}>
+                                {`Southern California NAM District Map`}
+                            </div>
                         </div>
                     </div>
+                    <div className={'geo-map-column hide-on-expand'} >
+                        <div className={'hide-on-expand'} style={{ margin: '0px 96px' }}>
+                            <hr style={{  marginBottom: '0px' }} className="purpose-column-divider hide-on-expand" />
+                        </div>
                     </div>
-                    <hr className="purpose-column-divider hide-on-expand" style={{ marginLeft: '96px' }} />
                     <div style={{ marginTop: '0px' }} className={'geo-map-column'}>
-                    <div className="purpose-column-section-2">
-                        <CountUp
-                            start={1}
-                            end={26}
-                            duration={7.75}
-                            separator=""
-                            decimals={0}
-                            delay={0}
-                            decimal=","
-                            prefix="#"
-                            suffix="M"
-                        >
-                            {({ countUpRef }) => (
-                            <div style={{ margin: '8px 0px' }} onClick={() => window.open('https://x.com/hashtag/26M?src=hashtag_click', 'blank')}>
-                                <p style={{ cursor: 'pointer', fontSize: '100px', fontWeight: 800, margin: '0px 8px 0px 0px', color: '#00ACEE' }} ref={countUpRef} />
+                        <div className="purpose-column-section-2">
+                            <CountUp
+                                start={1}
+                                end={26}
+                                duration={7.75}
+                                separator=""
+                                decimals={0}
+                                delay={0}
+                                decimal=","
+                                prefix="#"
+                                suffix="M"
+                            >
+                                {({ countUpRef }) => (
+                                <div style={{ margin: '8px 0px' }} onClick={() => window.open('https://x.com/hashtag/26M?src=hashtag_click', 'blank')}>
+                                    <p style={{ cursor: 'pointer', fontSize: '100px', fontWeight: 800, margin: '0px 8px 0px 0px', color: '#00ACEE' }} ref={countUpRef} />
+                                </div>
+                                )}
+                            </CountUp>
+                            <div style={{ position: 'relative', bottom: '8px' }}>
+                                <p style={{ margin: '0px', fontWeight: 800, fontSize: '14px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`souls reside in SoCal District. We are `}</p>
+                                <p style={{ margin: '0px', fontWeight: 800, fontSize: '14px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`commissioned to reach The Next Town`}</p>
+                                <p style={{ margin: '0px', fontWeight: 800, fontSize: '14px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`with the Acts 2:38 salvation message.`}</p>
+                                <p style={{ margin: '0px', fontWeight: 800, fontSize: '14px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`Help us Go. Gather. Grow.`}</p>
                             </div>
-                            )}
-                        </CountUp>
-                        <div style={{ position: 'relative', bottom: '8px' }}>
-                            <p style={{ margin: '0px', fontWeight: 800, fontSize: '14px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`souls reside in SoCal District. We are `}</p>
-                            <p style={{ margin: '0px', fontWeight: 800, fontSize: '14px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`commissioned to reach The Next Town`}</p>
-                            <p style={{ margin: '0px', fontWeight: 800, fontSize: '14px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`with the Acts 2:38 salvation message.`}</p>
-                            <p style={{ margin: '0px', fontWeight: 800, fontSize: '14px', display: 'flex', alignItems: 'center', color: 'gold' }} className="purpose-column-header">{`Help us Go. Gather. Grow.`}</p>
-                        </div>
-                        </div>
-                        <hr className="purpose-column-divider" style={{ margin: '0px 96px' }} />
-                        <div>
-                        <div style={{ margin: '32px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <div style={{ marginLeft: '0px', width: 'fit-content' }} className={'subtitle-text-container'}>
-                            <div style={{ marginBottom: '48px', marginTop: '24px', textAlign: 'center', padding: '24px', backgroundColor: 'rgb(246, 68, 55)' }}>
-                            <a className={'cta-button'} href={`/policy-form`} style={{ margin: '24px 0px' }}>{`Click here to see the SoCal District path to church planting.`}</a>
                             </div>
-                        </div>
-                        <div style={{ marginLeft: '0px' }} className={'subtitle-text-container'}>
-                            <button onClick={startTrainingHandler} className={`training-button`}>
-                            {`START ONLINE TRAINING!`}
-                            </button>
-                        </div>
-                        </div>
-                        <hr className="purpose-column-divider" style={{ margin: '0px 96px', marginBottom: '0px' }} />
-                        <div className="circular-text-gap" />
-                        <CircularText />
+                            <hr className="purpose-column-divider" style={{ margin: '24px 96px 0px' }} />
+                            <div>
+                            <div style={{ margin: '32px 0px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                            <div style={{ marginLeft: '0px', width: 'fit-content' }} className={'subtitle-text-container'}>
+                                <div style={{ marginBottom: '48px', marginTop: '8px', textAlign: 'center', padding: '24px', backgroundColor: 'rgb(246, 68, 55)' }}>
+                                <a className={'cta-button'} href={`/policy-form`} style={{ margin: '24px 0px' }}>{`Click here to see the SoCal District path to church planting.`}</a>
+                                </div>
+                            </div>
+                            <div style={{ marginLeft: '0px' }} className={'subtitle-text-container'}>
+                                <button onClick={startTrainingHandler} className={`training-button`}>
+                                {`START ONLINE TRAINING!`}
+                                </button>
+                            </div>
+                            </div>
+                            <hr className="purpose-column-divider" style={{ margin: '0px 96px', marginBottom: '0px' }} />
+                            <div className="circular-text-gap" />
+                                <CircularText />
+                            </div>
                         </div>
                     </div>
-                </div>
                 <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
             <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                 <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
