@@ -17,6 +17,8 @@
   Cache-Control: public, max-age=31536000, immutable
 /static/church-planter-1-29290bcc5d4ec08c5fceb29c550eab48.jpg
   Cache-Control: public, max-age=31536000, immutable
+/static/church-planter-6-695853ebf9b3ea824982d5d94e8af8d3.jpg
+  Cache-Control: public, max-age=31536000, immutable
 /static/church-planter-3-00dc61d5c6523cbd85f986c0c4bd62f6.jpg
   Cache-Control: public, max-age=31536000, immutable
 /static/church-planter-4-a574d79b06dfcd8a1e2c722a19d7e406.jpg
@@ -24,8 +26,6 @@
 /static/church-planter-2-9e0c4d4a6042de92d0087c8e62af3f4b.jpg
   Cache-Control: public, max-age=31536000, immutable
 /static/church-planter-7-8a639ff8d7f7d96ceb19ddd1b6cb9cbd.jpg
-  Cache-Control: public, max-age=31536000, immutable
-/static/church-planter-6-695853ebf9b3ea824982d5d94e8af8d3.jpg
   Cache-Control: public, max-age=31536000, immutable
 /static/church-planter-8-74559bde479bfc28d0b14cc1b44bc7e8.jpg
   Cache-Control: public, max-age=31536000, immutable
@@ -37,7 +37,7 @@
   Cache-Control: public, max-age=31536000, immutable
 /app-273dcdcc44e59de75e2c.js
   Cache-Control: public, max-age=31536000, immutable
-/webpack-runtime-dec9f355e30dcb6d1808.js
+/webpack-runtime-798b38bb4ff830c2eb7f.js
   Cache-Control: public, max-age=31536000, immutable
 /component---src-pages-404-js-42c4848afadad2cbe20a.js
   Cache-Control: public, max-age=31536000, immutable
@@ -63,7 +63,7 @@
   Cache-Control: public, max-age=31536000, immutable
 /component---src-templates-christmas-for-christ-page-js-669c7e9526a3b031e8ae.js
   Cache-Control: public, max-age=31536000, immutable
-/component---src-templates-committee-page-js-d0481545528ac4e19146.js
+/component---src-templates-committee-page-js-73e1d1929db23db0570d.js
   Cache-Control: public, max-age=31536000, immutable
 /component---src-templates-contact-us-page-js-16d532042afc7cdd15a8.js
   Cache-Control: public, max-age=31536000, immutable
@@ -105,7 +105,7 @@
   Cache-Control: public, max-age=31536000, immutable
 /app-273dcdcc44e59de75e2c.js.map
   Cache-Control: public, max-age=31536000, immutable
-/webpack-runtime-dec9f355e30dcb6d1808.js.map
+/webpack-runtime-798b38bb4ff830c2eb7f.js.map
   Cache-Control: public, max-age=31536000, immutable
 /component---src-pages-404-js-42c4848afadad2cbe20a.js.map
   Cache-Control: public, max-age=31536000, immutable
@@ -131,7 +131,7 @@
   Cache-Control: public, max-age=31536000, immutable
 /component---src-templates-christmas-for-christ-page-js-669c7e9526a3b031e8ae.js.map
   Cache-Control: public, max-age=31536000, immutable
-/component---src-templates-committee-page-js-d0481545528ac4e19146.js.map
+/component---src-templates-committee-page-js-73e1d1929db23db0570d.js.map
   Cache-Control: public, max-age=31536000, immutable
 /component---src-templates-contact-us-page-js-16d532042afc7cdd15a8.js.map
   Cache-Control: public, max-age=31536000, immutable
