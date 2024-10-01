@@ -33,7 +33,7 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
           </p>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-          <p style={{ color: 'white', marginTop: '16px', marginBottom: '24px', fontSize: '14px' }}>{`Below are the NAM Directors for each section of the southern California district. `}</p>
+          <p style={{ color: 'white', marginTop: '16px', marginBottom: '24px', fontSize: '14px', textAlign: 'center' }}>{`Below are the NAM Directors for each section of the southern California district. `}</p>
         </div>
         </div>
         <div style={{ marginTop: '120px' }} className="church-planter-container">
