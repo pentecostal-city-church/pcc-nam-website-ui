@@ -23,7 +23,7 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
         </div>
         <div style={{ background: 'linear-gradient(rgb(2,49,74), rgb(2,49,97))', padding: '16px 0px 32px' }}>
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '32px' }}>
-          <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
+          <p style={{ textAlign: 'center', margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif' }}>
               {`SOUTHERN CALIFORNIA DISTRICT`}
           </p>
         </div>

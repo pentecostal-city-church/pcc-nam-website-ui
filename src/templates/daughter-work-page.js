@@ -312,16 +312,9 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
         <div>
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '32px 0px 0px' }}>
             <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <img style={{ height: '210px', borderRadius: '105px' }} className={'logo-image-circle'} src={'http://socalnam.org/img/dwp.png'} />
-                <p style={{ margin: '24px 0px 0px', maxWidth: '1050px', color: 'white', fontSize: '18px'}}>{`Before completing this Daughter Work application form, please make sure you have`}</p>
+                <img style={{ maxWidth: '80%', maxHeight: '30vw', height: '210px', borderRadius: '105px' }} className={'logo-image-circle'} src={'http://socalnam.org/img/dwp.png'} />
+                <p style={{ margin: '24px 24px 0px', maxWidth: '1050px', color: 'white', fontSize: '18px', textAlign: 'center' }}>Before completing this Daughter Work application form, please make sure you have read through the <a href={'/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>SoCal District Policy Form</a>. Contact us with any questions. Once you feel free to submit your online application to: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>read through the <a href={'/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>SoCal District Policy Form</a>. Contact us with any questions. Once you</p>
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>feel free to submit your online application to: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
-            </div>
-
             <div style={{ justifyContent: 'center', margin: '32px 0px' }} className={'subtitle-text-container'}>
                 <button onClick={startTrainingHandler} className={`training-button`}>
                 {`START ONLINE TRAINING!`}

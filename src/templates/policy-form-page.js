@@ -14,15 +14,12 @@ export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => 
       <div>
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif' }}>
+        <p style={{ textAlign: 'center', margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif' }}>
             {`SOCAL DISTRICT NAM POLICY`}
         </p>
       </div>
       <div style={{ textAlign: 'center', marginTop: '32px', marginBottom: '32px' }}>
-        <p style={{ margin: '0px' }}>{`Although we are excited to plant churches and start new works, to borrow words from the Apostle Paul, everything must still be done`}</p>
-        <p style={{ margin: '0px' }}>{`decently and in order. So we have done our best to clearly communicate the expectations and structure of what it looks like to launch`}</p>
-        <p style={{ margin: '0px' }}>{`a church in Missouri. Please read through the summarized system form below, and feel free to scroll down to the bottom of the page`}</p>
-        <p style={{ margin: '0px' }}>{`to download and print the entire policy packet for your benefit.`}</p>
+        <p style={{ margin: '0px 36px' }}>{`Although we are excited to plant churches and start new works, to borrow words from the Apostle Paul, everything must still be done decently and in order. So we have done our best to clearly communicate the expectations and structure of what it looks like to launch a church in Missouri. Please read through the summarized system form below, and feel free to scroll down to the bottom of the page to download and print the entire policy packet for your benefit.`}</p>
       </div>
       <div style={{ justifyContent: 'center', margin: '24px 0px 96px' }} className={'subtitle-text-container'}>
             <button onClick={startTrainingHandler} className={`training-button`}>
@@ -31,7 +28,7 @@ export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => 
         </div>
       <div style={{ marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/09450eb0-ea2a-4beb-8b65-543aeb91fec5.jpeg")' }}/>
       <div style={{ textAlign: 'center' }}>
-        <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif' }}>
+        <p style={{ textAlign: 'center', margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif' }}>
             {`PATH TO PLANTING A CHURCH`}
         </p>
       </div>

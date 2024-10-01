@@ -135,7 +135,7 @@ const NavModule = (props) => {
                       type="button"
                       onClick={() => {
                         if (subNavIndex === index) {
-                          toggleSubNavIndex(0);
+                          window.open(item.path, '_self');
                         } else {
                           toggleSubNavIndex(index);
                         }

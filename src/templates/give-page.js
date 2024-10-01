@@ -12,14 +12,14 @@ export const GivePageTemplate = ({ title, content, contentComponent }) => {
 
     return (
       <div>
-        <div style={{ margin: '32px 156px 0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+        <div style={{ margin: '32px 36px 0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>
+                <p style={{ textAlign: 'center', margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>
                     {`SUPPORT SOCAL DISTRICT`}
                 </p>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <p style={{ margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>
+                <p style={{ textAlign: 'center', margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>
                     {`NORTH AMERICAN MISSIONS`}
                 </p>
             </div>

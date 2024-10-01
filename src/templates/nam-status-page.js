@@ -14,10 +14,10 @@ export const NAMStatusPageTemplate = ({ title, content, contentComponent }) => {
       <div>
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
             <div style={{ margin: '0px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <p style={{ margin: '8px 0px 0px', maxWidth: '1050px', fontSize: '18px', color: 'white' }}>{`Before completing this NAM Status form. Please make sure you complete the online training.`}</p>
+                <p style={{ margin: '8px 0px 0px', maxWidth: '1050px', fontSize: '18px', color: 'white', textAlign: 'center' }}>{`Before completing this NAM Status form. Please make sure you complete the online training.`}</p>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>Please submit your NAM status form to: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+            <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', marginTop: '24px' }}>
+                <p style={{ textAlign: 'center', margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>Please submit your NAM status form to: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
             </div>
             <div style={{ margin: '8px 0px 0px', display: 'flex', justifyContent: 'center' }}>
               <a target='_blank' href={`https://drive.google.com/file/d/1xASOa_PElGkp9s60JxaNEIyIDnwhwSim/view?usp=sharing`} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>Click here to access the NAM Status form.</a>

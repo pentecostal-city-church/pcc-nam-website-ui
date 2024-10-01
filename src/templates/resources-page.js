@@ -13,17 +13,17 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
     return (
       <div>
         <div>
-            <div style={{ display: 'flex', margin: '72px' }}>
-                <div style={{ marginTop: '32px' }}>
+            <div className="conditional-flex-2">
+                <div className="conditional-flex-2b" style={{ marginTop: '32px' }}>
                     <img style={{ border: '1px solid white', width: '330px', height: '426px' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/0bf53f68-79b8-4e39-98b1-7ab66498dbb1.jpg`}/>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', marginTop: '32px' }}>
-                    <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
+                    <div className="conditional-justify-1" style={{ display: 'flex' }}>
                         <div>
-                        <p style={{ margin: '0px 48px 0px', fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>
+                        <p style={{ margin: '0px 48px 0px', fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif', textAlign: 'center' }}>
                         {`RESOURCES FOR THE`}
                         </p>
-                        <p style={{ margin: '0px 48px 32px', fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>
+                        <p style={{ margin: '0px 48px 32px', fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif', textAlign: 'center' }}>
                         {`NORTH AMERICAN MISSIONARY`}
                         </p>
                         </div>

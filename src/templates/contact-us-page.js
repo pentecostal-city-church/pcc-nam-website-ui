@@ -329,7 +329,7 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
             <h2 style={{ marginTop: '260px' }} className="purpose-column-title">CONNECT</h2>
                 <p style={{ marginTop: '16px' }} className="purpose-column-header">WITH US</p>
             </div>
-            <div style={{ alignSelf: 'center', border: '8px solid white', width: 'fit-content', padding: '24px 32px 32px', display: 'flex', flexDirection: 'column', margin: '180px 0px 136px', alignItems: 'center' }}>
+            <div style={{ alignSelf: 'center', border: '8px solid white', width: 'fit-content', padding: '24px 32px 32px', display: 'flex', flexDirection: 'column', margin: '180px 24px 136px', alignItems: 'center' }}>
             <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif', marginBottom: '16px' }}>
                 {`CONTACT US`}
             </p>

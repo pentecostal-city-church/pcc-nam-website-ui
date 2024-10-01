@@ -20,34 +20,30 @@ export const AffiliationApplicationPageTemplate = ({ title, content, contentComp
     return (
       <div>
         <div style={{ marginTop: '32px', display: 'flex', flexDirection: 'column' }}>
-
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <p style={{ margin: '0px 48px 32px', fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>
-                    {`UPCI AFFILIATION APPLICATION`}
-                    </p>
-                </div>
-                <div style={{ margin: '0px 48px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', fontSize: '16px', color: 'white' }}>
-                        <p style={{ margin: '0px', maxWidth: '1050px' }}>Click the link below to access the official UPCI Affiliation Application.</p>
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', fontSize: '16px', color: 'white' }}>
-                        <p style={{ margin: '0px', maxWidth: '1050px' }}>please fill out this form and submit it to this email: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
-                    </div>
-                </div>
-                <div style={{ margin: '32px 48px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column' }}>
-                        <p style={{ margin: '0px', maxWidth: '1050px' }}><a href={`https://drive.google.com/file/d/1uKJly9TYXB4w5bbD2vUeaZl9xQLLhkkj/view`} target="_blank" style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>CLICK HERE TO ACCESS APPLICATION</a></p>
-                    </div>
-                </div>
-                <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
-                <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
-                    <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
-                </div>
-                <div style={{ textAlign: 'center', marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
-                  <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
-                </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <p style={{ margin: '0px 48px 32px', fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif', textAlign: 'center' }}>
+              {`UPCI AFFILIATION APPLICATION`}
+              </p>
+          </div>
+          <div style={{ margin: '0px 48px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', fontSize: '16px', color: 'white', textAlign: 'center' }}>
+                  <p style={{ margin: '0px', maxWidth: '1050px' }}>Click the link below to access the official UPCI Affiliation Application. Please fill out this form and submit it to this email: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+              </div>
+          </div>
+          <div style={{ margin: '32px 48px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                  <p style={{ margin: '0px', maxWidth: '1050px' }}><a href={`https://drive.google.com/file/d/1uKJly9TYXB4w5bbD2vUeaZl9xQLLhkkj/view`} target="_blank" style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>CLICK HERE TO ACCESS APPLICATION</a></p>
+              </div>
+          </div>
+          <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
+          <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+              <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
+            <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Please email us with questions or for more information at: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+          </div>
         </div>
-        </div>
+      </div>
     );
 };
 

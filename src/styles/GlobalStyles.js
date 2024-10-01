@@ -579,8 +579,124 @@ svg.circular-text-svg {
   }
 }
 
+.ministry-container {
+  display: block;
+  @media(min-width:1000px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.ministry-container-margin {
+  margin-left: 0px;
+  margin-top: 8px;
+  @media(min-width:1000px) {
+    margin-left: 128px;
+    margin-top: 8px;
+  }
+}
+
+.conditional-flex {
+  display: block;
+  @media(min-width:1350px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.conditional-container {
+  padding-bottom: 36px;
+  @media(min-width:1160px) {
+    padding-bottom: 0px;
+  }
+}
+
+.conditional-flex-b {
+  display: flex;
+  justify-content: center;
+  @media(min-width:1350px) {
+    display: block;
+  }
+}
+
+.conditional-flex-2 {
+  display: block;
+  margin: 0px 24px;
+  @media(min-width:900px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.conditional-justify-1 {
+  justify-content: center;
+  @media(min-width:900px) {
+    justify-content: flex-start;
+  }
+}
+
+.conditional-flex-2b {
+  display: flex;
+  justify-content: center;
+  @media(min-width:900px) {
+    display: block;
+  }
+}
+
+.conditional-column-1 {
+  margin: 0px 24px;
+  @media(min-width:1350px) {
+    margin: 0px 0px 0px 24px;
+    width: 560px;
+  }
+}
+
+.conditional-margin {
+  margin: 0px 24px;
+  @media(min-width:900px) {
+    margin: 0px;
+  }
+}
+
+.conditional-column-2 {
+  @media(min-width:1350px) {
+    width: 760px;
+  }
+}
+
+.ministry-text-container {
+  margin-left: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 36px;
+  @media(min-width:1000px) {
+    margin-left: 64px;
+    width: 560px;
+  }
+}
+
+.cfc-socal-influence-container {
+  display: block;
+  margin-top: 0px;
+  padding: 8px 0px;
+  @media(min-width:1000px) {
+
+    display: flex;
+  }
+}
+
+.pastor-resources-container {
+  text-align: left;
+  @media(min-width:1000px) {
+    text-align: left;
+    margin-right: 24px;
+  }
+}
+
 .subtitle-text-container {
-  margin-top: 32px;
+  margin-top: 0px;
   margin-left: 32px;
   width: 100%;
   display: flex;
@@ -595,7 +711,6 @@ svg.circular-text-svg {
 
 .church-planter-img-container {
   margin: 16px;
-  width: 20%;
   text-align: center;
 }
 
@@ -616,7 +731,7 @@ svg.circular-text-svg {
   display: flex;
   flex-wrap: wrap;
   max-width: 1000px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .church-planter-container {

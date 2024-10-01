@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <FooterStyles style={{ paddingTop: '48px', marginBottom: '0px', paddingBottom: '0px', marginTop: '72px', background: 'linear-gradient(rgb(2,49,74), rgb(2,49,97))' }} className="section">
-      <div className="container container__tight">
+      <div className="container container__tight conditional-container">
         <div style={{ display: 'flex' }}>
           <div>
           <Link to="/">
@@ -91,7 +91,7 @@ const Footer = () => {
                       className={`footer-nav-link footer-nav-header`}
                       // onClick={toggleNav}
                       // onKeyDown={toggleNav}
-                      to={item.path}
+                      href={item.path}
                       // activeClassName="menu__item--active"
                     >
                       {item.text}

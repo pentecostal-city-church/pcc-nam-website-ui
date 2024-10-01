@@ -18,17 +18,17 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
             {`NAM APPLICATIONS`}
             </p>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div className="conditional-flex">
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px', alignItems: 'center' }}>
-                <div>
-                  <div style={{ display: 'flex' }}>
-                      <div>
+                <div >
+                  <div className="conditional-flex-2">
+                      <div className="conditional-flex-2b">
                           <div style={{ marginTop: '8px', cursor: 'pointer' }} onClick={() => window.open('http://www.christmasforchrist.faith/#home', '_blank')}>
                               <img src={`https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/c376af9c-2598-4040-a896-c58ae80ac76c/CFC-BUTTON-1.jpg`} style={{ width: '180px', height: '180px' }} />
                           </div>
                       </div>
-                      <div style={{ marginLeft: '24px', width: '560px' }}>
-                          <div>
+                      <div className="conditional-column-1">
+                          <div className="conditional-flex-2b" style={{ marginTop: '16px' }}>
                               <p style={{ color: 'white', fontSize: '20px', fontWeight: 300, fontFamily: '"Heebo",sans-serif' }}>{`CHRISTMAS FOR CHRIST FUNDING APPLICATION`}</p>
                           </div>
                           <div>
@@ -40,15 +40,9 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
                       </div>
                   </div>
                 </div>
-                <div style={{ margin: '48px 48px 0px', display: 'flex', flexDirection: 'column' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column' }}>
-                        <p style={{ margin: '0px', maxWidth: '1050px', color: 'white' }}>{`We are excited to offer all of our applications online! Please click below to read about guidelines,`}</p>
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column' }}>
-                        <p style={{ margin: '0px', maxWidth: '1050px', color: 'white' }}>{`expectations, and to submit any of your forms to a secure email that is only accessed by our Executive NAM`}</p>
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column' }}>
-                        <p style={{ margin: '0px', maxWidth: '1050px', color: 'white' }}>{`Team.`}</p>
+                <div className="conditional-column-2" style={{ margin: '24px 24px 0px', display: 'flex', flexDirection: 'column' }}>
+                    <div className="conditional-margin" style={{ display: 'flex', flexDirection: 'column' }}>
+                        <p style={{ margin: '0px', maxWidth: '1050px', color: 'white' }}>{`We are excited to offer all of our applications online! Please click below to read about guidelines, expectations, and to submit any of your forms to a secure email that is only accessed by our Executive NAM Team.`}</p>
                     </div>
                 </div>
                 <div style={{ alignSelf: 'flex-start', margin: '32px 48px 0px', display: 'flex', flexDirection: 'column' }}>
@@ -70,7 +64,7 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
                     </button>
                 </div>
             </div>
-            <div style={{ marginTop: '32px' }}>
+            <div className={'conditional-flex-b'} style={{ marginTop: '32px' }}>
                 <img style={{ border: '1px solid white', width: '330px', height: '426px' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/65f256a2-cae9-4720-90c2-dbcd16608276.jpg`}/>
             </div>
 
