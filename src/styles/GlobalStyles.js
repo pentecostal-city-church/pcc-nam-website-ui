@@ -430,6 +430,7 @@ svg.circular-text-svg {
 .landing-main-container {
   height: calc(100vh - 273px);
   justify-content: center;
+  background-image: url("http://socalnam.org/img/main.JPG");
   @media(min-width:924px) {
     display: flex;
     height: calc(100vh - 154px);
@@ -508,6 +509,15 @@ svg.circular-text-svg {
   @media(min-width:1100px) {
     flex-direction: row;
   }
+}
+
+.purpose-column-text {
+  font-size: 22px;
+  width: 100%;
+  color: white;
+  margin: 0px;
+  text-align: center;
+  font-weight: 600;
 }
 
 .purpose-column-title {
@@ -765,11 +775,13 @@ svg.circular-text-svg {
 .var-height-1 {
   height: 160px;
   display: flex;
+  justify-content: center;
   align-items: center;
   @media(min-width:600px) {
     height: 240px;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 }
 

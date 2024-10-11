@@ -7,14 +7,14 @@ import { HTMLContent } from "../components/Content";
 // eslint-disable-next-line
 export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => {
     const startTrainingHandler = () => {
-        window.open('https://www.socalupci.org/Offerings-', 'blank');
+        window.open('https://ministrycentral.com/the-launch-button', 'blank');
     }
 
     return (
       <div>
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <p style={{ textAlign: 'center', margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif' }}>
+        <p style={{ textAlign: 'center', margin: '64px 0px 0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif' }}>
             {`SOCAL DISTRICT NAM POLICY`}
         </p>
       </div>
