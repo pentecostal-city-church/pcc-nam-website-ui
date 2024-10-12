@@ -60,8 +60,8 @@
   "component---src-templates-policy-form-page-js.js": "component---src-templates-policy-form-page-js-f6b4e976735456c0511a.js",
   "component---src-templates-product-page-js-2ae7acd5f0e2bc888f86.js.map": "component---src-templates-product-page-js-2ae7acd5f0e2bc888f86.js.map",
   "component---src-templates-product-page-js.js": "component---src-templates-product-page-js-2ae7acd5f0e2bc888f86.js",
-  "component---src-templates-resources-page-js-b5c93d3abd183ba9b3d3.js.map": "component---src-templates-resources-page-js-b5c93d3abd183ba9b3d3.js.map",
-  "component---src-templates-resources-page-js.js": "component---src-templates-resources-page-js-b5c93d3abd183ba9b3d3.js",
+  "component---src-templates-resources-page-js-0e9d80964f7451f7a6f2.js.map": "component---src-templates-resources-page-js-0e9d80964f7451f7a6f2.js.map",
+  "component---src-templates-resources-page-js.js": "component---src-templates-resources-page-js-0e9d80964f7451f7a6f2.js",
   "component---src-templates-tags-js-fffc3cc20a64a964a2a0.js.map": "component---src-templates-tags-js-fffc3cc20a64a964a2a0.js.map",
   "component---src-templates-tags-js.js": "component---src-templates-tags-js-fffc3cc20a64a964a2a0.js",
   "framework-45e707c08527960a7616.js.LICENSE.txt": "framework-45e707c08527960a7616.js.LICENSE.txt",
@@ -80,6 +80,6 @@
   "static/heebo-latin-700-normal.woff": "static/heebo-latin-700-normal-00e751096e2ade149fe342a6709ddff9.woff",
   "static/heebo-latin-700-normal.woff2": "static/heebo-latin-700-normal-6609965e18e664d204ecb6f6d6e84452.woff2",
   "styles.css": "styles.1b0066bf327562aa9318.css",
-  "webpack-runtime-e76267fd23b4c2dbfeb7.js.map": "webpack-runtime-e76267fd23b4c2dbfeb7.js.map",
-  "webpack-runtime.js": "webpack-runtime-e76267fd23b4c2dbfeb7.js"
+  "webpack-runtime-0fe5a2f2eab12a6c98a1.js.map": "webpack-runtime-0fe5a2f2eab12a6c98a1.js.map",
+  "webpack-runtime.js": "webpack-runtime-0fe5a2f2eab12a6c98a1.js"
 }
