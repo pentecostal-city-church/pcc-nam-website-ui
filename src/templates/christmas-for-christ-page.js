@@ -17,7 +17,7 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
     return (
         <div>
         <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(255, 9, 4, 0.25)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("http://socalnam.org/img/cfc_slide.png")` }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(255, 9, 4, 0)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("http://socalnam.org/img/cfc_slide.png")` }}>
               {/* <h2 style={{ marginTop: '220px' }} className="purpose-column-title">CHRISTMAS</h2>
                 <h2 style={{ marginTop: '16px' }} className="purpose-column-title">FOR CHRIST</h2> */}
             </div>
