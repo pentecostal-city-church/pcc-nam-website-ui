@@ -17,9 +17,9 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
     return (
         <div>
         <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(255, 9, 4, 0.25)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/65245e82e8702710659fca87/b61eff28-49ab-41dd-9bbd-9dcc12450117/serve-collage.jpg")` }}>
-              <h2 style={{ marginTop: '220px' }} className="purpose-column-title">CHRISTMAS</h2>
-                <h2 style={{ marginTop: '16px' }} className="purpose-column-title">FOR CHRIST</h2>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(255, 9, 4, 0.25)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("http://socalnam.org/img/cfc_slide.png")` }}>
+              {/* <h2 style={{ marginTop: '220px' }} className="purpose-column-title">CHRISTMAS</h2>
+                <h2 style={{ marginTop: '16px' }} className="purpose-column-title">FOR CHRIST</h2> */}
             </div>
           </div>
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '96px' }}>
