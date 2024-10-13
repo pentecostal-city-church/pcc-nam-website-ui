@@ -12,7 +12,13 @@ export const GivePageTemplate = ({ title, content, contentComponent }) => {
 
     return (
       <div>
-        <div style={{ margin: '32px 36px 0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(180, 179, 134, 0.2)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1641420088093-R1R21JATP3QHJEH8SW0K/website-3jpg.jpg")` }}>
+              <h2 style={{ marginTop: '260px' }} className="purpose-column-title">GIVE</h2>
+                <p style={{ marginTop: '16px' }} className="purpose-column-header">HELP FUND THE MISSION</p>
+            </div>
+          </div>
+        <div style={{ margin: '64px 36px 0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <p style={{ textAlign: 'center', margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>
                     {`SUPPORT SOCAL DISTRICT`}

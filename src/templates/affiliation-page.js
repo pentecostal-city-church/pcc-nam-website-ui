@@ -9,7 +9,12 @@ import { HTMLContent } from "../components/Content";
 export const AffiliationPageTemplate = ({ title, content, contentComponent }) => {
   return (
     <div>
-    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '32px' }}>
+              <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,1)', backgroundSize: 'cover', height: '630px', width: '100%' }}>
+                <h2 style={{ marginTop: '260px' }} className="purpose-column-title">AFFILIATIONS</h2>
+            </div>
+        </div>
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '96px' }}>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <p style={{ textAlign: 'center', margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
               {`NATIONAL`}

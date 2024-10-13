@@ -8,8 +8,12 @@ import { HTMLContent } from "../components/Content";
 export const MinistriesPageTemplate = ({ title, content, contentComponent }) => {
   return (
     <div>
+        <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,1)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/gallery/slides/mobile_6eb558c6-4997-4125-8dbc-b1581041608d.jpeg")' }}>
+                <h2 style={{ marginTop: '260px' }} className="purpose-column-title">MINISTRIES</h2>
+            </div>
+        </div>
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '98.5px' }}>
-        <div style={{ marginBottom: '48px', width: '100%', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/gallery/slides/mobile_6eb558c6-4997-4125-8dbc-b1581041608d.jpeg")' }}/>
         <div style={{ textAlign: 'center' }}>
           <p style={{ textAlign: 'center', margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif'  }}>
               {`MINISTRIES OF SOCAL DISTRICT`}
@@ -151,7 +155,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
                 <p>Choose "North American Missions" and then the specific fund that you are desiring to support.</p>
             </div>
         </div> */}
-        <div style={{ marginTop: '48px', marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/685b8f5d-41cb-464b-aed9-9addeef456e7.jpeg")' }}/>
+        <div style={{ marginTop: '120px', marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/685b8f5d-41cb-464b-aed9-9addeef456e7.jpeg")' }}/>
         <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
         <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
             <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>

@@ -13,7 +13,12 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
     return (
       <div>
         <div>
-            <div className="conditional-flex-2">
+          <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(80, 79, 34, 0.5)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1455569744236-DFT7EPG1GEJDE9ZFXT5L/image-asset.jpeg")` }}>
+            <h2 style={{ marginTop: '260px' }} className="purpose-column-title">RESOURCES</h2>
+            </div>
+          </div>
+            <div style={{ marginTop: '96px' }} className="conditional-flex-2">
                 <div className="conditional-flex-2b" style={{ marginTop: '32px' }}>
                     <img style={{ border: '1px solid white', width: '330px', height: '426px' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/0bf53f68-79b8-4e39-98b1-7ab66498dbb1.jpg`}/>
                 </div>
@@ -49,6 +54,7 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
                     </div>
                 </div>
             </div>
+            <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
             <div style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
                     <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
                 </div>

@@ -310,7 +310,12 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
 
     return (
         <div>
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '32px 0px 0px' }}>
+                          <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,0.1)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1457312810413-VO4XT8SGYS260TQSJNBG/growing-tree-000038736694_Large+%281%29.jpg")` }}>
+                <h2 style={{ marginTop: '260px' }} className="purpose-column-title">DAUGHTER WORK</h2>
+            </div>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '96px 0px 0px' }}>
             <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <img style={{ maxWidth: '80%', maxHeight: '30vw', height: '210px', borderRadius: '105px' }} className={'logo-image-circle'} src={'http://socalnam.org/img/dwp.png'} />
                 <p style={{ margin: '24px 24px 0px', maxWidth: '1050px', color: 'white', fontSize: '18px', textAlign: 'center' }}>Before completing this Daughter Work application form, please make sure you have read through the <a href={'/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>SoCal District Policy Form</a>. Contact us with any questions. Once you feel free to submit your online application to: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
