@@ -17,7 +17,7 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
   return (
     <div>
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '0px' }}>
-      <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1698958055723-89PIVDX0D4LFRV7Z74T5/LAUNCH-WEBSITE-PIC.jpg")` }}>
+      <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1698958055723-89PIVDX0D4LFRV7Z74T5/LAUNCH-WEBSITE-PIC.jpg")` }}>
           <h2 style={{ marginTop: '260px' }} className="purpose-column-title">SOCAL NAM</h2>
           <p style={{ marginTop: '16px' }} className="purpose-column-header">COMMITTEE</p>
         </div>

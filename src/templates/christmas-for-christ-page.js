@@ -17,7 +17,7 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
     return (
         <div>
         <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(255, 9, 4, 0.25)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/65245e82e8702710659fca87/b61eff28-49ab-41dd-9bbd-9dcc12450117/serve-collage.jpg")` }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(255, 9, 4, 0.25)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/65245e82e8702710659fca87/b61eff28-49ab-41dd-9bbd-9dcc12450117/serve-collage.jpg")` }}>
               <h2 style={{ marginTop: '220px' }} className="purpose-column-title">CHRISTMAS</h2>
                 <h2 style={{ marginTop: '16px' }} className="purpose-column-title">FOR CHRIST</h2>
             </div>
@@ -34,7 +34,7 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
                 </div>
                 </div>
             <div>
-                <div style={{ marginBottom: '48px', marginTop: '120px', width: '100%', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/3bc3a6f2-25c6-4a55-a8ad-bce1c5502b43.jpg")' }}/>
+                <div style={{ marginBottom: '48px', marginTop: '120px', width: '100%', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundSize: 'cover', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/3bc3a6f2-25c6-4a55-a8ad-bce1c5502b43.jpg")' }}/>
             </div>
             <div className="cfc-socal-influence-container">
                 <div style={{ display: 'flex', justifyContent: 'center' }}>

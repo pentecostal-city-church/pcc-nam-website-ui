@@ -311,7 +311,7 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
     return (
         <div>
                           <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,0.1)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1457312810413-VO4XT8SGYS260TQSJNBG/growing-tree-000038736694_Large+%281%29.jpg")` }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,0.1)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1457312810413-VO4XT8SGYS260TQSJNBG/growing-tree-000038736694_Large+%281%29.jpg")` }}>
                 <h2 style={{ marginTop: '260px' }} className="purpose-column-title">DAUGHTER WORK</h2>
             </div>
         </div>
@@ -345,7 +345,7 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
                 </div>
             ) : (
                 <div>
-                <div style={{ margin: '48px 0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover', height: '360px', width: '100%', backgroundImage: 'url("https://i.redd.it/t2j51hl4qfwb1.jpg")' }}/>
+                <div style={{ margin: '48px 0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundSize: 'cover', height: '360px', width: '100%', backgroundImage: 'url("https://i.redd.it/t2j51hl4qfwb1.jpg")' }}/>
                 {/* <div style={{ margin: '0px 72px' }}>
                     <div>
                         <p style={{ fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif', marginBottom: '4px' }}>SOCAL DISTRICT DAUGHTER WORK APPLICATION</p>

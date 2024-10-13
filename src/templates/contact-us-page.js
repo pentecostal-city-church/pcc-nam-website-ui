@@ -325,7 +325,7 @@ export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
     ) : (
         <div>
         <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("http://socalnam.org/img/Silhouettes-of-Business-People-Working-000066600625_Large.jpeg")` }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("http://socalnam.org/img/Silhouettes-of-Business-People-Working-000066600625_Large.jpeg")` }}>
             <h2 style={{ marginTop: '260px' }} className="purpose-column-title">CONNECT</h2>
                 <p style={{ marginTop: '16px' }} className="purpose-column-header">WITH US</p>
             </div>

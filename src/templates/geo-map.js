@@ -38,7 +38,7 @@ export const GeoMap = () => {
     
     return (
         <div id="geo-map">
-            <div onClick={nextTownHandler} className={'var-height-1'} style={{ cursor: 'pointer', margin: '0px 0px 64px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'contain', width: '100%', backgroundImage: `url("http://socalnam.org/img/next+town+repeat+banner+2.png")` }}>
+            <div onClick={nextTownHandler} className={'var-height-1'} style={{ cursor: 'pointer', margin: '0px 0px 64px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'contain', width: '100%', backgroundImage: `url("http://socalnam.org/img/next+town+repeat+banner+2.png")` }}>
                 <div>
                 <div><p className="purpose-column-text">{`CLICK HERE TO GO TO…`}</p></div>
                 <div><h2 className="purpose-column-title">THE NEXT TOWN</h2></div>

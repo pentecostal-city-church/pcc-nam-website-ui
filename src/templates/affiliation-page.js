@@ -10,7 +10,7 @@ export const AffiliationPageTemplate = ({ title, content, contentComponent }) =>
   return (
     <div>
               <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,1)', backgroundSize: 'cover', height: '630px', width: '100%' }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,1)', backgroundSize: 'cover', height: '630px', width: '100%' }}>
                 <h2 style={{ marginTop: '260px' }} className="purpose-column-title">AFFILIATIONS</h2>
             </div>
         </div>
@@ -32,7 +32,7 @@ export const AffiliationPageTemplate = ({ title, content, contentComponent }) =>
         <div style={{ textAlign: 'center', marginTop: '64x', marginBottom: '128px' }}>
           <a rel="noreferrer" target="_blank" href={`https://www.northamericanmissions.faith`} style={{ fontSize: '28px', color: 'rgb(30, 150, 168)', margin: '0px' }}>{`www.northamericanmissions.faith`}</a>
         </div>
-        <div style={{ marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/8aee7101-2018-46b0-9749-f5b1650edf7b.jpg")' }}/>
+        <div style={{ marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/8aee7101-2018-46b0-9749-f5b1650edf7b.jpg")' }}/>
         <div style={{ textAlign: 'center' }}>
           <p style={{ textAlign: 'center', margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
               {`UNITED PENTECOSTAL CHURCH`}
@@ -51,7 +51,7 @@ export const AffiliationPageTemplate = ({ title, content, contentComponent }) =>
         <div style={{ textAlign: 'center', marginTop: '12px', marginBottom: '128px' }}>
           <a rel="noreferrer" target="_blank" href={`https://www.upci.org`} style={{ fontSize: '28px', color: 'rgb(30, 150, 168)', margin: '0px' }}>{`www.upci.org`}</a>
         </div>
-        <div style={{ marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/c18f840e-2813-40ee-9d0e-0eeec78307e9.jpg")' }}/>
+        <div style={{ marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/c18f840e-2813-40ee-9d0e-0eeec78307e9.jpg")' }}/>
         <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
         <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
                     <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>

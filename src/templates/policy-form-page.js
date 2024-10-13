@@ -13,7 +13,7 @@ export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => 
     return (
       <div>
         <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(150, 149, 74, 0.5)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1727477855517-896IDYBQGCCMTGEAQYAV/leadership-bg.jpg")` }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(150, 149, 74, 0.5)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1727477855517-896IDYBQGCCMTGEAQYAV/leadership-bg.jpg")` }}>
                 <h2 style={{ marginTop: '260px' }} className="purpose-column-title">NAM POLICY</h2>
             </div>
         </div>
@@ -31,7 +31,7 @@ export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => 
             {`START ONLINE TRAINING!`}
             </button>
         </div>
-      <div style={{ marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/09450eb0-ea2a-4beb-8b65-543aeb91fec5.jpeg")' }}/>
+      <div style={{ marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/09450eb0-ea2a-4beb-8b65-543aeb91fec5.jpeg")' }}/>
       <div style={{ textAlign: 'center' }}>
         <p style={{ textAlign: 'center', margin: '0px', fontSize: '44px', fontWeight: 600, color: 'white', fontFamily: '"Heebo", sans-serif' }}>
             {`PATH TO PLANTING A CHURCH`}
