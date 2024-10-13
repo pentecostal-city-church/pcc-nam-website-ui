@@ -19,8 +19,8 @@ export const AffiliationApplicationPageTemplate = ({ title, content, contentComp
 
     return (
       <div>
-                <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(255, 9, 4, 0.15)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("http://www.upcworldconnect.com/wp-content/uploads/2018/04/BibleTravel.jpg")` }}>
+          <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(225, 229, 224, 0.15)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("http://socalnam.org/img/UPCI.png")` }}>
               <h2 style={{ marginTop: '220px' }} className="purpose-column-title">AFFILIATION</h2>
                 <h2 style={{ marginTop: '16px' }} className="purpose-column-title">APPLICATION</h2>
             </div>

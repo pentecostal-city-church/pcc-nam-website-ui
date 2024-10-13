@@ -13,7 +13,7 @@ export const NAMStatusPageTemplate = ({ title, content, contentComponent }) => {
     return (
       <div>
           <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,1)', backgroundSize: 'cover', height: '630px', width: '100%' }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,0.1)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("http://www.upcworldconnect.com/wp-content/uploads/2018/04/BibleTravel.jpg")` }}>
             <h2 style={{ marginTop: '260px' }} className="purpose-column-title">NAM STATUS</h2>
             </div>
           </div>

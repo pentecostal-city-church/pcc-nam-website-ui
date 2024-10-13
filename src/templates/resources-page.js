@@ -48,8 +48,6 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
                         <ul style={{ margin: '16px 0px' }}>
                             <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} target="_blank" href={`https://docs.google.com/document/d/1-KlCl4zQ4aGYA3bwdjeSdQToLEnk0hL2/edit?usp=sharing&ouid=106782565888305451494&rtpof=true&sd=truek`}>{`Onboarding / Benefits Package`}</a></li>
                             <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} target="_blank" href={`https://drive.google.com/file/d/19pzjN8VJL_pns5DibOz4JXovbIjVSr2e/view`}>{`Onboarding / Benefits Package (En Español)`}</a></li>
-                            <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} target="_blank" href={`https://drive.google.com/file/d/1SEbuEYw8b0MgVqvTvcOKH4YtO0ow7bYA/view?usp=sharing`}>{`DWP Grant Application`}</a></li>
-                            <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} target="_blank" href={`https://drive.google.com/file/d/1jOpwRuzjpN6O5aphpVmUN1LTgaVW1tdo/view`}>{`DWP Grant Application (En Español)`}</a></li>
                         </ul>
                     </div>
                 </div>

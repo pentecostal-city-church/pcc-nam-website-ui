@@ -310,15 +310,15 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
 
     return (
         <div>
-                          <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,0.1)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1457312810413-VO4XT8SGYS260TQSJNBG/growing-tree-000038736694_Large+%281%29.jpg")` }}>
-                <h2 style={{ marginTop: '260px' }} className="purpose-column-title">DAUGHTER WORK</h2>
+            <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,0.1)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1457312810413-VO4XT8SGYS260TQSJNBG/growing-tree-000038736694_Large+%281%29.jpg")` }}>
+                    <h2 style={{ marginTop: '260px' }} className="purpose-column-title">DAUGHTER WORK</h2>
+                </div>
             </div>
-        </div>
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '96px 0px 0px' }}>
             <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                 <img style={{ maxWidth: '80%', maxHeight: '30vw', height: '210px', borderRadius: '105px' }} className={'logo-image-circle'} src={'http://socalnam.org/img/dwp.png'} />
-                <p style={{ margin: '24px 24px 0px', maxWidth: '1050px', color: 'white', fontSize: '18px', textAlign: 'center' }}>Before completing this Daughter Work application form, please make sure you have read through the <a href={'/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>SoCal District Policy Form</a>. Contact us with any questions. Once you feel free to submit your online application to: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
+                <p style={{ margin: '64px 24px 0px', maxWidth: '1050px', color: 'white', fontSize: '18px', textAlign: 'center' }}>Before completing this Daughter Work application form, please make sure you have read through the <a href={'/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>SoCal District Policy Form</a>. Contact us with any questions. Once you feel free to submit your online application to: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
             </div>
             <div style={{ justifyContent: 'center', margin: '32px 0px' }} className={'subtitle-text-container'}>
                 <button onClick={startTrainingHandler} className={`training-button`}>
@@ -327,7 +327,9 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                 <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>{`Daughter Work Project Grant Application`}</p>
-                <a target="_blank" href={'https://drive.google.com/file/d/1SEbuEYw8b0MgVqvTvcOKH4YtO0ow7bYA/view?usp=sharing'} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`Click here to access the application form.`}</a>
+                <p style={{ margin: '4px 0px 0px', maxWidth: '1050px', color: 'white', fontSize: '14px' }}>{`Click below to access the application form.`}</p>
+                <a target="_blank" href={'https://drive.google.com/file/d/1SEbuEYw8b0MgVqvTvcOKH4YtO0ow7bYA/view?usp=sharing'} style={{ marginBottom: '0px', marginTop: '24px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`DWP Grant Application`}</a>
+                <a target="_blank" href={`https://drive.google.com/file/d/1jOpwRuzjpN6O5aphpVmUN1LTgaVW1tdo/view`} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`DWP Grant Application (En Español)`}</a>
             </div>
             {sent ? (
                 <div style={{ display: 'flex', justifyContent: 'center', margin: '48px 72px' }}>
