@@ -13,9 +13,14 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
 
     return (
         <div>
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '32px' }}>
+                  <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,0.1)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: 'url("http://www.upcworldconnect.com/wp-content/uploads/2018/04/lightstock_385733_download_medium_mindy_.jpg")' }}>
+                <h2 style={{ marginTop: '260px' }} className="purpose-column-title">APPLICATIONS</h2>
+            </div>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '96px' }}>
             <p style={{ margin: '0px 48px 0px', fontSize: '36px', fontWeight: 600, color: 'white', fontFamily: '"Heebo",sans-serif'  }}>
-            {`NAM APPLICATIONS`}
+            {`NORTH AMERICAN MISSIONS APPLICATIONS`}
             </p>
         </div>
         <div className="conditional-flex">
