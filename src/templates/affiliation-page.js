@@ -10,7 +10,7 @@ export const AffiliationPageTemplate = ({ title, content, contentComponent }) =>
   return (
     <div>
               <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(60,52,47,1)', backgroundSize: 'cover', height: '630px', width: '100%' }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(160,152,147,1)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1727477326147-VSVBIDHOJ7BX9CL6WWYE/ministrie-bg.jpg")` }}>
                 <h2 style={{ marginTop: '260px' }} className="purpose-column-title">AFFILIATIONS</h2>
             </div>
         </div>

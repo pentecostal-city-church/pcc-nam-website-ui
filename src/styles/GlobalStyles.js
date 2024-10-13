@@ -437,6 +437,16 @@ svg.circular-text-svg {
   }
 }
 
+.bullet-margin {
+  margin: 48px 12px 0px;
+  @media(min-width:600px) {
+    margin: 48px 24px 0px;
+  }
+  @media(min-width:800px) {
+    margin: 48px 120px 0px;
+  }
+}
+
 .purpose-column {
   margin-top: 120px;
   flex-direction: column;

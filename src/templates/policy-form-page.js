@@ -13,7 +13,7 @@ export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => 
     return (
       <div>
         <div style={{ marginTop: '0px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(150, 149, 74, 0.5)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/1727477855517-896IDYBQGCCMTGEAQYAV/leadership-bg.jpg")` }}>
+            <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(150, 149, 134, 0.1)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("http://socalnam.org/img/getty.jpg")` }}>
                 <h2 style={{ marginTop: '260px' }} className="purpose-column-title">NAM POLICY</h2>
             </div>
         </div>
@@ -37,7 +37,7 @@ export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => 
             {`PATH TO PLANTING A CHURCH`}
         </p>
       </div>
-      <div style={{ margin: '48px 120px 0px' }}>
+      <div className={'bullet-margin'}>
         <div style={{ marginBottom: '36px' }}>
           <div >
             <p style={{ color: 'rgb(232, 250, 140)', fontSize: '20px' }}>1. Evangelism and Outreach Extension</p>
