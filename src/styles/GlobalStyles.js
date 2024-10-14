@@ -428,12 +428,12 @@ svg.circular-text-svg {
 }
 
 .landing-main-container {
-  height: calc(100vh - 273px);
+  height: calc(100vh - 92.5px);
   justify-content: center;
   background-image: url("http://socalnam.org/img/main.jpg");
-  @media(min-width:924px) {
+  @media(min-width:831px) {
     display: flex;
-    height: calc(100vh - 154px);
+    height: calc(100vh - 154.5px);
   }
 }
 

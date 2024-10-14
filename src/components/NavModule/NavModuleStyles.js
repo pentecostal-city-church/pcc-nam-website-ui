@@ -58,7 +58,7 @@ export const NavModuleStyles = styled.nav`
 
   .logo-image-circle {
     height: 60px;
-    @media only screen and (min-width: 430px) {
+    @media only screen and (min-width: 861px) {
       height: 120px;
     }
   }
