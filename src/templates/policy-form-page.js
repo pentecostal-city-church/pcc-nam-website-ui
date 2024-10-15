@@ -57,7 +57,7 @@ export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => 
           <ul style={{ margin: '0px' }}>
             <li style={{ fontSize: '16px' }}>A <i>Preaching Point</i> is a regularly scheduled service, typically once a week or at least once a month, that features preaching. At this juncture, under UPCI policy, there should be an application with District approval.</li>
             <li style={{ fontSize: '16px' }}>The pastor of the church desiring a Preaching Point should contact his/her Presbyter to inquire about the city, and then that pastor should contact the District North American Missions Director to secure a “Preaching Point Application.”</li>
-            <li style={{ fontSize: '16px' }}>The MO District North American Missions Committee consists of the district superintendent, district NAM director, sectional presbyter, and sectional NAM director. This group can approve any Preaching Point where there is not currently a UPC church. If there is a UPC Church, then the approval of the District Board is required.</li>
+            <li style={{ fontSize: '16px' }}>The SoCal District North American Missions Committee consists of the district superintendent, district NAM director, sectional presbyter, and sectional NAM director. This group can approve any Preaching Point where there is not currently a UPC church. If there is a UPC Church, then the approval of the District Board is required.</li>
             <li style={{ fontSize: '16px' }}>A preaching point isn’t a firm commitment to start a church, but it’s a stated effort to explore the possibility, and therefore it’s important to consider the proposed target area and the input of any neighboring pastors.</li>
             <li style={{ fontSize: '16px' }}>A preaching point is distinct from the mother church as to location or language and it is designed to reach people who are currently unchurched.</li>
           </ul>
@@ -80,7 +80,6 @@ export const PolicyFormPageTemplate = ({ title, content, contentComponent }) => 
           <ul style={{ margin: '0px' }}>
             <li style={{ fontSize: '16px' }}>This step happens when:  the pastor of the Mother Church feels like the Daughter Church is ready to become self-governing, or someone is desiring to assemble a team using the "LAUNCH" method and plans to hold preview services leading up to a launch date with said team.</li>
             <li style={{ fontSize: '16px' }}>The Daughter Church shall <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} href={`/nam-status`}>submit the completed application</a> to the District North American Missions Director for processing.</li>
-            <li style={{ fontSize: '16px' }}>This step requires an interview with the MO NAM Committee, who then brings their recommendation to the District Board for approval.</li>
           </ul>
         </div>
         {/* <div style={{ marginBottom: '36px' }}>

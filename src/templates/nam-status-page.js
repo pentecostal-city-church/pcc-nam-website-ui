@@ -25,7 +25,7 @@ export const NAMStatusPageTemplate = ({ title, content, contentComponent }) => {
                 <p style={{ textAlign: 'center', margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>Please submit your NAM status form to: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
             </div>
             <div style={{ margin: '8px 0px 0px', display: 'flex', justifyContent: 'center' }}>
-              <a target='_blank' href={`https://drive.google.com/file/d/1xASOa_PElGkp9s60JxaNEIyIDnwhwSim/view?usp=sharing`} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>Click here to access the NAM Status form.</a>
+              <a target='_blank' href={`https://www.dropbox.com/scl/fi/wi8vcn8yrijrwa983il2k/church_status_form.pdf?rlkey=dia4zfzsfy9rc8eoz5dbh5n65&st=h199ldim&dl=0`} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>Click here to access the NAM Status form.</a>
             </div>
             <div style={{ justifyContent: 'center', margin: '48px 0px' }} className={'subtitle-text-container'}>
                 <button onClick={startTrainingHandler} className={`training-button`}>

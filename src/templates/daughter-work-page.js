@@ -328,8 +328,8 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                 <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>{`Daughter Work Project Grant Application`}</p>
                 <p style={{ margin: '4px 0px 0px', maxWidth: '1050px', color: 'white', fontSize: '14px' }}>{`Click below to access the application form.`}</p>
-                <a target="_blank" href={'https://drive.google.com/file/d/1SEbuEYw8b0MgVqvTvcOKH4YtO0ow7bYA/view?usp=sharing'} style={{ marginBottom: '0px', marginTop: '24px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`DWP Grant Application`}</a>
-                <a target="_blank" href={`https://drive.google.com/file/d/1jOpwRuzjpN6O5aphpVmUN1LTgaVW1tdo/view`} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`DWP Grant Application (En Español)`}</a>
+                <a target="_blank" href={'https://www.dropbox.com/scl/fi/mjobzpnolrpgibuu5dpzj/DWP-Grant-Application-SoCal-NAM-5.23.pdf?rlkey=z1s7n5e0m0lpi9f032tafco05&st=sx944uoc&dl=0'} style={{ marginBottom: '0px', marginTop: '24px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`DWP Grant Application`}</a>
+                <a target="_blank" href={`https://www.dropbox.com/scl/fi/9zq28fonylthkz0m2e38c/DWP-Grant-Application-SPANISH-5.23.pdf?rlkey=wmkjkx7k5et6h4dwqs3rezc2w&st=jlu8dk3z&dl=0`} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`DWP Grant Application (En Español)`}</a>
             </div>
             {sent ? (
                 <div style={{ display: 'flex', justifyContent: 'center', margin: '48px 72px' }}>

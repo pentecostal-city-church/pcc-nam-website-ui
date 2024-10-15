@@ -38,7 +38,7 @@ export const AffiliationApplicationPageTemplate = ({ title, content, contentComp
           </div>
           <div style={{ margin: '32px 48px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
-                  <p style={{ margin: '0px', maxWidth: '1050px' }}><a href={`https://drive.google.com/file/d/1uKJly9TYXB4w5bbD2vUeaZl9xQLLhkkj/view`} target="_blank" style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>CLICK HERE TO ACCESS APPLICATION</a></p>
+                  <p style={{ margin: '0px', maxWidth: '1050px' }}><a href={`https://www.dropbox.com/scl/fi/u37pv60lek94q6z45ji9x/Church-Affiliation-Form.pdf?rlkey=iw5zk7qsucwof7n0o5hg7kdcv&st=7vqckdok&dl=0`} target="_blank" style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>CLICK HERE TO ACCESS APPLICATION</a></p>
               </div>
           </div>
           <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>

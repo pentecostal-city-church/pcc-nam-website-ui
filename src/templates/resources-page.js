@@ -46,8 +46,8 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
                     </div>
                     <div style={{ margin: '0px 48px' }}>
                         <ul style={{ margin: '16px 0px' }}>
-                            <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} target="_blank" href={`https://docs.google.com/document/d/1-KlCl4zQ4aGYA3bwdjeSdQToLEnk0hL2/edit?usp=sharing&ouid=106782565888305451494&rtpof=true&sd=truek`}>{`Onboarding / Benefits Package`}</a></li>
-                            <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} target="_blank" href={`https://drive.google.com/file/d/19pzjN8VJL_pns5DibOz4JXovbIjVSr2e/view`}>{`Onboarding / Benefits Package (En Español)`}</a></li>
+                            <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} target="_blank" href={`https://www.dropbox.com/scl/fi/tg2e5fwjwe57pd2e37e6y/2024-SoCal-Church-Planter-Onboarding-Packet-10.23.docx.pdf?rlkey=i57croyfm0i4l6k0bwk204axb&st=g8v69onx&dl=0`}>{`Onboarding / Benefits Package`}</a></li>
+                            <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} target="_blank" href={`https://www.dropbox.com/scl/fi/j9ex557hyy5urj0s25co7/2024-Spanish-Onboarding-Packet-10.23.pdf?rlkey=zilvb8mngfjpwc3qmkc3hvkfr&st=6387fyon&dl=0`}>{`Onboarding / Benefits Package (En Español)`}</a></li>
                         </ul>
                     </div>
                 </div>
