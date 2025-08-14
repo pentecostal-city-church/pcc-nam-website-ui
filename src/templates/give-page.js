@@ -6,8 +6,8 @@ import { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
 export const GivePageTemplate = ({ title, content, contentComponent }) => {
-    const startTrainingHandler = () => {
-        window.open('https://www.socalupci.org/Offerings-', 'blank');
+    const openMakeDonationLink = () => {
+        window.open('https://give.tithe.ly/?formId=e0c98844-4c62-11ee-90fc-1260ab546d11', 'blank');
     }
 
     return (
@@ -43,7 +43,7 @@ export const GivePageTemplate = ({ title, content, contentComponent }) => {
                 </ul>
             </div>
             <div style={{ marginTop: '48px' }} className={'subtitle-text-container'}>
-                <button onClick={startTrainingHandler} className={`training-button`}>
+                <button onClick={openMakeDonationLink} className={`training-button`}>
                     {`MAKE A DONATION`}
                 </button>
             </div>
