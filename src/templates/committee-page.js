@@ -45,7 +45,7 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
             </div>
             <div className={'church-planter-img-container'}>
               <img className={'church-planter-img'} src={churchPlanter7} />
-              <p className={'church-planter-text-1'}>{`Stephen Garcia`}</p>
+              <p className={'church-planter-text-1'}>{`David McGovern`}</p>
               <p className={'church-planter-text-2'}>{`NAM Secretary`}</p>
             </div>
             <div className={'church-planter-img-container'}>
