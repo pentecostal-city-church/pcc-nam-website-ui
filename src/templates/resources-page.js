@@ -6,10 +6,6 @@ import { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
 export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
-    const startTrainingHandler = () => {
-        window.open('https://www.socalupci.org/Offerings-', 'blank');
-    }
-
     return (
       <div>
         <div>

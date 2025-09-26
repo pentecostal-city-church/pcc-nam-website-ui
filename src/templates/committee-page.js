@@ -9,7 +9,7 @@ import churchPlanter3 from '../img/church-planter/church-planter-3.jpg';
 import churchPlanter4 from '../img/church-planter/church-planter-4.jpg';
 import churchPlanter5 from '../img/church-planter/church-planter-5.jpg';
 import churchPlanter6 from '../img/church-planter/church-planter-6.jpg';
-import churchPlanter7 from '../img/church-planter/church-planter-7.jpg';
+import churchPlanter7 from '../img/church-planter/church-planter-9.jpg';
 import churchPlanter8 from '../img/church-planter/church-planter-8.jpg';
 
 // eslint-disable-next-line
