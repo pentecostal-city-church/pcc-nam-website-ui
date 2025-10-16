@@ -456,6 +456,27 @@ Once you've made changes locally and tested them, follow these steps to publish 
 
 **📖 For detailed deployment instructions, troubleshooting, and setup, see [DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md)**
 
+### 🚀 Automatic Deployment (Recommended)
+
+**Good news!** The site is configured with automatic deployment. Simply push your changes to GitHub and the site will automatically build and deploy:
+
+```bash
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
+
+That's it! GitHub Actions will automatically:
+1. Build the site
+2. Deploy to GitHub Pages
+3. Your changes will be live in 5-10 minutes
+
+You can watch the deployment progress at: https://github.com/pentecostal-city-church/pcc-nam-website-ui/actions
+
+### Manual Deploy (Alternative)
+
+If you prefer to deploy manually or if automatic deployment fails, follow these steps:
+
 ### Quick Deploy (Summary)
 
 ### Step 1: Review Your Changes
@@ -513,7 +534,15 @@ docker-compose exec gatsby-dev npm run deploy
 
 ### Step 6: Verify Custom Domain
 
-After deploying, go to your [GitHub Pages settings](https://github.com/pentecostal-city-church/pcc-nam-website-ui/settings/pages) and ensure `www.socalnam.org` is set as the custom domain.
+**IMPORTANT:** After deploying, you must verify the custom domain is still configured.
+
+1. Go to [GitHub Pages settings](https://github.com/pentecostal-city-church/pcc-nam-website-ui/settings/pages)
+2. Scroll down to the "Custom domain" section
+3. If the field is empty or shows a different domain, enter: `www.socalnam.org`
+4. Click "Save"
+5. Wait a few minutes for DNS to propagate
+
+**Why this is necessary:** Sometimes GitHub Pages removes the custom domain setting after deployment, which would cause the site to only be accessible at the default GitHub Pages URL instead of www.socalnam.org.
 
 Your changes should be live in 5-10 minutes!
 
