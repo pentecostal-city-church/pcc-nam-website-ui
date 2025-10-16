@@ -11,6 +11,7 @@ import churchPlanter5 from '../img/church-planter/church-planter-5.jpg';
 import churchPlanter6 from '../img/church-planter/church-planter-6.jpg';
 import churchPlanter7 from '../img/church-planter/church-planter-9.jpg';
 import churchPlanter8 from '../img/church-planter/church-planter-8.jpg';
+import churchPlanter10 from '../img/church-planter/church-planter-10.jpg';
 
 // eslint-disable-next-line
 export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
@@ -67,6 +68,11 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
               <img className={'church-planter-img'} src={churchPlanter4} />
               <p className={'church-planter-text-1'}>{`Efrain Garibay`}</p>
               <p className={'church-planter-text-2'}>{`Section 3 Director`}</p>
+            </div>
+            <div className={'church-planter-img-container'}>
+              <img className={'church-planter-img'} src={churchPlanter10} />
+              <p className={'church-planter-text-1'}>{`Wilbur Polanco`}</p>
+              <p className={'church-planter-text-2'}>{`Section 4 Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
               <img className={'church-planter-img'} src={churchPlanter5} />
