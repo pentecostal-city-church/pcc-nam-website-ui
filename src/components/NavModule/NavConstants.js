@@ -26,6 +26,10 @@ export const menuItems = [
     text: "Ministries",
   },
   {
+    path: "/re-source",
+    text: "Re:Source",
+  },
+  {
     path: "/give",
     text: "Give",
     accordion: [
