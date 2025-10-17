@@ -29,7 +29,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
             <div className="ministry-container">
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div style={{ marginTop: '36px' }}>
-                        <img src={'http://socalnam.org/img/pk-retreat.png'} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
+                        <img src={'http://socalnam.org/img/pk-retreat.png'} style={{ borderRadius: '50%', width: '160px', height: '160px' }} alt="PK Retreat" />
                     </div>
                 </div>
                 <div className="ministry-text-container">
@@ -47,7 +47,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
             <div className="ministry-container">
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div style={{ marginTop: '36px' }}>
-                    <img src={'http://socalnam.org/img/christian-prisoner-ministry.png'} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
+                    <img src={'http://socalnam.org/img/christian-prisoner-ministry.png'} style={{ borderRadius: '50%', width: '160px', height: '160px' }} alt="Christian Prisoner Ministry" />
                     </div>
                 </div>
                 <div className="ministry-text-container">
@@ -58,14 +58,14 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
                         <p style={{ color: 'white', fontSize: '14px' }}>Christian Prisoner Ministry is a non-profit ministry extending the hope and power of the gospel to over 7.3 million people currently behind bars, on probation, or on parole in North America's criminal justice system, as well as their families.</p>
                     </div>
                     <div>
-                        <p style={{ margin: '0px', color: 'white', fontSize: '14px' }}>Since 1982 CPM has trained and certified more than 3,000 volunteers for ministry in the correctional environment. Through CPM, you can contact a network of certified chaplains trained and dedicated to reaching your friends, family, and neighbors behind bars or in transitional living facilities. If you desire to serve in this ministry, CPM can equip and empower you to be involved. Jerry Menchaca (<a style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`mailto:jerrymenchaca@aol.com`} target="_blank">jerrymenchaca@aol.com</a>) is the ministry director.</p>
+                        <p style={{ margin: '0px', color: 'white', fontSize: '14px' }}>Since 1982 CPM has trained and certified more than 3,000 volunteers for ministry in the correctional environment. Through CPM, you can contact a network of certified chaplains trained and dedicated to reaching your friends, family, and neighbors behind bars or in transitional living facilities. If you desire to serve in this ministry, CPM can equip and empower you to be involved. Jerry Menchaca (<a style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`mailto:jerrymenchaca@aol.com`} target="_blank" rel="noopener noreferrer">jerrymenchaca@aol.com</a>) is the ministry director.</p>
                     </div>
                     <br />
                     <div style={{ alignSelf: 'flex-start' }}>
                         <p style={{ margin: '0px', color: 'white' }}>Link to <i>National</i> Ministry Information:</p>
                     </div>
                     <div style={{ alignSelf: 'flex-start' }}>
-                        <a target="_blank" style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`https://prisonministry.faith/`}>{`www.prisonministry.faith`}</a>
+                        <a target="_blank" rel="noopener noreferrer" style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`https://prisonministry.faith/`}>{`www.prisonministry.faith`}</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
             <div className="ministry-container">
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div style={{ marginTop: '36px' }}>
-                    <img src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/6ef0cf62-77e4-4444-a5e7-4beebfbe83e7@2x.png`} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
+                    <img src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/6ef0cf62-77e4-4444-a5e7-4beebfbe83e7@2x.png`} style={{ borderRadius: '50%', width: '160px', height: '160px' }} alt="Church-In-A-Day" />
                     </div>
                 </div>
                 <div className="ministry-text-container">
@@ -90,7 +90,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
                         <p style={{ margin: '0px', color: 'white' }}>Link to <i>National</i> Ministry Information:</p>
                     </div>
                     <div style={{ alignSelf: 'flex-start' }}>
-                        <a target="_blank" style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`https://www.ciad.faith/`}>{`www.ciad.faith`}</a>
+                        <a target="_blank" rel="noopener noreferrer" style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`https://www.ciad.faith/`}>{`www.ciad.faith`}</a>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
             <div className="ministry-container">
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div style={{ marginTop: '36px' }}>
-                        <img src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/45d733c6-cacf-4c1e-a235-2afe56ce28f3@2x.png`} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
+                        <img src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/45d733c6-cacf-4c1e-a235-2afe56ce28f3@2x.png`} style={{ borderRadius: '50%', width: '160px', height: '160px' }} alt="Evangelist Ministries" />
                     </div>
                 </div>
                 <div className="ministry-text-container">
@@ -115,7 +115,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
                         <p style={{ margin: '0px', color: 'white' }}>Link to <i>National</i> Ministry Information:</p>
                     </div>
                     <div style={{ alignSelf: 'flex-start' }}>
-                        <a target="_blank" style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`https://www.evangelist.faith`}>{`www.evangelist.faith`}</a>
+                        <a target="_blank" rel="noopener noreferrer" style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`https://www.evangelist.faith`}>{`www.evangelist.faith`}</a>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
             <div className="ministry-container">
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div style={{ marginTop: '36px' }}>
-                    <img src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/6c2ee08f-562f-4d07-877b-0f70d49fbac9@2x.png`} style={{ borderRadius: '50%', width: '160px', height: '160px' }} />
+                    <img src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/6c2ee08f-562f-4d07-877b-0f70d49fbac9@2x.png`} style={{ borderRadius: '50%', width: '160px', height: '160px' }} alt="Metro Missions" />
                     </div>
                 </div>
                 <div className="ministry-text-container">
@@ -141,7 +141,7 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
                         <p style={{ margin: '0px', color: 'white' }}>Link to <i>National</i> Ministry Information:</p>
                     </div>
                     <div style={{ alignSelf: 'flex-start' }}>
-                        <a target="_blank" style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`https://www.metromissions.faith`}>{`www.metromissions.faith`}</a>
+                        <a target="_blank" rel="noopener noreferrer" style={{ margin: '0px', fontSize: '16px', color: 'rgb(30, 150, 168)' }} href={`https://www.metromissions.faith`}>{`www.metromissions.faith`}</a>
                     </div>
                 </div>
             </div>

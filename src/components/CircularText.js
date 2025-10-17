@@ -7,10 +7,6 @@ const circularTextArr = [
 ];
 
 const textChangeInterval = 6500;
-const variants = {
-    open: { opacity: 1 },
-    closed: { opacity: 0 },
-};
 
 const CircularText = (props) => {
     const [textStringIndex, setTextStringIndex] = React.useState(0);
@@ -38,7 +34,7 @@ const CircularText = (props) => {
     React.useEffect(() => {
         setTimeout(() => {
             if (animating) {
-                setTextStringIndex(((textStringIndex + 1) % 3));
+                setTextStringIndex((prevIndex) => ((prevIndex + 1) % 3));
                 setAnimating(false);
             }
         }, 250);

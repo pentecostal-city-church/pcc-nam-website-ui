@@ -7,7 +7,7 @@ import { HTMLContent } from "../components/Content";
 // eslint-disable-next-line
 export const GivePageTemplate = ({ title, content, contentComponent }) => {
     const openMakeDonationLink = () => {
-        window.open('https://give.tithe.ly/?formId=e0c98844-4c62-11ee-90fc-1260ab546d11', 'blank');
+        window.open('https://give.tithe.ly/?formId=e0c98844-4c62-11ee-90fc-1260ab546d11', '_blank', 'noopener,noreferrer');
     }
 
     return (

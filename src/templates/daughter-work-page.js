@@ -3,9 +3,6 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
-import { countries, countryToFlag } from "./contact-us-page";
-import { FaPhoneAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 
 export const states = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
@@ -262,51 +259,11 @@ export const countryList = [
 ];
 // eslint-disable-next-line
 export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) => {
-    const [countryCode, setCountryCode] = React.useState('1');
-    const [fName, setFName] = React.useState('');
-    const [lName, setLName] = React.useState('');
-    const [usState, setUSState] = React.useState('California');
-    const [country, setCountry] = React.useState('United States of America');
-    const [address1, setAddress1] = React.useState('');
-    const [address2, setAddress2] = React.useState('');
-    const [zipcode, setZipcode] = React.useState('');
-    const [phone, setPhone] = React.useState('');
-    const [motherChurch, setMotherChurch] = React.useState('');
-    const [email, setEmail] = React.useState('');
-    const [sent, setSent] = React.useState(false);
-    const [targetCity, setTargetCity] = React.useState('');
-    const [contacted, setContacted] = React.useState('NO');
-    const [upciChurchPresent, setUPCIChurchPresent] = React.useState('NO');
-
-    const countriesMemo = React.useMemo(() => {
-        return countries;
-    }, [countries]);
-
-    const selectOnChange = (e) => {
-        setCountryCode(e.target.value);
-    }
-
-    const countryOnChange = (e) => {
-        setCountry(e.target.value);
-    }
-
-    const stateOnChange = (e) => {
-        setUSState(e.target.value);
-    }
-
-    const contactedOnChange = (e) => {
-        setContacted(e.target.value);
-    }
-
-    const churchPresentOnChange = (e) => {
-        setUPCIChurchPresent(e.target.value);
-    }
+    const sent = false; // Form is currently disabled
 
     const startTrainingHandler = () => {
-        window.open('https://ministrycentral.com/the-launch-button', 'blank');
+        window.open('https://ministrycentral.com/the-launch-button', '_blank', 'noopener,noreferrer');
     }
-
-    const reason = `Mother Church Address: ${address1}, ${address2}, ${targetCity}, ${zipcode} ${usState}, ${country}. Mother Church Pastor Email: ${email}. Target City for Daughter Work: ${targetCity}. Have you contacted the Presbyter of this section? ${contacted}. Is there a UPC Church in this area? ${upciChurchPresent}.`;
 
     return (
         <div>
@@ -317,7 +274,7 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
             </div>
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '96px 0px 0px' }}>
             <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-                <img style={{ maxWidth: '80%', maxHeight: '30vw', height: '210px', borderRadius: '105px' }} className={'logo-image-circle'} src={'http://socalnam.org/img/dwp.png'} />
+                <img style={{ maxWidth: '80%', maxHeight: '30vw', height: '210px', borderRadius: '105px' }} className={'logo-image-circle'} src={'http://socalnam.org/img/dwp.png'} alt="Daughter Work Project" />
                 <p style={{ margin: '64px 24px 0px', maxWidth: '1050px', color: 'white', fontSize: '18px', textAlign: 'center' }}>Before completing this Daughter Work application form, please make sure you have read through the <a href={'/policy-form'} style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>SoCal District Policy Form</a>. Contact us with any questions. Once you feel free to submit your online application to: <a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'underline', fontWeight: 400 }} href={`mailto:socalnorthamericanmissions@gmail.com`}>socalnorthamericanmissions@gmail.com</a></p>
             </div>
             <div style={{ justifyContent: 'center', margin: '32px 0px' }} className={'subtitle-text-container'}>
@@ -328,8 +285,8 @@ export const DaughterWorkPageTemplate = ({ title, content, contentComponent }) =
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                 <p style={{ margin: '0px', maxWidth: '1050px', color: 'white', fontSize: '18px' }}>{`Daughter Work Project Grant Application`}</p>
                 <p style={{ margin: '4px 0px 0px', maxWidth: '1050px', color: 'white', fontSize: '14px' }}>{`Click below to access the application form.`}</p>
-                <a target="_blank" href={'https://www.dropbox.com/scl/fi/mjobzpnolrpgibuu5dpzj/DWP-Grant-Application-SoCal-NAM-5.23.pdf?rlkey=z1s7n5e0m0lpi9f032tafco05&st=sx944uoc&dl=0'} style={{ marginBottom: '0px', marginTop: '24px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`DWP Grant Application`}</a>
-                <a target="_blank" href={`https://www.dropbox.com/scl/fi/9zq28fonylthkz0m2e38c/DWP-Grant-Application-SPANISH-5.23.pdf?rlkey=wmkjkx7k5et6h4dwqs3rezc2w&st=jlu8dk3z&dl=0`} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`DWP Grant Application (En Español)`}</a>
+                <a target="_blank" rel="noopener noreferrer" href={'https://www.dropbox.com/scl/fi/mjobzpnolrpgibuu5dpzj/DWP-Grant-Application-SoCal-NAM-5.23.pdf?rlkey=z1s7n5e0m0lpi9f032tafco05&st=sx944uoc&dl=0'} style={{ marginBottom: '0px', marginTop: '24px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`DWP Grant Application`}</a>
+                <a target="_blank" rel="noopener noreferrer" href={`https://www.dropbox.com/scl/fi/9zq28fonylthkz0m2e38c/DWP-Grant-Application-SPANISH-5.23.pdf?rlkey=wmkjkx7k5et6h4dwqs3rezc2w&st=jlu8dk3z&dl=0`} style={{ marginBottom: '16px', marginTop: '0px', color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }}>{`DWP Grant Application (En Español)`}</a>
             </div>
             {sent ? (
                 <div style={{ display: 'flex', justifyContent: 'center', margin: '48px 72px' }}>

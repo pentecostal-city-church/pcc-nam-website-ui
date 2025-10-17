@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
-import Seo from "../components/SEO";
+import SEO from "../components/SEO";
 // import BannerModule from "../components/BannerModule/BannerModule";
 import { FiChevronDown as ChevronDown } from "react-icons/fi";
 import { GeoMap } from './geo-map';
@@ -62,7 +62,6 @@ export const IndexPageTemplate = ({
 
   return (
     <div >
-      <Seo title="Home" />
       <Layout>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <AnimatePresence>
@@ -188,6 +187,12 @@ IndexPage.propTypes = {
 
 export default IndexPage;
 
+// Gatsby Head API for SEO
+export const Head = ({ data }) => {
+  const { site } = data;
+  return <SEO title="Home" siteMetadata={site.siteMetadata} />;
+};
+
 export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
@@ -217,6 +222,16 @@ export const pageQuery = graphql`
           heading
           description
         }
+      }
+    }
+    site {
+      siteMetadata {
+        siteTitle: title
+        siteDesc: description
+        image
+        author
+        siteUrl
+        twitterUsername
       }
     }
   }

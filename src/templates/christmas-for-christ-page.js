@@ -38,7 +38,7 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
             </div>
             <div className="cfc-socal-influence-container">
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img style={{ border: '1px solid white' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/1cad4449-3f48-4e00-9d63-2597f43c0172.jpg`}/>
+                    <img style={{ border: '1px solid white' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/1cad4449-3f48-4e00-9d63-2597f43c0172.jpg`} alt="Southern California Influence" />
                 </div>
                 <div style={{ margin: '0px 80px' }}>
                     <p style={{ color: 'white', fontSize: '36px', fontWeight: 200, fontFamiy: '"Heebo",sans-serif' }}>{`SOUTHERN CALIFORNIA INFLUENCE`}</p>
@@ -75,9 +75,9 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
                                 <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
                                     <div style={{ display: 'flex', justifyContent: 'center', backgroundColor: 'rgb(20,20,20)', color: 'white', cursor: 'pointer', height: '200px', width: '200px', position: 'relative', bottom: '225px', left: '200px' }}>
                                         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                                            <div style={{ margin: '8px 0px', display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 500 }}><TfiTwitter className={'social-icon'} /><div className={'social-icon'} style={{ marginLeft: '8px' }} /><a className={'social-icon'} target="_blank" href={'https://twitter.com/share?url=https%3A%2F%2Fmissourinam.com%2Fmedia%2F779871-3243391-1943856%2Fchristmas-for-christ-the-beginning'}>{`TWITTER`}</a></div>
-                                            <div style={{ margin: '8px 0px', display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 500 }}><TbBrandFacebook className={'social-icon'} /><div className={'social-icon'} style={{ marginLeft: '8px' }} /><a className={'social-icon'} target="_blank" href={'http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmissourinam.com%2Fmedia%2F779871-3243391-1943856%2Fchristmas-for-christ-the-beginning'}>{`FACEBOOK`}</a></div>
-                                            <div style={{ margin: '8px 0px', display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 500 }}><GoMail className={'social-icon'} /><div className={'social-icon'} style={{ marginLeft: '8px' }} /><a className={'social-icon'} target="_blank" href={'mailto:?Body=https%3A%2F%2Fmissourinam.com%2Fmedia%2F779871-3243391-1943856%2Fchristmas-for-christ-the-beginning'}>{`EMAIL TO A FRIEND`}</a></div>
+                                            <div style={{ margin: '8px 0px', display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 500 }}><TfiTwitter className={'social-icon'} /><div className={'social-icon'} style={{ marginLeft: '8px' }} /><a className={'social-icon'} target="_blank" rel="noopener noreferrer" href={'https://twitter.com/share?url=https%3A%2F%2Fmissourinam.com%2Fmedia%2F779871-3243391-1943856%2Fchristmas-for-christ-the-beginning'}>{`TWITTER`}</a></div>
+                                            <div style={{ margin: '8px 0px', display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 500 }}><TbBrandFacebook className={'social-icon'} /><div className={'social-icon'} style={{ marginLeft: '8px' }} /><a className={'social-icon'} target="_blank" rel="noopener noreferrer" href={'http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmissourinam.com%2Fmedia%2F779871-3243391-1943856%2Fchristmas-for-christ-the-beginning'}>{`FACEBOOK`}</a></div>
+                                            <div style={{ margin: '8px 0px', display: 'flex', justifyContent: 'center', alignItems: 'center', fontWeight: 500 }}><GoMail className={'social-icon'} /><div className={'social-icon'} style={{ marginLeft: '8px' }} /><a className={'social-icon'} target="_blank" rel="noopener noreferrer" href={'mailto:?Body=https%3A%2F%2Fmissourinam.com%2Fmedia%2F779871-3243391-1943856%2Fchristmas-for-christ-the-beginning'}>{`EMAIL TO A FRIEND`}</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -92,11 +92,11 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
                             <p className="pastor-resources-container" style={{ fontSize: '14px', fontFamily: '"Heebo", sans-serif' }}>{`If you are a Southern California District Pastor looking for other videos, testimonies to show your church, bulletin inserts, or slides, feel free to visit the national CFC website to gain access to all of these things.`}</p>
 
                         </div>
-                        <a target="_blank" style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} href={'http://www.christmasforchrist.faith/#home'}>{`Click here for more CFC resources!`}</a>
+                        <a target="_blank" rel="noopener noreferrer" style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} href={'http://www.christmasforchrist.faith/#home'}>{`Click here for more CFC resources!`}</a>
                         </div>
 
                         <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center' }}>
-                            <img style={{ border: '1px solid white', height: '426px', width: '330px' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/b60019e6-77cd-425d-b778-f2f36535041e.jpg`} />
+                            <img style={{ border: '1px solid white', height: '426px', width: '330px' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/b60019e6-77cd-425d-b778-f2f36535041e.jpg`} alt="Christmas for Christ Resources" />
                         </div>
                     </div>
                 </div>

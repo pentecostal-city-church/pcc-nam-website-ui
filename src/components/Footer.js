@@ -74,14 +74,14 @@ const Footer = () => {
                 </section>
               </div>
               <div className="column is-4 social">
-                <a target="_blank" title="facebook" href="https://facebook.com">
+                <a target="_blank" rel="noopener noreferrer" title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
                     alt="Facebook"
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a target="_blank" title="twitter" href="https://twitter.com">
+                <a target="_blank" rel="noopener noreferrer" title="twitter" href="https://twitter.com">
                   <img
                     className="fas fa-lg"
                     src={twitter}
@@ -89,14 +89,14 @@ const Footer = () => {
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a target="_blank" title="instagram" href="https://instagram.com">
+                <a target="_blank" rel="noopener noreferrer" title="instagram" href="https://instagram.com">
                   <img
                     src={instagram}
                     alt="Instagram"
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a target="_blank" title="vimeo" href="https://vimeo.com">
+                <a target="_blank" rel="noopener noreferrer" title="vimeo" href="https://vimeo.com">
                   <img
                     src={vimeo}
                     alt="Vimeo"

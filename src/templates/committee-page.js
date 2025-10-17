@@ -40,47 +40,47 @@ export const CommitteePageTemplate = ({ title, content, contentComponent }) => {
         <div style={{ marginTop: '120px' }} className="church-planter-container">
           <div className={`church-planter-row`}>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter1} />
+              <img className={'church-planter-img'} src={churchPlanter1} alt="Nathan Cupoli - NAM Director" />
               <p className={'church-planter-text-1'}>{`Nathan Cupoli`}</p>
               <p className={'church-planter-text-2'}>{`NAM Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter7} />
+              <img className={'church-planter-img'} src={churchPlanter7} alt="David McGovern - NAM Secretary" />
               <p className={'church-planter-text-1'}>{`David McGovern`}</p>
               <p className={'church-planter-text-2'}>{`NAM Secretary`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter6} />
+              <img className={'church-planter-img'} src={churchPlanter6} alt="Lakelie Lopez - Promotions Director" />
               <p className={'church-planter-text-1'}>{`Lakelie Lopez`}</p>
               <p className={'church-planter-text-2'}>{`Promotions Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter2} />
+              <img className={'church-planter-img'} src={churchPlanter2} alt="Ezekial Rodriguez - Section 1 Director" />
               <p className={'church-planter-text-1'}>{`Ezekial Rodriguez`}</p>
               <p className={'church-planter-text-2'}>{`Section 1 Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter3} />
+              <img className={'church-planter-img'} src={churchPlanter3} alt="Philip Raya - Section 2 Director" />
               <p className={'church-planter-text-1'}>{`Philip Raya`}</p>
               <p className={'church-planter-text-2'}>{`Section 2 Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter4} />
+              <img className={'church-planter-img'} src={churchPlanter4} alt="Efrain Garibay - Section 3 Director" />
               <p className={'church-planter-text-1'}>{`Efrain Garibay`}</p>
               <p className={'church-planter-text-2'}>{`Section 3 Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter10} />
+              <img className={'church-planter-img'} src={churchPlanter10} alt="Wilbur Polanco - Section 4 Director" />
               <p className={'church-planter-text-1'}>{`Wilbur Polanco`}</p>
               <p className={'church-planter-text-2'}>{`Section 4 Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter5} />
+              <img className={'church-planter-img'} src={churchPlanter5} alt="Dan Olivera - Section 5 Director" />
               <p className={'church-planter-text-1'}>{`Dan Olivera`}</p>
               <p className={'church-planter-text-2'}>{`Section 5 Director`}</p>
             </div>
             <div className={'church-planter-img-container'}>
-              <img className={'church-planter-img'} src={churchPlanter8} />
+              <img className={'church-planter-img'} src={churchPlanter8} alt="Javier Orozco - Spanish Liaison" />
               <p className={'church-planter-text-1'}>{`Javier Orozco`}</p>
               <p className={'church-planter-text-2'}>{`Spanish Liaison`}</p>
             </div>

@@ -20,7 +20,7 @@ const Footer = () => {
         <div style={{ display: 'flex' }}>
           <div>
           <Link to="/">
-            <img style={{ height: '64px' , marginBottom: '12px' }} src={'http://socalnam.org/img/socal-nam-logo-transparent.png'} />
+            <img style={{ height: '64px' , marginBottom: '12px' }} src={'http://socalnam.org/img/socal-nam-logo-transparent.png'} alt="SoCal NAM Logo" />
           </Link>
           {siteMeta.twitterUsername ||
           siteMeta.facebookUsername ||

@@ -287,17 +287,7 @@ export const countries = [
 
 // eslint-disable-next-line
 export const ContactUsPageTemplate = ({ title, content, contentComponent }) => {
-    const [countryCode, setCountryCode] = React.useState('1');
-    const [fName, setFName] = React.useState('');
-    const [lName, setLName] = React.useState('');
-    const [phone, setPhone] = React.useState('');
-    const [reason, setReason] = React.useState('');
-    const [email, setEmail] = React.useState('');
-    const [sent, setSent] = React.useState(false);
-    const [zipCode, setZipCode] = React.useState('');
-    const [targetCity, setTargetCity] = React.useState('');
-    const [contacted, setContacted] = React.useState(false);
-    const [existingChurch, setExistingChurch] = React.useState(false);
+    const sent = false; // Form is currently disabled
 
     return sent ? (
         <div>

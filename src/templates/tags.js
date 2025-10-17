@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 
@@ -16,16 +15,14 @@ const TagRoute = (props) =>  {
     ));
 
     const { tag } = props.pageContext;
-    const { title } = props.data.site.siteMetadata;
     const { totalCount } = props.data.allMarkdownRemark;
     const tagHeader = `${totalCount} post${
       totalCount === 1 ? "" : "s"
-    } tagged with “${tag}”`;
+    } tagged with "${tag}"`;
 
     return (
       <Layout>
         <section className="section">
-          <Helmet title={`${tag} | ${title}`} />
           <div className="container content">
             <div className="columns">
               <div
@@ -46,6 +43,18 @@ const TagRoute = (props) =>  {
 }
 
 export default TagRoute;
+
+// Gatsby Head API for SEO
+export const Head = ({ pageContext, data }) => {
+  const { tag } = pageContext;
+  const { title } = data.site.siteMetadata;
+  return (
+    <>
+      <html lang="en" />
+      <title>{`${tag} | ${title}`}</title>
+    </>
+  );
+};
 
 export const tagPageQuery = graphql`
   query TagPage($tag: String) {

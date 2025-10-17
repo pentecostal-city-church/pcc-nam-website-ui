@@ -8,7 +8,7 @@ import { HTMLContent } from "../components/Content";
 // eslint-disable-next-line
 export const ApplicationsPageTemplate = ({ title, content, contentComponent }) => {
     const startTrainingHandler = () => {
-        window.open('https://ministrycentral.com/the-launch-button', 'blank');
+        window.open('https://ministrycentral.com/the-launch-button', '_blank', 'noopener,noreferrer');
     }
 
     return (
@@ -28,8 +28,8 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
                 <div >
                   <div className="conditional-flex-2">
                       <div className="conditional-flex-2b">
-                          <div style={{ marginTop: '8px', cursor: 'pointer' }} onClick={() => window.open('http://www.christmasforchrist.faith/#home', '_blank')}>
-                              <img src={`https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/c376af9c-2598-4040-a896-c58ae80ac76c/CFC-BUTTON-1.jpg`} style={{ width: '180px', height: '180px' }} />
+                          <div style={{ marginTop: '8px', cursor: 'pointer' }} onClick={() => window.open('http://www.christmasforchrist.faith/#home', '_blank', 'noopener,noreferrer')}>
+                              <img src={`https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/c376af9c-2598-4040-a896-c58ae80ac76c/CFC-BUTTON-1.jpg`} style={{ width: '180px', height: '180px' }} alt="Christmas for Christ" />
                           </div>
                       </div>
                       <div className="conditional-column-1">
@@ -37,10 +37,10 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
                               <p style={{ color: 'white', fontSize: '20px', fontWeight: 300, fontFamily: '"Heebo",sans-serif' }}>{`CHRISTMAS FOR CHRIST FUNDING APPLICATION`}</p>
                           </div>
                           <div>
-                              <p style={{ color: 'white', fontSize: '14px' }}>Church planters can use this application to apply for personal or property support financed by Christmas for Christ. Application will be open from <a target="_blank" href={'https://wa.upci.org/nam'} style={{ textDecoration: 'underline', color: 'rgb(30, 150, 168)' }}>October 15 to January 15</a>. For application information, please read the <a target="_blank" href={'https://www.northamericanmissions.faith/s/CFC-Policy-and-FAQs-2022.pdf'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>Policy</a>. Applicant must complete required online <a target="_blank" href={'https://ministrycentral.com/courses/christmas-for-christ-training'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>CFC training</a> OR have attended <a target="_blank" href={'https://www.launchachurch.faith/'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>Launch Training</a>. Email <a target="_blank" href={'mailto:nam@upci.org'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>nam@upci.org</a> for more information.</p>
+                              <p style={{ color: 'white', fontSize: '14px' }}>Church planters can use this application to apply for personal or property support financed by Christmas for Christ. Application will be open from <a target="_blank" rel="noopener noreferrer" href={'https://wa.upci.org/nam'} style={{ textDecoration: 'underline', color: 'rgb(30, 150, 168)' }}>October 15 to January 15</a>. For application information, please read the <a target="_blank" rel="noopener noreferrer" href={'https://www.northamericanmissions.faith/s/CFC-Policy-and-FAQs-2022.pdf'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>Policy</a>. Applicant must complete required online <a target="_blank" rel="noopener noreferrer" href={'https://ministrycentral.com/courses/christmas-for-christ-training'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>CFC training</a> OR have attended <a target="_blank" rel="noopener noreferrer" href={'https://www.launchachurch.faith/'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>Launch Training</a>. Email <a target="_blank" rel="noopener noreferrer" href={'mailto:nam@upci.org'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>nam@upci.org</a> for more information.</p>
                           </div>
                           <div>
-                              <p style={{ margin: '0px', color: 'white', fontSize: '14px' }}>For additional instructions on how to complete these forms, <a target="_blank" href={'https://www.northamericanmissions.faith/s/Steps-For-Completion-CFC-Grants.pdf'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>Click Here</a>. </p>
+                              <p style={{ margin: '0px', color: 'white', fontSize: '14px' }}>For additional instructions on how to complete these forms, <a target="_blank" rel="noopener noreferrer" href={'https://www.northamericanmissions.faith/s/Steps-For-Completion-CFC-Grants.pdf'} style={{ textDecoration: 'none', color: 'rgb(30, 150, 168)' }}>Click Here</a>. </p>
                           </div>
                       </div>
                   </div>
@@ -70,7 +70,7 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
                 </div>
             </div>
             <div className={'conditional-flex-b'} style={{ marginTop: '32px' }}>
-                <img style={{ border: '1px solid white', width: '330px', height: '426px' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/65f256a2-cae9-4720-90c2-dbcd16608276.jpg`}/>
+                <img style={{ border: '1px solid white', width: '330px', height: '426px' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/65f256a2-cae9-4720-90c2-dbcd16608276.jpg`} alt="NAM Application" />
             </div>
 
         </div>

@@ -16,7 +16,7 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
           </div>
             <div style={{ marginTop: '96px' }} className="conditional-flex-2">
                 <div className="conditional-flex-2b" style={{ marginTop: '32px' }}>
-                    <img style={{ border: '1px solid white', width: '330px', height: '426px' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/0bf53f68-79b8-4e39-98b1-7ab66498dbb1.jpg`}/>
+                    <img style={{ border: '1px solid white', width: '330px', height: '426px' }} src={`https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/site-images/0bf53f68-79b8-4e39-98b1-7ab66498dbb1.jpg`} alt="North American Missionary Resources" />
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', marginTop: '32px' }}>
                     <div className="conditional-justify-1" style={{ display: 'flex' }}>
@@ -42,8 +42,8 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
                     </div>
                     <div style={{ margin: '0px 48px' }}>
                         <ul style={{ margin: '16px 0px' }}>
-                            <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} target="_blank" href={`https://www.dropbox.com/scl/fi/tg2e5fwjwe57pd2e37e6y/2024-SoCal-Church-Planter-Onboarding-Packet-10.23.docx.pdf?rlkey=i57croyfm0i4l6k0bwk204axb&st=g8v69onx&dl=0`}>{`Onboarding / Benefits Package`}</a></li>
-                            <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} target="_blank" href={`https://www.dropbox.com/scl/fi/j9ex557hyy5urj0s25co7/2024-Spanish-Onboarding-Packet-10.23.pdf?rlkey=zilvb8mngfjpwc3qmkc3hvkfr&st=6387fyon&dl=0`}>{`Onboarding / Benefits Package (En Español)`}</a></li>
+                            <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} target="_blank" rel="noopener noreferrer" href={`https://www.dropbox.com/scl/fi/tg2e5fwjwe57pd2e37e6y/2024-SoCal-Church-Planter-Onboarding-Packet-10.23.docx.pdf?rlkey=i57croyfm0i4l6k0bwk204axb&st=g8v69onx&dl=0`}>{`Onboarding / Benefits Package`}</a></li>
+                            <li style={{ margin: '16px 0px' }}><a style={{ color: 'rgb(30, 150, 168)', textDecoration: 'none', fontWeight: 600 }} target="_blank" rel="noopener noreferrer" href={`https://www.dropbox.com/scl/fi/j9ex557hyy5urj0s25co7/2024-Spanish-Onboarding-Packet-10.23.pdf?rlkey=zilvb8mngfjpwc3qmkc3hvkfr&st=6387fyon&dl=0`}>{`Onboarding / Benefits Package (En Español)`}</a></li>
                         </ul>
                     </div>
                 </div>

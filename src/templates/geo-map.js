@@ -9,17 +9,17 @@ export const GeoMap = () => {
 
     const intervalRef = React.useRef(null);
     const [screenWidth, setScreenWidth] = React.useState(typeof window !== 'undefined' ? window?.innerWidth : 1200);
-  
-    const getMapSize = () => { 
-      const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
-      return screenWidth;
-    };
-    
+
     React.useEffect(() => {
+      const getMapSize = () => {
+        const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
+        return screenWidth;
+      };
+
       intervalRef.current = setInterval(() => {
         setScreenWidth(getMapSize());
       }, [2500]);
-  
+
       return () => {
         try {
           clearInterval(intervalRef);
@@ -29,11 +29,11 @@ export const GeoMap = () => {
     }, []);
 
     const startTrainingHandler = () => {
-        window.open('https://ministrycentral.com/the-launch-button', 'blank');
+        window.open('https://ministrycentral.com/the-launch-button', '_blank', 'noopener,noreferrer');
     }
 
     const nextTownHandler = () => {
-        window.open('http://www.northamericanmissions.faith/thenexttown', 'blank');
+        window.open('http://www.northamericanmissions.faith/thenexttown', '_blank', 'noopener,noreferrer');
     };
     
     return (
