@@ -1,12 +1,10 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 import {
   ComposableMap,
   Geographies,
-  Geography,
-  ZoomableGroup
+  Geography
 } from "react-simple-maps";
 import { scaleQuantize } from "d3-scale";
-import { csv } from "d3-fetch";
 import { censusData } from '../cms/census';
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json";

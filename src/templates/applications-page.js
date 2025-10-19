@@ -28,7 +28,7 @@ export const ApplicationsPageTemplate = ({ title, content, contentComponent }) =
                 <div >
                   <div className="conditional-flex-2">
                       <div className="conditional-flex-2b">
-                          <div style={{ marginTop: '8px', cursor: 'pointer' }} onClick={() => window.open('http://www.christmasforchrist.faith/#home', '_blank', 'noopener,noreferrer')}>
+                          <div style={{ marginTop: '8px', cursor: 'pointer' }} onClick={() => window.open('http://www.christmasforchrist.faith/#home', '_blank', 'noopener,noreferrer')} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') window.open('http://www.christmasforchrist.faith/#home', '_blank', 'noopener,noreferrer'); }} role="button" tabIndex={0}>
                               <img src={`https://images.squarespace-cdn.com/content/v1/56af834f8259b53131e16682/c376af9c-2598-4040-a896-c58ae80ac76c/CFC-BUTTON-1.jpg`} style={{ width: '180px', height: '180px' }} alt="Christmas for Christ" />
                           </div>
                       </div>

@@ -69,7 +69,7 @@ export const ChristmasForChristPageTemplate = ({ title, content, contentComponen
                                 <hr style={{ margin: '12px 0px 0px', backgroundColor: 'rgb(70,70,70)' }}/>
                             </div>
                             <div>
-                                <div onClick={toggleDropdown} style={{ cursor: 'pointer', color: 'white', marginTop: '18px', display: 'flex', justifyContent: 'flex-end' }}>{`SHARE`}</div>
+                                <div onClick={toggleDropdown} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') toggleDropdown(); }} role="button" tabIndex={0} style={{ cursor: 'pointer', color: 'white', marginTop: '18px', display: 'flex', justifyContent: 'flex-end' }}>{`SHARE`}</div>
                             </div>
                             {showDropdown ? (
                                 <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>

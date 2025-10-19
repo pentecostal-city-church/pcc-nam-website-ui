@@ -88,7 +88,7 @@ const NavModule = (props) => {
                     layout="constrained"
                     placeholder="logo-dark"
                   /> */}
-                  <img className={'logo-image-circle'} src={'http://socalnam.org/img/socal-nam-logo-transparent.png'} />
+                  <img className={'logo-image-circle'} src={'http://socalnam.org/img/socal-nam-logo-transparent.png'} alt="SoCal NAM Logo" />
                   {/* {title}
                   <span>.</span> */}
                 </Link>
@@ -201,7 +201,7 @@ const NavModule = (props) => {
             {title && (
               <LogoStyles>
                 <Link to="/">
-                  <img className={'logo-image-circle'} src={'http://socalnam.org/img/socal-nam-logo-transparent.png'} />
+                  <img className={'logo-image-circle'} src={'http://socalnam.org/img/socal-nam-logo-transparent.png'} alt="SoCal NAM Logo" />
                   {/* <StaticImage
                     className={'logo-image-circle'}
                     src="../../../static/img/socal-nam-dark-logo.png"
