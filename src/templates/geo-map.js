@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import MapChart from '../components/MapChart';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import CircularText from "../components/CircularText";
@@ -38,6 +39,45 @@ export const GeoMap = () => {
     
     return (
         <div id="geo-map">
+            {/* Re:Source Event Section */}
+            <div style={{
+                width: '100%',
+                backgroundImage: 'linear-gradient(rgba(2, 49, 74, 0.85), rgba(2, 49, 97, 0.85)), url("/img/re-source/RESOURCE screen.jpeg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                padding: '48px 24px'
+            }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <h2 style={{ color: 'white', fontSize: '96px', fontWeight: 600, marginBottom: '0px', textAlign: 'center', fontFamily: '"Heebo",sans-serif', textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
+                        RE:SOURCE 2025
+                    </h2>
+                    <p style={{ fontWeight: 600, textTransform: 'uppercase', color: 'white', fontSize: '18px', textAlign: 'center', maxWidth: '700px', marginBottom: '32px', lineHeight: '1.6', textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>
+                        Join us for our keynote event designed to inspire, equip, and sustain church planters and ministry leaders across Southern California.
+                    </p>
+                    <Link to="/re-source" style={{ textDecoration: 'none' }}>
+                        <button style={{
+                            backgroundColor: 'rgb(246, 68, 55)',
+                            color: 'white',
+                            padding: '18px 48px',
+                            fontSize: '18px',
+                            fontWeight: 600,
+                            border: 'none',
+                            borderRadius: '4px',
+                            cursor: 'pointer',
+                            fontFamily: '"Heebo",sans-serif',
+                            transition: 'background-color 0.3s ease',
+                            boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
+                        }}
+                        onMouseEnter={(e) => e.target.style.backgroundColor = 'rgb(226, 48, 35)'}
+                        onMouseLeave={(e) => e.target.style.backgroundColor = 'rgb(246, 68, 55)'}
+                        >
+                            Learn More
+                        </button>
+                    </Link>
+                </div>
+            </div>
+
             <div onClick={nextTownHandler} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') nextTownHandler(); }} role="button" tabIndex={0} className={'var-height-1'} style={{ cursor: 'pointer', margin: '0px 0px 64px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(100, 139, 114, 0.5)', backgroundSize: 'contain', width: '100%', backgroundImage: `url("http://socalnam.org/img/next+town+repeat+banner+2.png")` }}>
                 <div>
                 <div><p className="purpose-column-text">{`CLICK HERE TO GO TO…`}</p></div>
