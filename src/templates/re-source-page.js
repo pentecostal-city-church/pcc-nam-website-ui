@@ -15,7 +15,9 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: '24px' }}>
           {/* Register Button */}
           <a
-              href="mailto:socalnorthamericanmissions@gmail.com?subject=Re:Source 2025 Interest"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://pentecostalcitychurch.churchcenter.com/unproxy/registrations/events/3222143"
               style={{
                 textDecoration: 'none'
               }}
@@ -298,7 +300,9 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
             </p>
             {/* Register Button */}
             <a
-              href="mailto:socalnorthamericanmissions@gmail.com?subject=Re:Source 2025 Interest"
+              href="https://pentecostalcitychurch.churchcenter.com/registrations/events/3222143"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 textDecoration: 'none'
               }}
@@ -330,7 +334,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                 e.target.style.boxShadow = '0 4px 14px rgba(239, 68, 68, 0.4)';
               }}
               >
-                Register Your Interest
+                Register Here
                 <svg
                   width="20"
                   height="20"
@@ -403,7 +407,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
               letterSpacing: '2px',
               marginBottom: '48px',
             }}>
-              NOVEMBER 6-8, 2025
+              NOVEMBER 7-8, 2025
             </h2>
 
             {/* Venue */}
@@ -563,7 +567,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
               marginBottom: '0px'
             }}>
               <img
-                src="/img/re-source/RESOURCE-INVITE-IMAGE.JPEG"
+                src="/img/re-source/re-source.png"
                 alt="Re:Source Event Invitation"
                 style={{
                   width: '100%',
