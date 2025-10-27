@@ -509,22 +509,6 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                       left: 0,
                       color: 'white'
                     }}>•</span>
-                    <strong>Thursday, Nov 6 @ 7pm:</strong> Exclusive session for Church Planters & NAM Pastors.
-                  </li>
-                  <li style={{
-                    fontSize: 'clamp(14px, 1.8vw, 16px)',
-                    fontWeight: 500,
-                    color: 'white',
-                    marginBottom: '8px',
-                    fontFamily: '"Heebo",sans-serif',
-                    paddingLeft: '24px',
-                    position: 'relative'
-                  }}>
-                    <span style={{
-                      position: 'absolute',
-                      left: 0,
-                      color: 'white'
-                    }}>•</span>
                     <strong>Friday, Nov 7 starting @ 9am:</strong> Full day of general sessions, split tracks, and a powerful panel discussion.
                   </li>
                   <li style={{
