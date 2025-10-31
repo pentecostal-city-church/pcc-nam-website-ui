@@ -742,7 +742,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                       • Personal Growth (Art Hodges)
                     </p>
                     <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
-                      • Making Disciples (Mike Gonzales)
+                      • Making Disciples (Karl Sachs)
                     </p>
                   </div>
                 </div>
