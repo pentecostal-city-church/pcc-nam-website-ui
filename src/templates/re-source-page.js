@@ -6,8 +6,15 @@ import { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
 export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
-  const [fridayOpen, setFridayOpen] = React.useState(true);
-  const [saturdayOpen, setSaturdayOpen] = React.useState(true);
+  const [fridayOpen, setFridayOpen] = React.useState(false);
+  const [saturdayOpen, setSaturdayOpen] = React.useState(false);
+
+  const scrollToSchedule = () => {
+    const scheduleElement = document.getElementById('schedule-section');
+    if (scheduleElement) {
+      scheduleElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   return (
     <div>
@@ -15,7 +22,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
         <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(42, 59, 74, 0.85)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("/img/re-source/dtla-bg.jpg")` }}>
           <h2 style={{ marginTop: '260px' }} className="purpose-column-title">RE:SOURCE</h2>
           <p style={{ marginTop: '16px' }} className="purpose-column-header">SOCAL NAM KEYNOTE EVENT</p>
-          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '24px' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', marginTop: '24px', flexWrap: 'wrap', padding: '0 24px' }}>
           {/* Register Button */}
           <a
               target="_blank"
@@ -68,6 +75,50 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                 </svg>
               </button>
             </a>
+            <button
+              onClick={scrollToSchedule}
+              style={{
+                background: 'white',
+                color: 'rgb(239, 68, 68)',
+                fontSize: '18px',
+                fontWeight: 600,
+                padding: '18px 48px',
+                borderRadius: '8px',
+                border: 'none',
+                cursor: 'pointer',
+                fontFamily: '"Heebo",sans-serif',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '12px',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 14px rgba(255, 255, 255, 0.4)'
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.background = 'rgba(255, 255, 255, 0.9)';
+                e.target.style.transform = 'translateY(-2px)';
+                e.target.style.boxShadow = '0 6px 20px rgba(255, 255, 255, 0.5)';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background = 'white';
+                e.target.style.transform = 'translateY(0)';
+                e.target.style.boxShadow = '0 4px 14px rgba(255, 255, 255, 0.4)';
+              }}
+            >
+              View Schedule
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </button>
             </div>
         </div>
         {/* Join the Movement Section */}
@@ -470,7 +521,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
             >
             {/* Additional Info Section */}
         {/* Schedule Section */}
-        <div style={{
+        <div id="schedule-section" style={{
           background: '#1a1a1a',
           padding: '32px 24px',
           display: 'flex',
