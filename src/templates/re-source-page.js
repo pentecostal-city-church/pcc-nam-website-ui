@@ -522,7 +522,9 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
             {/* Additional Info Section */}
         {/* Schedule Section */}
         <div id="schedule-section" style={{
-          background: '#1a1a1a',
+          background: 'linear-gradient(135deg, rgba(2,49,74,0.85) 0%, rgba(2,49,97,0.85) 75%, rgba(3, 49, 120,0.85) 100%)',
+          // background: 'rgba(12, 54, 121,0.75)',
+          // border: '#FFF58A 3px solid',
           padding: '32px 24px',
           display: 'flex',
           justifyContent: 'center',
@@ -541,7 +543,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
               textAlign: 'center',
               fontFamily: '"Heebo",sans-serif',
               textTransform: 'uppercase',
-              borderBottom: '1px solid white',
+              borderBottom: '1px solid #FFF58A',
               paddingBottom: '0px',
               display: 'inline-block'
             }}>
@@ -564,7 +566,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                   padding: '16px 24px',
                   background: 'rgba(255, 255, 255, 0.1)',
                   borderRadius: '8px',
-                  border: '2px solid white',
+                  border: '2px solid #FFF58A',
                   transition: 'all 0.3s ease'
                 }}
                 onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)'}
@@ -600,15 +602,15 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
               </div>
 
               {fridayOpen && (<>
-              <div>
-                <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
-                  9:00 AM - 10:00 AM | <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Light Breakfast</span>
+              <div style={{ padding: '0px 0px 24px' }}>
+                <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
+                  9:00 AM - 10:00 AM <span style={{ color: '#FFF58A' }}>|</span> <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Light Breakfast</span>
                 </p>
-                <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
-                  10:00 AM - 11:00 AM | <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>General Session 1: Jason Dillon</span>
+                <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
+                  10:00 AM - 11:00 AM <span style={{ color: '#FFF58A' }}>|</span> <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>General Session 1: Jason Dillon</span>
                 </p>
-                <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
-                  11:00 AM - 11:30 AM | <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Break</span>
+                <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
+                  11:00 AM - 11:30 AM <span style={{ color: '#FFF58A' }}>|</span> <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Break</span>
                 </p>
               </div>
 
@@ -619,67 +621,67 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                 marginBottom: '32px',
                 border: '1px solid rgba(255, 255, 255, 0.1)'
               }}>
-                <p style={{ color: 'white', fontSize: '20px', fontWeight: 700, marginBottom: '24px', fontFamily: '"Heebo",sans-serif', textTransform: 'uppercase' }}>
-                  11:30 AM - 1:00 PM | Split Track 01
+                <p style={{ color: 'white', fontSize: '20px', fontWeight: 700, marginBottom: '24px', fontFamily: '"Heebo",sans-serif', textTransform: 'uppercase', textAlign: 'left' }}>
+                  11:30 AM - 1:00 PM <span style={{ color: '#FFF58A' }}>|</span> Split Track 01
                 </p>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px' }}>
                   {/* Church Planters Track */}
                   <div>
-                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       Church Planters Track
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Music in a Church Plant Setting<br/>(Eileen Gonzales & Olga Raya)
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Financial Resources<br/>(Nathan Cupoli & Philip Harding)
                     </p>
                   </div>
 
                   {/* Pastors Track */}
                   <div>
-                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       Pastors Track
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Daughter Works (Greg Pounds)
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Small Groups (Javier Orozco)
                     </p>
                   </div>
 
                   {/* Creatives Track */}
                   <div>
-                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       Creatives Track
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Building a Creative Team (Carleon Wilson)
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Social Media (Nolan Graham)
                     </p>
                   </div>
 
                   {/* Young Ministers Track */}
                   <div>
-                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       Young Ministers Track
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Being a Timothy (John Lopez)
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Dreaming Big (Tom Copple)
                     </p>
                   </div>
                 </div>
               </div>
 
-              <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
-                1:00 PM - 2:15 PM | <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Lunch & Panel 01</span>
+              <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '32px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
+                1:00 PM - 2:15 PM <span style={{ color: '#FFF58A' }}>|</span> <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Lunch & Panel 01</span>
               </p>
 
               {/* Split Track 02 */}
@@ -689,59 +691,59 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                 borderRadius: '8px',
                 border: '1px solid rgba(255, 255, 255, 0.1)'
               }}>
-                <p style={{ color: 'white', fontSize: '20px', fontWeight: 700, marginBottom: '24px', fontFamily: '"Heebo",sans-serif', textTransform: 'uppercase' }}>
-                  2:15 PM - 3:45 PM | Split Track 02
+                <p style={{ color: 'white', fontSize: '20px', fontWeight: 700, marginBottom: '24px', fontFamily: '"Heebo",sans-serif', textTransform: 'uppercase', textAlign: 'left' }}>
+                  2:15 PM - 3:45 PM <span style={{ color: '#FFF58A' }}>|</span> Split Track 02
                 </p>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px' }}>
                   {/* Church Planters Track */}
                   <div>
-                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       Church Planters Track
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Building a Team (David McGovern)
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Systems in a Church Plant (Scott Shoemake)
                     </p>
                   </div>
 
                   {/* Pastors Track */}
                   <div>
-                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       Pastors Track
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Counseling Resources (Lakelie Lopez)
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Pastoral Families<br/>(Kari Pounds & Monique McGovern)
                     </p>
                   </div>
 
                   {/* Creatives Track */}
                   <div>
-                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       Creatives Track
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Live Stream (John Aoki)
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Building a Worship Team (Frankie Taylor)
                     </p>
                   </div>
 
                   {/* Young Ministers Track */}
                   <div>
-                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       Young Ministers Track
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Personal Growth (Art Hodges)
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Making Disciples (Karl Sachs)
                     </p>
                   </div>
@@ -750,19 +752,19 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
 
               {/* Friday Evening */}
               <div style={{
-                padding: '24px',
+                padding: '24px 0px',
                 borderRadius: '8px',
               }}>
-                <p style={{ color: 'white', fontSize: '20px', fontWeight: 700, marginBottom: '16px', fontFamily: '"Heebo",sans-serif', textTransform: 'uppercase' }}>
-                  Friday PM | Evening Service
+                <p style={{ color: 'white', fontSize: '20px', fontWeight: 700, marginBottom: '16px', fontFamily: '"Heebo",sans-serif', textTransform: 'uppercase', textAlign: 'left' }}>
+                  Friday PM <span style={{ color: '#FFF58A' }}>|</span> Evening Service
                 </p>
-                <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
-                  4:00 PM - 6:00 PM | <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>General Session 2: Jason Dillon</span>
+                <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
+                  4:00 PM - 6:00 PM <span style={{ color: '#FFF58A' }}>|</span> <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>General Session 2: Jason Dillon</span>
                 </p>
-                <p style={{ color: 'white', fontSize: '16px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
+                <p style={{ color: 'white', fontSize: '16px', marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                   • 5 Minute Keynote: Art Hodges III
                 </p>
-                <p style={{ color: 'white', fontSize: '16px', fontFamily: '"Heebo",sans-serif' }}>
+                <p style={{ color: 'white', fontSize: '16px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                   • Hyphen ministry leads worship
                 </p>
               </div>
@@ -783,7 +785,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                   padding: '16px 24px',
                   background: 'rgba(255, 255, 255, 0.1)',
                   borderRadius: '8px',
-                  border: '2px solid white',
+                  border: '2px solid #FFF58A',
                   transition: 'all 0.3s ease',
                   marginBottom: '32px',
                 }}
@@ -820,11 +822,11 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
               </div>
 
               {saturdayOpen && (<>
-              <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
-                9:00 AM - 9:45 AM | <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Porto's & Coffee</span>
+              <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
+                9:00 AM - 9:45 AM <span style={{ color: '#FFF58A' }}>|</span> <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Porto's & Coffee</span>
               </p>
-              <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '32px', fontFamily: '"Heebo",sans-serif' }}>
-                10:00 AM - 11:00 AM | <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Panel 02 - Small Groups</span>
+              <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '32px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
+                10:00 AM - 11:00 AM <span style={{ color: '#FFF58A' }}>|</span> <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Panel 02 - Small Groups</span>
               </p>
 
               {/* Split Track 03 */}
@@ -835,64 +837,63 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                 marginBottom: '32px',
                 border: '1px solid rgba(255, 255, 255, 0.1)'
               }}>
-                <p style={{ color: 'white', fontSize: '20px', fontWeight: 700, marginBottom: '24px', fontFamily: '"Heebo",sans-serif', textTransform: 'uppercase' }}>
-                  11:00 AM - 11:45 AM | Split Track 03
+                <p style={{ color: 'white', fontSize: '20px', fontWeight: 700, marginBottom: '24px', fontFamily: '"Heebo",sans-serif', textTransform: 'uppercase', textAlign: 'left' }}>
+                  11:00 AM - 11:45 AM <span style={{ color: '#FFF58A' }}>|</span> Split Track 03
                 </p>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px' }}>
                   {/* Church Planters Track */}
                   <div>
-                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       Church Planters Track
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Relationship with the District<br/>(Art Hodges)
                     </p>
                   </div>
 
                   {/* Pastors Track */}
                   <div>
-                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       Pastors Track
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Systems for Growth (Mark Waddle)
                     </p>
                   </div>
 
                   {/* Creatives Track */}
                   <div>
-                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       Creatives Track
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Cohesive Branding (David McGovern)
                     </p>
                   </div>
 
                   {/* Young Ministers Track */}
                   <div>
-                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'white', fontSize: '16px', fontWeight: 700, marginBottom: '12px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       Young Ministers Track
                     </p>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                       • Staying True to Your Calling<br/>(Frankie Taylor)
                     </p>
                   </div>
                 </div>
               </div>
 
-              <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif' }}>
-                11:45 AM | <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Break</span>
+              <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
+                11:45 AM <span style={{ color: '#FFF58A' }}>|</span> <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Break</span>
               </p>
 
               {/* Closing Session */}
               <div style={{
-                padding: '24px',
                 borderRadius: '8px',
               }}>
-                <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, fontFamily: '"Heebo",sans-serif' }}>
-                  12:00 PM | <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>General Session 3: Jason Dillon</span>
+                <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
+                  12:00 PM <span style={{ color: '#FFF58A' }}>|</span> <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>General Session 3: Jason Dillon</span>
                 </p>
               </div>
             </>)}
