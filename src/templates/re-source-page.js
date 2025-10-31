@@ -6,8 +6,8 @@ import { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
 export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
-  const [fridayOpen, setFridayOpen] = React.useState(false);
-  const [saturdayOpen, setSaturdayOpen] = React.useState(false);
+  const [fridayOpen, setFridayOpen] = React.useState(true);
+  const [saturdayOpen, setSaturdayOpen] = React.useState(true);
 
   const scrollToSchedule = () => {
     const scheduleElement = document.getElementById('schedule-section');
@@ -442,7 +442,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
             textAlign: 'center'
           }}>
             <p style={{
-              fontSize: 'clamp(24px, 4vw, 40px)',
+              fontSize: '24px',
               fontWeight: 600,
               color: 'rgb(12, 74, 110)',
               marginBottom: '16px',
@@ -452,7 +452,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
             </p>
             {/* Date and Time */}
             <h2 style={{
-              fontSize: 'clamp(32px, 5vw, 58px)',
+              fontSize: '48px',
               fontWeight: 700,
               color: '#34495E',
               fontFamily: '"Heebo",sans-serif',
@@ -476,7 +476,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
               PENTECOSTAL CITY CHURCH
             </h3>
             <p style={{
-              fontSize: 'clamp(18px, 2.5vw, 36px)',
+              fontSize: '24px',
               fontWeight: 600,
               color: '#34495E',
               marginBottom: '0px',
@@ -485,7 +485,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
               BROCKWAY STREET,
             </p>
             <p style={{
-              fontSize: 'clamp(18px, 2.5vw, 36px)',
+              fontSize: '24px',
               fontWeight: 600,
               color: '#34495E',
               marginBottom: '64px',
