@@ -13,7 +13,6 @@ export const SEO = ({ title, description, siteMetadata }) => {
 
   return (
     <>
-      <html lang="en" />
       <title>{title ? `${title} | ${siteTitle}` : siteTitle}</title>
       <meta name="description" content={description || siteDesc} />
       <meta name="image" content={image} />
