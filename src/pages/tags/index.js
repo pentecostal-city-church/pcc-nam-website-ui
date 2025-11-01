@@ -40,7 +40,6 @@ export const Head = ({ data }) => {
   const { title } = data.site.siteMetadata;
   return (
     <>
-      <html lang="en" />
       <title>{`Tags | ${title}`}</title>
     </>
   );

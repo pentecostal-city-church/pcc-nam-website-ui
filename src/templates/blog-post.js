@@ -80,7 +80,6 @@ export const Head = ({ data }) => {
   const { markdownRemark: post } = data;
   return (
     <>
-      <html lang="en" />
       <title>{`${post.frontmatter.title} | Blog`}</title>
       <meta name="description" content={post.frontmatter.description} />
     </>
