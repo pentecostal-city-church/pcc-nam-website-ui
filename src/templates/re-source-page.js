@@ -115,8 +115,8 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
+                <path d="M12 5v14" />
+                <path d="M19 12 12 19 5 12" />
               </svg>
             </button>
             </div>
