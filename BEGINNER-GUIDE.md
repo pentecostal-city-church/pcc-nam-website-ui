@@ -8,9 +8,10 @@ Welcome! This guide will walk you through how to access this project, make chang
 1. [Understanding the Setup](#understanding-the-setup)
 2. [Accessing Your Project](#accessing-your-project)
 3. [Making Changes Using Prompts](#making-changes-using-prompts)
-4. [Understanding & Fixing Errors](#understanding--fixing-errors)
-5. [Submitting Your Changes](#submitting-your-changes)
-6. [Useful Tips](#useful-tips)
+4. [Complete Workflow: From Prompt to Deployment](#complete-workflow-from-prompt-to-deployment)
+5. [Understanding & Fixing Errors](#understanding--fixing-errors)
+6. [Submitting Your Changes](#submitting-your-changes)
+7. [Useful Tips](#useful-tips)
 
 ---
 
@@ -87,6 +88,250 @@ Think about what you want to change. For example:
 - **Be specific:** "Change the padding" is less clear than "Add 8px left and right padding to the drawer content"
 - **Reference page names:** "On the /re-source page, change..." helps the assistant find the right place
 - **Describe the result:** Tell the assistant what you want to see, not just what to do
+
+---
+
+## Complete Workflow: From Prompt to Deployment
+
+This section shows you the complete process of making a change in Builder.io, creating a Pull Request (PR), and deploying it to the live website at www.socalnam.org.
+
+### The Full Process Overview
+
+Here's what happens when you make a change:
+1. **Make changes** in Builder.io using prompts
+2. **Review your changes** in the Builder.io preview
+3. **Create a Pull Request** to submit your changes
+4. **Navigate to GitHub** to review and merge the PR
+5. **Automatic deployment** happens via GitHub Actions
+6. **See your changes live** at www.socalnam.org
+
+Let's walk through each step with screenshots!
+
+---
+
+### Step 1: Making Changes in Builder.io
+
+![Builder.io Prompt Area](/img/guide/how-to-1.png)
+
+**Where to make changes:**
+- Look at the bottom of the Builder.io interface
+- You'll see a text input area (shown in the screenshot above)
+- This is where you type your prompts to make changes
+
+**Example prompts:**
+```
+"Change the schedule title color to yellow"
+"Add a new section about upcoming events"
+"Fix the spacing between the buttons"
+```
+
+**What happens next:**
+- The AI assistant reads your prompt
+- Makes the changes to the code
+- Shows you a preview of the changes
+- You can make multiple changes before creating a PR
+
+---
+
+### Step 2: Creating a Pull Request
+
+![Create PR Button](/img/guide/how-to-2.png)
+
+**When you're ready to submit your changes:**
+
+1. **Review your changes** in the Builder.io preview
+2. **Look for the "Create PR" button** (shown in screenshot above)
+3. **Click the button** to start creating your Pull Request
+4. **Add a description** of what you changed (optional but helpful)
+
+**Example PR descriptions:**
+```
+"Updated RE:SOURCE page schedule section colors"
+"Fixed navigation menu spacing on mobile"
+"Added new event section to homepage"
+```
+
+---
+
+### Step 3: Getting the GitHub PR Link
+
+![GitHub PR Link](/img/guide/how-to-3.png)
+
+**After creating the PR:**
+
+1. Builder.io will show you a **link to your GitHub Pull Request** (shown in screenshot)
+2. **Click this link** - it will open GitHub in a new tab
+3. This takes you to the PR page where you can review and merge
+
+**What the PR link looks like:**
+```
+https://github.com/pentecostal-city-church/pcc-nam-website-ui/pull/123
+```
+
+---
+
+### Step 4: Navigating to Your Organization on GitHub
+
+![GitHub Organization](/img/guide/how-to-4.png)
+
+**If you need to find your PR manually:**
+
+1. **Go to GitHub.com** and log in
+2. **Click on your organization icon** in the top-left (shown in screenshot)
+3. **Look for "pentecostal-city-church"** in the dropdown
+4. **Click on the organization name**
+
+---
+
+### Step 5: Finding Your Repository
+
+![Repository Link](/img/guide/how-to-5.png)
+
+**From your organization page:**
+
+1. **Look for the "Repositories" tab** (shown in screenshot)
+2. **Find "pcc-nam-website-ui"** in the list
+3. **Click on the repository name**
+4. **Click on "Pull requests" tab** at the top
+5. **Find your PR** in the list (it will be the most recent one)
+
+---
+
+### Step 6: Merging the Pull Request
+
+![Merge PR Button](/img/guide/how-to-6.png)
+
+**On the Pull Request page:**
+
+1. **Review the changes** - scroll down to see what was modified
+2. **Check the status** - make sure all checks are passing (green checkmarks)
+3. **Click the "Merge pull request" button** (shown in screenshot)
+4. **Confirm the merge** by clicking the confirmation button
+5. **Delete the branch** (optional) - click "Delete branch" button after merging
+
+**Important notes:**
+- ✅ **Green checkmarks** mean the code is ready to merge
+- ❌ **Red X marks** mean there are errors - don't merge yet
+- ⏳ **Yellow dots** mean checks are still running - wait for them to finish
+
+---
+
+### Step 7: Automatic Deployment
+
+**After you merge the PR, magic happens automatically!**
+
+1. **GitHub Actions triggers** - this is an automated workflow
+2. **The website builds** - all your changes are compiled
+3. **Deployment happens** - the changes go live to www.socalnam.org
+4. **Takes 2-5 minutes** - be patient!
+
+**How to watch the deployment:**
+
+1. **Go to the "Actions" tab** in your repository
+2. **See the workflow running** - it will have a yellow dot (⏳) while building
+3. **Green checkmark** (✅) means deployment succeeded!
+4. **Red X** (❌) means there was an error - ask for help
+
+**View the Actions page:**
+```
+https://github.com/pentecostal-city-church/pcc-nam-website-ui/actions
+```
+
+---
+
+### Step 8: Seeing Your Changes Live
+
+**Once deployment completes:**
+
+1. **Visit www.socalnam.org** in your browser
+2. **You might need to refresh** (press Ctrl+Shift+R or Cmd+Shift+R)
+3. **Your changes are now live!** 🎉
+
+**Troubleshooting:**
+- **Changes not showing?** Clear your browser cache or try incognito mode
+- **Page looks broken?** Check the Actions tab for deployment errors
+- **Still having issues?** Ask the AI assistant for help
+
+---
+
+### Complete Example Walkthrough
+
+Let's say you want to change the button color on the RE:SOURCE page from red to blue.
+
+#### 1. Make the Change
+```
+Prompt: "On the RE:SOURCE page, change the Register button color from red to blue"
+```
+
+#### 2. Review in Builder.io
+- Check the preview
+- Make sure it looks right
+- The button should now be blue
+
+#### 3. Create Pull Request
+- Click "Create PR" button in Builder.io
+- Add description: "Changed Register button to blue on RE:SOURCE page"
+- Submit the PR
+
+#### 4. Get GitHub Link
+- Builder.io shows you the link
+- Click it to open GitHub
+
+#### 5. Review on GitHub
+- Check the "Files changed" tab
+- See what code was modified
+- Verify it looks correct
+
+#### 6. Merge the PR
+- Click "Merge pull request"
+- Confirm the merge
+- Delete the branch (optional)
+
+#### 7. Wait for Deployment
+- Go to Actions tab
+- Wait for green checkmark (2-5 minutes)
+- Deployment complete!
+
+#### 8. Check Live Site
+- Visit www.socalnam.org/re-source
+- Refresh the page
+- See your blue button live!
+
+---
+
+### Quick Reference: PR to Deployment
+
+| Step | What to Do | Where |
+|------|-----------|-------|
+| 1. Make changes | Type prompts | Builder.io prompt area |
+| 2. Create PR | Click "Create PR" | Builder.io top-right |
+| 3. Get link | Click GitHub link | Builder.io notification |
+| 4. Review PR | Check changes | GitHub PR page |
+| 5. Merge PR | Click "Merge pull request" | GitHub PR page |
+| 6. Watch deploy | Check Actions tab | GitHub Actions |
+| 7. View live | Visit website | www.socalnam.org |
+
+---
+
+### Common Questions
+
+**Q: How long does deployment take?**
+A: Usually 2-5 minutes after merging the PR.
+
+**Q: Can I make more changes while deployment is running?**
+A: Yes! You can start working on new changes immediately.
+
+**Q: What if the deployment fails?**
+A: Check the Actions tab for error messages, then ask the AI assistant for help.
+
+**Q: Can I undo a deployment?**
+A: Yes, you can create a new PR that reverts the changes, or ask an admin to revert the merge.
+
+**Q: Do I need to merge every PR immediately?**
+A: No, you can leave PRs open for review and merge them later.
+
+**Q: What if two people are working at the same time?**
+A: GitHub handles this automatically - the second person will need to update their branch before merging.
 
 ---
 
