@@ -155,7 +155,10 @@ export const MinistriesPageTemplate = ({ title, content, contentComponent }) => 
                 <p>Choose "North American Missions" and then the specific fund that you are desiring to support.</p>
             </div>
         </div> */}
-        <div style={{ marginTop: '120px', marginBottom: '96px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/685b8f5d-41cb-464b-aed9-9addeef456e7.jpeg")' }}/>
+        <div style={{ marginTop: '120px', marginBottom: '32px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundSize: 'contain', height: '360px', width: '100%', backgroundImage: 'url("https://s3.amazonaws.com/media.cloversites.com/d9/d9509a98-d2b2-40ff-8581-57203fc30f00/backgrounds/685b8f5d-41cb-464b-aed9-9addeef456e7.jpeg")' }}/>
+        <div style={{ textAlign: 'center', marginBottom: '96px' }}>
+          <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>Together in purpose, advancing God's kingdom across North America</p>
+        </div>
         <hr style={{ border: '1px solid white', margin: '72px 96px' }} className="purpose-column-divider"/>
         <div style={{ marginTop: '0px', display: 'flex', justifyContent: 'center' }}>
             <p style={{ color: 'white', margin: '0px', fontSize: '14px' }}>{`SoCal District North American Missions Department`}</p>
