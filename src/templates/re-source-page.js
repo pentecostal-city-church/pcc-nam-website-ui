@@ -21,7 +21,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginTop: '0px' }}>
         <div style={{ margin: '0px', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundPosition: 'center', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(42, 59, 74, 0.85)', backgroundSize: 'cover', height: '630px', width: '100%', backgroundImage: `url("/img/re-source/dtla-bg.jpg")` }}>
           <h2 style={{ marginTop: '260px' }} className="purpose-column-title">RE:SOURCE</h2>
-          <p style={{ marginTop: '16px', WebkitTextStroke: '1px white', color: 'transparent' }} className="purpose-column-header">SOCAL NAM KEYNOTE EVENT</p>
+          <p style={{ marginTop: '16px' }} className="purpose-column-header">SOCAL NAM KEYNOTE EVENT</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', marginTop: '24px', flexWrap: 'wrap', padding: '0 24px' }}>
           {/* Register Button */}
           <a
