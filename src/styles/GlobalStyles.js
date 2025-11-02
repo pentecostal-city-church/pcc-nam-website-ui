@@ -430,7 +430,7 @@ svg.circular-text-svg {
 .landing-main-container {
   height: calc(100vh - 92.5px);
   justify-content: center;
-  background-image: url("http://socalnam.org/img/main.jpg");
+  background-image: url("/img/main.jpg");
   @media(min-width:831px) {
     display: flex;
     height: calc(100vh - 154.5px);
