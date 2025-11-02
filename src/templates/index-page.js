@@ -73,7 +73,7 @@ export const IndexPageTemplate = ({
             duration: 6
           }}
         >
-          <div id="purpose" className={'landing-main-container'} style={{ display: 'flex', alignItems: 'center', width: 'calc(100vw)', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(40, 39, 24, 0.75)', backgroundAttachment: 'scroll', backgroundSize: 'cover' }}>
+          <div id="purpose" className={'landing-main-container'} style={{ display: 'flex', alignItems: 'center', width: 'calc(100vw)', backgroundPositionX: '50%', backgroundPositionY: '50%', backgroundRepeat: 'no-repeat', backgroundBlendMode: 'soft-light', backgroundColor: 'rgba(40, 39, 24, 0.75)', backgroundAttachment: 'scroll', backgroundSize: 'cover', backgroundImage: `url("/img/main/main.jpg")` }}>
             <div style={{ marginTop: '0px', width: '100%', maxWidth: '880px'}} className={'purpose-column'}>
             <div className={'purpose-container'}>
                 <p style={{ marginLeft: '16px', marginTop: '0px', marginBottom: '32px', color: 'white' }} className="purpose-column-header-1">OUR <b style={{ color: 'rgb(246, 68, 55)' }}>PURPOSE</b></p>
