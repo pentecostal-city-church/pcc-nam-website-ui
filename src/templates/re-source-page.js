@@ -601,7 +601,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                 </svg>
               </div>
 
-              {fridayOpen && (<div style={{ paddingLeft: '8px', paddingRight: '8px' }}>
+              {fridayOpen && (<>
               <div style={{ padding: '0px 0px 24px' }}>
                 <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                   9:00 AM - 10:00 AM <span style={{ color: '#FFF58A' }}>|</span> <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Light Breakfast</span>
@@ -768,7 +768,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                   • Hyphen ministry leads worship
                 </p>
               </div>
-            </div>)}</div>
+            </>)}</div>
 
             {/* Saturday Schedule */}
             <div>
@@ -821,7 +821,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                 </svg>
               </div>
 
-              {saturdayOpen && (<div style={{ paddingLeft: '8px', paddingRight: '8px' }}>
+              {saturdayOpen && (<>
               <p style={{ color: 'white', fontSize: '18px', fontWeight: 600, marginBottom: '8px', fontFamily: '"Heebo",sans-serif', textAlign: 'left' }}>
                 9:00 AM - 9:45 AM <span style={{ color: '#FFF58A' }}>|</span> <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Porto's & Coffee</span>
               </p>
@@ -896,7 +896,7 @@ export const ReSourcePageTemplate = ({ title, content, contentComponent }) => {
                   12:00 PM <span style={{ color: '#FFF58A' }}>|</span> <span style={{ color: 'rgba(255, 255, 255, 0.8)' }}>General Session 3: Jason Dillon</span>
                 </p>
               </div>
-            </div>)}
+            </>)}
             </div>
           </div>
         </div>
