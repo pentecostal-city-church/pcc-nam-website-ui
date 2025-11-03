@@ -8,10 +8,11 @@ Welcome! This guide will walk you through how to access this project, make chang
 1. [Understanding the Setup](#understanding-the-setup)
 2. [Accessing Your Project](#accessing-your-project)
 3. [Making Changes Using Prompts](#making-changes-using-prompts)
-4. [Complete Workflow: From Prompt to Deployment](#complete-workflow-from-prompt-to-deployment)
-5. [Understanding & Fixing Errors](#understanding--fixing-errors)
-6. [Submitting Your Changes](#submitting-your-changes)
-7. [Useful Tips](#useful-tips)
+4. [First-Time Setup: Logging into GitHub](#first-time-setup-logging-into-github)
+5. [Complete Workflow: From Prompt to Deployment](#complete-workflow-from-prompt-to-deployment)
+6. [Understanding & Fixing Errors](#understanding--fixing-errors)
+7. [Submitting Your Changes](#submitting-your-changes)
+8. [Useful Tips](#useful-tips)
 
 ---
 
@@ -88,6 +89,47 @@ Think about what you want to change. For example:
 - **Be specific:** "Change the padding" is less clear than "Add 8px left and right padding to the drawer content"
 - **Reference page names:** "On the /re-source page, change..." helps the assistant find the right place
 - **Describe the result:** Tell the assistant what you want to see, not just what to do
+
+---
+
+## First-Time Setup: Logging into GitHub
+
+**Important:** This section is for first-time users who need to access the GitHub repository.
+
+### Step 1: Navigate to GitHub
+
+1. Open your web browser
+2. Go to: **https://github.com**
+
+### Step 2: Log In
+
+1. Click the **"Sign in"** button in the top-right corner
+2. Enter the credentials:
+   - **Email:** `socal.nam.dev@gmail.com`
+   - **Password:** `socalnamdev`
+3. Click **"Sign in"**
+
+### Step 3: Verify Access
+
+After logging in:
+1. Click on your profile icon in the top-right
+2. You should see "pentecostal-city-church" in the organizations list
+3. Click on it to access the organization
+
+### Step 4: Navigate to the Repository
+
+1. From the organization page, click **"Repositories"**
+2. Find and click on **"pcc-nam-website-ui"**
+3. You now have access to the project!
+
+### Security Recommendations
+
+⚠️ **Important Security Note:**
+- This is a shared development account
+- **Change the password** after your first login for better security
+- Go to Settings → Password and Security
+- Use a strong, unique password
+- Consider enabling two-factor authentication (2FA)
 
 ---
 
