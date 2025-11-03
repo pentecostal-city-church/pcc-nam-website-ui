@@ -8,11 +8,10 @@ Welcome! This guide will walk you through how to access this project, make chang
 1. [Understanding the Setup](#understanding-the-setup)
 2. [Accessing Your Project](#accessing-your-project)
 3. [Making Changes Using Prompts](#making-changes-using-prompts)
-4. [First-Time Setup: Logging into GitHub](#first-time-setup-logging-into-github)
-5. [Complete Workflow: From Prompt to Deployment](#complete-workflow-from-prompt-to-deployment)
-6. [Understanding & Fixing Errors](#understanding--fixing-errors)
-7. [Submitting Your Changes](#submitting-your-changes)
-8. [Useful Tips](#useful-tips)
+4. [Complete Workflow: From Prompt to Deployment](#complete-workflow-from-prompt-to-deployment)
+5. [Understanding & Fixing Errors](#understanding--fixing-errors)
+6. [Submitting Your Changes](#submitting-your-changes)
+7. [Useful Tips](#useful-tips)
 
 ---
 
@@ -36,8 +35,8 @@ A Pull Request is like saying "I've made some changes, please review and approve
 ### Step 1: Open the Project in Your Browser
 Your project is running in a cloud environment. You don't need to install anything on your computer!
 
-**To see the live website:**
-Visit: https://1ebb7a412a774d3dad4d59c752a3e062-5ca8fdfec9a64aa391ff3b210.fly.dev
+**To see the live website preview:**
+Visit: https://builder.io/app/projects/1ebb7a412a774d3dad4d59c752a3e062/aura-lab
 
 This is your **preview** - you'll see your website update here in real-time as you make changes.
 
@@ -104,10 +103,9 @@ Think about what you want to change. For example:
 ### Step 2: Log In
 
 1. Click the **"Sign in"** button in the top-right corner
-2. Enter the credentials:
-   - **Email:** `socal.nam.dev@gmail.com`
-   - **Password:** `socalnamdev`
-3. Click **"Sign in"**
+2. Select Sign In Using Google
+3. Click **"Sign in"** and use the credentials
+   
 
 ### Step 3: Verify Access
 
@@ -130,7 +128,6 @@ After logging in:
 - Go to Settings → Password and Security
 - Use a strong, unique password
 - Consider enabling two-factor authentication (2FA)
-
 ---
 
 ## Complete Workflow: From Prompt to Deployment
