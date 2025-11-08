@@ -82,7 +82,6 @@ You have **two options** for updating the website:
 **What you can edit:**
 - Page titles, headings, and body text
 - Images (upload new ones or swap existing)
-- Blog posts
 - Committee member info
 - Contact information
 - Navigation links
@@ -177,28 +176,6 @@ Or:
 ```
 Tell Claude: "Change all headings to use the font 'Heebo' instead of the current font"
 ```
-
-### Task 6: Add a New Blog Post
-
-**Using Decap CMS:**
-1. Go to http://localhost:8000/admin
-2. Click "Blog" in the sidebar
-3. Click "New Blog"
-4. Fill in the fields:
-   - Title
-   - Publish Date
-   - Description
-   - Body (use the rich text editor)
-   - Upload a featured image
-   - Add tags
-5. Click "Publish"
-
-**Manual Method:**
-1. Create a new file in `src/pages/blog/`
-2. Name it: `YYYY-MM-DD-title-of-post.md`
-3. Copy the format from an existing blog post
-4. Fill in your content
-
 ---
 
 ## Working with Claude Code
@@ -510,7 +487,6 @@ git commit -m "Update homepage hero image and text"
 - `"Update Committee page with 2024 members"`
 - `"Change primary button color to match brand"`
 - `"Fix broken link on Ministries page"`
-- `"Add new blog post about Easter event"`
 
 ### Step 4: Push to GitHub
 
@@ -656,7 +632,6 @@ pcc-nam-website-ui/
 │   ├── pages/              # All page content (markdown files)
 │   │   ├── index.md        # Homepage
 │   │   ├── about/
-│   │   ├── blog/           # Blog posts
 │   │   ├── committee/
 │   │   ├── ministries/
 │   │   └── ...

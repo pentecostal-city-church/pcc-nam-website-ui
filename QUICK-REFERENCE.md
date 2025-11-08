@@ -39,7 +39,6 @@ docker-compose exec gatsby-dev npm run deploy
 | Homepage | `src/pages/index.md` |
 | Navigation | `src/components/Navbar.js` |
 | Footer | `src/components/Footer/Footer.js` |
-| Blog posts | `src/pages/blog/` |
 | CMS Admin | http://localhost:8000/admin |
 
 ## Ask Claude Code
