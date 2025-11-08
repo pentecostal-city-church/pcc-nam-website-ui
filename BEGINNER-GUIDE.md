@@ -32,26 +32,54 @@ A Pull Request is like saying "I've made some changes, please review and approve
 
 ## Accessing Your Project
 
-### Step 1: Open the Project in Your Browser
-Your project is running in a cloud environment. You don't need to install anything on your computer!
+### Accessing Builder.io
 
-**To see the live website preview:**
-Visit: https://builder.io/app/projects/1ebb7a412a774d3dad4d59c752a3e062/aura-lab
+Builder.io is the platform where you'll edit the website using AI prompts. Follow these steps to access it:
 
-This is your **preview** - you'll see your website update here in real-time as you make changes.
+#### Step 1: Go to Builder.io
+1. Open your web browser
+2. Navigate to: **https://www.builder.io/**
 
-### Step 2: Access the Code Editor
-The code editor interface is where you can:
-- View and edit code files
-- See the file structure
-- Make changes using AI prompts
+#### Step 2: Click "Go to app"
+1. Look for the **"Go to app"** button on the Builder.io homepage
+2. Click it to proceed to the login page
 
-You're already in this editor! It's the interface where you're reading this and making requests.
+#### Step 3: Login with Credentials
+1. Use the following email to log in: **socal.nam.dev@gmail.com**
+2. Enter the password (contact your administrator if you don't have it)
+3. Click **"Sign in"**
 
-### Step 3: Understand Your Repository Location
+#### Step 4: Select the Project
+1. Once logged in, you'll see a list of projects
+2. Click on **"pcc-nam-website-ui"**
+
+#### Step 5: Wait for the Project to Build
+1. Allow the project to build completely
+2. **This can take up to 10 minutes** - be patient!
+3. You'll see a loading indicator while the build is in progress
+4. Once complete, the Builder.io interface will be ready to use
+
+#### Step 6: Edit Using Prompts
+1. Look for the **prompt input area on the left-hand side** of the screen
+2. This is where you'll type your requests to make changes to the website
+3. Type your change request in clear, simple English
+4. The AI will make the changes for you
+
+#### Step 7: Save and Deploy Changes
+1. After making your changes, review them in the preview
+2. When you're ready to submit, look for the **"Send PR" button in the top-right corner**
+3. Click it to create a Pull Request with your changes
+4. Follow the PR workflow to merge and deploy your changes (see the "Complete Workflow" section below)
+
+---
+
+### Understanding Your Repository Location
 - **Repository Name:** pentecostal-city-church/pcc-nam-website-ui
 - **Current Branch:** spark-lab (this is where your changes go)
 - **What that means:** You're working on the "spark-lab" branch of the PCC NAM website project
+
+**To see the live website preview:**
+Visit: https://builder.io/app/projects/1ebb7a412a774d3dad4d59c752a3e062/aura-lab
 
 ---
 
